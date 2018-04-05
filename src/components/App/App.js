@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './App.css';
-import { getAlcoholicRecipes } from '../../api/apiCalls/getAllRecipes';
+import { getRecipes } from '../../api/apiCalls/getRecipes';
 
 
 export class App extends Component {
@@ -14,7 +14,7 @@ export class App extends Component {
   }
 
   async componentDidMount() {
-    const recipes = await getAlcoholicRecipes();
+    const recipes = await getRecipes("a", "Optional_alcohol");
     this.setState({ recipes: recipes });
   }
 
