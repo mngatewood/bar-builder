@@ -15,7 +15,7 @@ export class App extends Component {
 
   async componentDidMount() {
     const recipes = await getRecipes("a", "Optional_alcohol");
-    this.setState({ recipes: recipes });
+    this.setState({ recipes });
   }
 
   render() {

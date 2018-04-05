@@ -10,11 +10,11 @@ export const getRecipes = async (filterType, filterValue) => {
     console.log(recipeDetails);
     return recipeDetails;
   } catch (error) {
-    throw Error("Error retrieving recipe summaries");
+    throw Error("Error retrieving recipes");
   }
 };
 
-const getRecipeDetails = async (recipeArray) => {
+export const getRecipeDetails = async (recipeArray) => {
   const urlQuery = 'lookup.php?i=';
   const promises = recipeArray.map(recipe => {
     return fetch(`${urlRoot}${urlQuery}${recipe.idDrink}`)
