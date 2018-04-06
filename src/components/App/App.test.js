@@ -10,11 +10,21 @@ describe('App', () => {
   });
 
   it('calls getRecipes with the correct params on componentDidMount ', () => {
+    wrapper.instance().componentDidMount();
+    expect(getMovies).toHaveBeenCalled();
 
   });
 
   it('updates state with recipes', () => {
 
   });
+
+  it('updates state on error', () => {
+
+  });
+
+  it('calls dispatch function when using mapDispatchToProps', () => {
+    
+  })
 
 });
