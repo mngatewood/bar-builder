@@ -1,7 +1,8 @@
 import React from 'react';
 import App from './App';
 import { shallow } from 'enzyme';
-
+import { getRecipes } from '../../api/apiCalls/getRecipes';
+jest.mock('../../apiCalls/getRecipes');
 describe('App', () => {
 
   it('matches the snapshot', () => {
@@ -10,9 +11,8 @@ describe('App', () => {
   });
 
   it('calls getRecipes with the correct params on componentDidMount ', () => {
-    wrapper.instance().componentDidMount();
-    expect(getMovies).toHaveBeenCalled();
-
+    const wrapper = shallow(<App />);
+    expect(getRecipes).toHaveBeenCalled();
   });
 
   it('updates state with recipes', () => {
