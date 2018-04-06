@@ -6,6 +6,7 @@ export const getRecipes = async (filterType, filterValue) => {
   try {
     const response = await fetch(url);
     const recipeSummary = await response.json();
+    console.log(recipeSummary)
     const recipeDetails = await getRecipeDetails(recipeSummary.drinks);
     return recipeDetails;
   } catch (error) {
