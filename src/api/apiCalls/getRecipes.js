@@ -7,20 +7,23 @@ export const getRecipes = async (filterType, filterValue) => {
     const response = await fetch(url);
     const recipeSummary = await response.json();
     const recipeDetails = await getRecipeDetails(recipeSummary.drinks);
-    console.log(recipeDetails);
     return recipeDetails;
   } catch (error) {
     throw Error("Error retrieving recipes");
   }
 };
 
-export const getRecipeDetails = async (recipeArray) => {
+export const getRecipeDetails = (recipeArray) => {
   const urlQuery = 'lookup.php?i=';
-  const promises = recipeArray.map(recipe => {
-    return fetch(`${urlRoot}${urlQuery}${recipe.idDrink}`)
-      .then(response => response.json())
-      .then(recipeDetails => recipeDetails.drinks[0])
-      .catch(error => (error));
+  const promises = recipeArray.map( async recipe => {
+    try {
+      const response = await fetch(`${urlRoot}${urlQuery}${recipe.idDrink}`);
+      const recipeData = await response.json();
+      const recipeDetails = await recipeData.drinks[0];
+      return recipeDetails;
+    } catch (error) {
+      throw Error("Error retrieving recipe details");
+    }
   });
   return Promise.all(promises);
 };
