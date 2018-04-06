@@ -3,7 +3,7 @@ import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './App.css';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
-import { Recipes } from '../Recipes/Recipes';
+import RecipeContainer from '../RecipeContainer/RecipeContainer';
 import Header from '../Header/Header';
 import { connect } from 'react-redux';
 import { addRecipes } from '../../actions';
@@ -25,7 +25,7 @@ export class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Route exact path='/' component={Recipes} />
+        <Route exact path='/' component={RecipeContainer} />
       </div>
     );
   }
