@@ -19,4 +19,4 @@ const router = (
   // </Provider>
 )
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(router, document.getElementById('root'));
