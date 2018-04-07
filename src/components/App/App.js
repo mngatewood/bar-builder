@@ -3,6 +3,7 @@ import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './App.css';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
+import { getFilterOptions } from '../../api/apiCalls/getFilterOptions'
 import RecipeContainer from '../RecipeContainer/RecipeContainer';
 import { Header } from '../Header/Header';
 import { connect } from 'react-redux';
@@ -18,6 +19,12 @@ export class App extends Component {
 
   async componentDidMount() {
     const recipes = await getRecipes("a", "Optional_alcohol");
+    const categoryOptions = await getFilterOptions("c");
+    const ingredientOptions = await getFilterOptions("i");
+    const alcoholicOptions = await getFilterOptions("a");
+    console.log(categoryOptions)
+    console.log(ingredientOptions)
+    console.log(alcoholicOptions)
     this.props.addRecipes(recipes);
   }
 
@@ -32,7 +39,10 @@ export class App extends Component {
 }
 
 export const mapDispatchToProps = dispatch => ({
-  addRecipes: (recipes) => dispatch(addRecipes(recipes))
+  addRecipes: (recipes) => dispatch(addRecipes(recipes)),
+  addCategoryOptions: (categoryOptions) => dispatch(addCategoryOptions(categoryOptions)),
+  addIngredientOptions: (ingredientOptions) => dispatch(addIngredientOptions(ingredientOptions)),
+  addAlcholicOptions: (alcoholicOptions) => dispatch(addAlcoholicOptions(alcoholicOptions)),
 });
 
 App.propTypes = {
