@@ -5,7 +5,7 @@ import './App.css';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { getFilterOptions } from '../../api/apiCalls/getFilterOptions'
 import RecipeContainer from '../RecipeContainer/RecipeContainer';
-import { Header } from '../Header/Header';
+import Header from '../Header/Header';
 import { connect } from 'react-redux';
 import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';
 

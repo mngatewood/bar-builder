@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-// import { NavLink, withRouter } from 'react-router-dom';
-// import { connect } from 'react-redux';
-// import { logOut, resetFavorites } from '../../actions';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 import './Header.css';
 import PropTypes from 'prop-types';
 
 export const Header = (
-  // categoryOptions, 
-  // ingredientOptions, 
-  // alcoholicOptions
+  categories, 
+  ingredients, 
+  alcoholicOptions
 ) => {
 
   // const categorySelectOptions = categoryOptions.map(option => {
@@ -37,8 +36,17 @@ export const Header = (
   </div>;
 };
 
-// Header.propTypes = {
-// };
+export const mapStateToProps = state => ({
+  categories: state.categories,
+  ingredients: state.ingredients,
+  alcoholicOptions: state.alcoholicOptions
+});
 
-// export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
+Header.propTypes = {
+  categories: PropTypes.object,
+  ingredients: PropTypes.object,
+  alcoholicOptions: PropTypes.object
+};
+
+export default withRouter(connect(mapStateToProps)(Header));
 
