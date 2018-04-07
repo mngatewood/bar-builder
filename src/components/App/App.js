@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './App.css';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
 import RecipeContainer from '../RecipeContainer/RecipeContainer';
-import Header from '../Header/Header';
+import { Header } from '../Header/Header';
 import { connect } from 'react-redux';
 import { addRecipes } from '../../actions';
 
