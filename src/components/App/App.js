@@ -18,7 +18,7 @@ export class App extends Component {
   }
 
   async componentDidMount() {
-    const recipes = await getRecipes("a", "Optional_alcohol");
+    const recipes = await getRecipes("i", "lemon_vodka");
     const categories = await getFilterOptions("c");
     const ingredients = await getFilterOptions("i");
     const alcoholicOptions = await getFilterOptions("a");

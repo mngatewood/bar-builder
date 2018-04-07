@@ -9,6 +9,10 @@ const RecipeContainer = ({recipes}) => {
     return <RecipeSummary
       key={recipe.idDrink}
       name={recipe.strDrink}
+      category={recipe.strCategory}
+      alcoholic={recipe.strAlcoholic}
+      glass={recipe.strGlass}
+      instructions={recipe.strInstructions}
       thumbnail={recipe.strDrinkThumb}
       ingredient1={recipe.strIngredient1}
       measure1={recipe.strMeasure1}
@@ -44,7 +48,7 @@ const RecipeContainer = ({recipes}) => {
   });
 
   return (
-    <div>
+    <div className="recipe-container">
       {displayRecipe}
     </div>
   );
