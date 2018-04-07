@@ -1,0 +1,25 @@
+.recipe-summary {
+  height: 400px;
+  width: 320px;
+}
+
+img.recipe-image {
+  height: 300px;
+  width: 200px;
+}
+
+.ingredient-list {
+  position: relative;
+  top: -320px;
+  padding: 10px;
+  height: 320px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.recipe-summary:hover .ingredient-list {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
