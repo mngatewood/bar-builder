@@ -31,7 +31,6 @@ export const Header = ({addRecipes, categories, ingredients, alcoholicOptions}) 
     const value = event.target.value;
     const type = event.target.id;
     const recipes = await getRecipes(type, value);
-    console.log(recipes)
     addRecipes(recipes);
   };
 
