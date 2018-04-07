@@ -4,12 +4,9 @@ import { connect } from 'react-redux';
 import './Header.css';
 import PropTypes from 'prop-types';
 
-export const Header = (
-  categories, 
-  ingredients, 
-  alcoholicOptions
-) => {
+export const Header = ({categories, ingredients, alcoholicOptions}) => {
 
+  console.log(alcoholicOptions)
   // const categorySelectOptions = categoryOptions.map(option => {
   //   return <option key={option.strCategory}>
   //     {option.strCategory}
@@ -22,17 +19,16 @@ export const Header = (
   //   </option>;
   // });
 
-  // const alcoholicSelectOptions = alcoholicOptions.map(option => {
-  //   return <option key={option.strAlcoholic}>
-  //     {option.strAlcoholic}
-  //   </option>;
-  // });
+  const alcoholicSelectOptions = alcoholicOptions.map(option => {
+    // console.log(option)
+    // return <option key={option.strAlcoholic}>
+    //   {option.strAlcoholic}
+    // </option>;
+  });
 
   return <div className="header">
     <h1>The Bar Builder</h1>
-{/*    <select>{categorySelectOptions}</select>
-    <select>{ingredientSelectOptions}</select>
-    <select>{alcoholicSelectOptions}</select> */}
+    <select>{alcoholicSelectOptions}</select>
   </div>;
 };
 

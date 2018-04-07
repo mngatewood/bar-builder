@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const RecipeSummary = (recipe) => {
-  console.log(recipe)
   const { name, 
     thumbnail, 
     ingredient1,
