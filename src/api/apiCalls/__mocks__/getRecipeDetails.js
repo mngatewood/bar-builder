@@ -1,5 +1,5 @@
 import mockFetchResponse from '../../../mockData/mockData';
 
-export const getRecipes = jest.fn().mockImplementation(() => {
+export const getRecipeDetails = jest.fn().mockImplementation(() => {
   return Promise.resolve({ mockFetchResponse });
 });
