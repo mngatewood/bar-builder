@@ -3,14 +3,14 @@ export const addRecipes = (recipes) => ({
   recipes
 });
 
-export const addCategoryOptions = (categoryOptions) => ({
-  type: 'ADD_CATEGORY_OPTIONS',
-  categoryOptions
+export const addCategories = (categories) => ({
+  type: 'ADD_CATEGORIES',
+  categories
 });
 
-export const addIngredientOptions = (ingredientOptions) => ({
-  type: 'ADD_INGREDIENT_OPTIONS',
-  ingredientOptions
+export const addIngredients = (ingredients) => ({
+  type: 'ADD_INGREDIENTS',
+  ingredients
 });
 
 export const addAlcoholicOptions = (alcoholicOptions) => ({

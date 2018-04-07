@@ -7,7 +7,7 @@ import { getFilterOptions } from '../../api/apiCalls/getFilterOptions'
 import RecipeContainer from '../RecipeContainer/RecipeContainer';
 import { Header } from '../Header/Header';
 import { connect } from 'react-redux';
-import { addRecipes } from '../../actions';
+import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';
 
 
 export class App extends Component {
@@ -19,13 +19,13 @@ export class App extends Component {
 
   async componentDidMount() {
     const recipes = await getRecipes("a", "Optional_alcohol");
-    const categoryOptions = await getFilterOptions("c");
-    const ingredientOptions = await getFilterOptions("i");
+    const categories = await getFilterOptions("c");
+    const ingredients = await getFilterOptions("i");
     const alcoholicOptions = await getFilterOptions("a");
-    console.log(categoryOptions)
-    console.log(ingredientOptions)
-    console.log(alcoholicOptions)
     this.props.addRecipes(recipes);
+    this.props.addCategories(categories);
+    this.props.addIngredients(ingredients);
+    this.props.addAlcoholicOptions(alcoholicOptions);
   }
 
   render() {
@@ -40,13 +40,16 @@ export class App extends Component {
 
 export const mapDispatchToProps = dispatch => ({
   addRecipes: (recipes) => dispatch(addRecipes(recipes)),
-  addCategoryOptions: (categoryOptions) => dispatch(addCategoryOptions(categoryOptions)),
-  addIngredientOptions: (ingredientOptions) => dispatch(addIngredientOptions(ingredientOptions)),
-  addAlcholicOptions: (alcoholicOptions) => dispatch(addAlcoholicOptions(alcoholicOptions)),
+  addCategories: (categories) => dispatch(addCategories(categories)),
+  addIngredients: (ingredients) => dispatch(addIngredients(ingredients)),
+  addAlcoholicOptions: (alcoholicOptions) => dispatch(addAlcoholicOptions(alcoholicOptions))
 });
 
 App.propTypes = {
-  addRecipes: PropTypes.func
+  addRecipes: PropTypes.func,
+  addCategories: PropTypes.func,
+  addIngredients: PropTypes.func,
+  addAlcoholicOptions: PropTypes.func
 };
 
 export default withRouter(connect(null, mapDispatchToProps)(App));
