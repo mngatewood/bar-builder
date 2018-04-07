@@ -2,11 +2,11 @@ import React from 'react';
 import './RecipeContainer.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { RecipeSummary } from '../RecipeSummary/RecipeSummary';
+import { Recipe } from '../Recipe/Recipe';
 
 const RecipeContainer = ({recipes}) => {
   const displayRecipe = recipes.map(recipe => {
-    return <RecipeSummary
+    return <Recipe
       key={recipe.idDrink}
       name={recipe.strDrink}
       category={recipe.strCategory}

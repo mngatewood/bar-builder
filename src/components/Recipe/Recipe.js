@@ -1,7 +1,7 @@
 import React from 'react';
-import './RecipeSummary.css'
+import './Recipe.css'
 
-export const RecipeSummary = (recipe) => {
+export const Recipe = (recipe) => {
   const { name, 
     thumbnail, 
     category,
