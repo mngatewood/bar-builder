@@ -39,10 +39,10 @@ export class App extends Component {
 }
 
 export const mapDispatchToProps = dispatch => ({
-  addRecipes: (recipes) => dispatch(addRecipes(recipes)),
-  addCategories: (categories) => dispatch(addCategories(categories)),
-  addIngredients: (ingredients) => dispatch(addIngredients(ingredients)),
-  addAlcoholicOptions: (alcoholicOptions) => dispatch(addAlcoholicOptions(alcoholicOptions))
+  addRecipes: recipes => dispatch(addRecipes(recipes)),
+  addCategories: categories => dispatch(addCategories(categories)),
+  addIngredients: ingredients => dispatch(addIngredients(ingredients)),
+  addAlcoholicOptions: alcoholicOptions => dispatch(addAlcoholicOptions(alcoholicOptions))
 });
 
 App.propTypes = {
