@@ -2,30 +2,24 @@ import React from 'react';
 import './InventoryContainer.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import Ingredient from '../Ingredient/Ingredient';
 
 const InventoryContainer = ({ingredients}) => {
   console.log(ingredients)
   const displayIngredient = ingredients.map(ingredient => {
-    return (
-      <p 
-        key={ingredient.strIngredient1}
-        className="ingredient">
-        <input
-          type="checkbox"
-          name={ingredient.strIngredient1}
-          value={ingredient.strIngredient1} />
-        <span>
-          &nbsp;{ingredient.strIngredient1}
-        </span>
-      </p>
-    );
+    return <Ingredient 
+      key={ingredient.strIngredient1}
+      value={ingredient.strIngredient1} />
   });
 
   return (
     <div className="inventory-container">
-      <form>
-        {displayIngredient}
-      </form>
+      <h2>Select your ingredients</h2>
+      <div className="ingredients-columns">
+        <form>
+          {displayIngredient}
+        </form>
+      </div>
     </div>
   );
 };
