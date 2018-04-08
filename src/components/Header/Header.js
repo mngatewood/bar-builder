@@ -32,6 +32,7 @@ export class Header extends Component {
     const type = event.target.id;
     const recipes = await getRecipes('filter', type, value);
     this.props.addRecipes(recipes);
+    this.props.history.push('/');
   };
   
   render() {
@@ -117,7 +118,8 @@ Header.propTypes = {
   addRecipes: PropTypes.func,
   categories: PropTypes.array,
   ingredients: PropTypes.array,
-  alcoholicOptions: PropTypes.array
+  alcoholicOptions: PropTypes.array,
+  history: PropTypes.object
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
