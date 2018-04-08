@@ -116,7 +116,7 @@ table {
   border-bottom: 5px solid transparent;
 }
 
-button {
+.recipe-details button {
   z-index: 9;
   position: absolute;
   top: 2px;
