@@ -7,7 +7,6 @@ export const getRecipes = async (queryType, filterType, filterValue) => {
     '' :
     `?${filterType}=${filterValue}`;
   const url = `${urlRoot}${urlQuery}${urlValue}`;
-  console.log(url)
   try {
     const response = await fetch(url);
     const recipeSummary = await response.json();

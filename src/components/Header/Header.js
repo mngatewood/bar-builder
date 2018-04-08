@@ -12,7 +12,7 @@ export class Header extends Component {
     super(props);
     this.state = {
       search: ''
-    }
+    };
   }
   
   handleSearchChange = event => {
@@ -23,7 +23,6 @@ export class Header extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const value = this.state.search;
-    console.log(this.state.search)
     const recipes = await getRecipes('search', 's', value);
     this.props.addRecipes(recipes);
   }
@@ -33,6 +32,7 @@ export class Header extends Component {
     const type = event.target.id;
     const recipes = await getRecipes('filter', type, value);
     this.props.addRecipes(recipes);
+    this.props.history.push('/');
   };
   
   render() {
@@ -118,7 +118,8 @@ Header.propTypes = {
   addRecipes: PropTypes.func,
   categories: PropTypes.array,
   ingredients: PropTypes.array,
-  alcoholicOptions: PropTypes.array
+  alcoholicOptions: PropTypes.array,
+  history: PropTypes.object
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
