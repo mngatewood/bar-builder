@@ -12,7 +12,7 @@ export class Header extends Component {
     super(props);
     this.state = {
       search: ''
-    }
+    };
   }
   
   handleSearchChange = event => {
@@ -23,7 +23,6 @@ export class Header extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const value = this.state.search;
-    console.log(this.state.search)
     const recipes = await getRecipes('search', 's', value);
     this.props.addRecipes(recipes);
   }
