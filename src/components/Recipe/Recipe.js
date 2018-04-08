@@ -53,12 +53,11 @@ export class Recipe extends Component {
       ingredient15,
       measure15 } = this.props;
     const { detailsHidden } = this.state;
-      console.log(detailsHidden);
     return <div className="recipe-summary" onClick={this.toggleRecipeDetails}>
-      <h4>{name}</h4>
+      <h3>{name}</h3>
       <img className="recipe-image" src={thumbnail} alt="cocktail" />
       <div className="ingredient-list hidden">
-        <h4>Ingredients:</h4>
+        <h3>Ingredients:</h3>
         <p>{measure1}&nbsp;{ingredient1}</p>
         <p>{measure2}&nbsp;{ingredient2}</p>
         <p>{measure3}&nbsp;{ingredient3}</p>
@@ -85,49 +84,53 @@ export class Recipe extends Component {
             <button onClick={this.toggleRecipeDetails}>X</button>
             <div className="tables-container">
               <table className="instructions-table">
-                <tr>
-                  <td className="table-category">Category: </td>
-                  <td className="table-text">{category}</td>
-                </tr>
-                <tr>
-                  <td className="table-category">Alcoholic: </td>
-                  <td className="table-text">{alcoholic}</td>
-                </tr>
-                <tr>
-                  <td className="table-category">Glass: </td>
-                  <td className="table-text">{glass}</td>
-                </tr>
-                <tr>
-                  <td className="table-category" colSpan="2">Instructions: </td>
-                </tr>
-                <tr>
-                  <td className="table-text" colSpan="2">{instructions}</td>
-                </tr>
+                <tbody>       
+                  <tr>
+                    <td className="table-category">Category: </td>
+                    <td className="table-text">{category}</td>
+                  </tr>
+                  <tr>
+                    <td className="table-category">Alcoholic: </td>
+                    <td className="table-text">{alcoholic}</td>
+                  </tr>
+                  <tr>
+                    <td className="table-category">Glass: </td>
+                    <td className="table-text">{glass}</td>
+                  </tr>
+                  <tr>
+                    <td className="table-category" colSpan="2">Instructions: </td>
+                  </tr>
+                  <tr>
+                    <td className="table-text" colSpan="2">{instructions}</td>
+                  </tr>
+                </tbody>
               </table>
               <table className="ingredients-table">
-                <tr>
-                  <td className="table-category" colSpan="2">Ingredients: </td>
-                </tr>
-                <tr>
-                  <td>{ingredient1}</td>
-                  <td>{measure1}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient2}</td>
-                  <td>{measure2}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient3}</td>
-                  <td>{measure3}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient4}</td>
-                  <td>{measure4}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient5}</td>
-                  <td>{measure5}</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td className="table-category" colSpan="2">Ingredients: </td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient1}</td>
+                    <td>{measure1}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient2}</td>
+                    <td>{measure2}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient3}</td>
+                    <td>{measure3}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient4}</td>
+                    <td>{measure4}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient5}</td>
+                    <td>{measure5}</td>
+                  </tr>
+                </tbody>
               </table>     
             </div>
           </div>

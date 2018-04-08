@@ -1,19 +1,35 @@
 .recipe-summary {
-  height: 400px;
-  width: 320px;
+  height: 500px;
+  width: 400px;
+  cursor: pointer;
+  background-color: papayawhip;
+  margin: 25px;
+}
+
+.recipe-summary h2 {
+  margin-bottom: 10px;
 }
 
 img.recipe-image {
-  height: 300px;
-  width: 200px;
+  height: 420px;
+  width: 360px;
 }
 
 .ingredient-list {
   position: relative;
-  top: -320px;
+  top: -424px;
+  left: 20px;
+  right: 0;
+  height: 400px;
+  width: 340px;
   padding: 10px;
-  height: 320px;
   background-color: rgba(255, 255, 255, 0.8);
+  line-height: 15px;
+  font-size: 18px;
+}
+
+.ingredient-list h3 {
+  margin-top: 10px;
 }
 
 .recipe-summary:hover .ingredient-list {
@@ -21,7 +37,7 @@ img.recipe-image {
 }
 
 .hidden {
-  opacity: 0;
+  opacity: 1;
 }
 
 .recipe-details {
@@ -29,6 +45,7 @@ img.recipe-image {
   position: absolute;
   top: 150px;
   left: 50px;
+  z-index: 98;
   margin: 0, auto;
   width: 90%;
   height: 500px;
@@ -74,7 +91,7 @@ table {
 }
 
 .instructions-table {
-  flex: 1 0 1rem;
+  flex: 1;
 }
 
 .ingredients-table {
@@ -82,4 +99,7 @@ table {
   font-size: 18px;
 }
 
+button {
+  z-index: 99;
+}
 
