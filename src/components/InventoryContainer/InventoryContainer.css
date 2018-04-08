@@ -1,5 +1,10 @@
 .inventory-container {
+  margin-left: 200px;
   padding: 20px;
+}
+
+.inventory-container h2 {
+  margin-top: 0;
 }
 
 .ingredients-columns {
