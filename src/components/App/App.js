@@ -6,6 +6,7 @@ import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { getFilterOptions } from '../../api/apiCalls/getFilterOptions'
 import RecipeContainer from '../RecipeContainer/RecipeContainer';
 import Header from '../Header/Header';
+import Welcome from '../Welcome/Welcome';
 import { connect } from 'react-redux';
 import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';
 
@@ -18,7 +19,7 @@ export class App extends Component {
   }
 
   async componentDidMount() {
-    const recipes = await getRecipes("a", "Optional_alcohol");
+    const recipes = await getRecipes("random");
     const categories = await getFilterOptions("c");
     const ingredients = await getFilterOptions("i");
     const alcoholicOptions = await getFilterOptions("a");
@@ -33,6 +34,7 @@ export class App extends Component {
       <div className="App">
         <Header />
         <Route exact path='/' component={RecipeContainer} />
+{/*        <Route exact path='/recipes' component={RecipeContainer} /> */}
       </div>
     );
   }

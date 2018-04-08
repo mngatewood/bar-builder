@@ -2,13 +2,17 @@ import React from 'react';
 import './RecipeContainer.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { RecipeSummary } from '../RecipeSummary/RecipeSummary';
+import { Recipe } from '../Recipe/Recipe';
 
 const RecipeContainer = ({recipes}) => {
   const displayRecipe = recipes.map(recipe => {
-    return <RecipeSummary
+    return <Recipe
       key={recipe.idDrink}
       name={recipe.strDrink}
+      category={recipe.strCategory}
+      alcoholic={recipe.strAlcoholic}
+      glass={recipe.strGlass}
+      instructions={recipe.strInstructions}
       thumbnail={recipe.strDrinkThumb}
       ingredient1={recipe.strIngredient1}
       measure1={recipe.strMeasure1}
@@ -39,12 +43,12 @@ const RecipeContainer = ({recipes}) => {
       ingredient14={recipe.strIngredient14}
       measure14={recipe.strMeasure14}
       ingredient15={recipe.strIngredient15}
-      measure15={recipe.strMeasure15} />
-      console.log(displayRecipe)
+      measure15={recipe.strMeasure15}
+      forceDetails={recipes.length === 1} />;
   });
 
   return (
-    <div>
+    <div className="recipe-container">
       {displayRecipe}
     </div>
   );
