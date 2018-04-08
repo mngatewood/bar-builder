@@ -1,7 +1,7 @@
 .recipe-summary {
   height: 500px;
   width: 400px;
-  cursor: pointer;
+  cursor: zoom-in;
   background-color: papayawhip;
   margin: 25px;
 }
@@ -24,12 +24,12 @@ img.recipe-image {
   width: 340px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
-  line-height: 15px;
+  line-height: 13px;
   font-size: 18px;
 }
 
 .ingredient-list h3 {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .recipe-summary:hover .ingredient-list {
@@ -42,23 +42,18 @@ img.recipe-image {
 
 .recipe-details-container {
   position: fixed;
-  width: 1000px;
+  width: 90%;
   top: 150px;
   left: 50%;
   transform: translateX(-50%);
   margin: 0 auto;
+  cursor: zoom-out;
+  z-index: 8;
 }
 
 .recipe-details {
   display: flex;
-  /* position: fixed;
-  top: 150px;
-  left: 50px; */
-  z-index: 98;
-  /* margin: 0, auto; */
-  /* width: 80%; */
-  /* height: 500px; */
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(253, 239, 216, 1);
 }
 
 .tables-container {
@@ -68,6 +63,7 @@ img.recipe-image {
 .recipe-details h1 {
   padding-left: 20px;
   text-align: left;
+  text-decoration: underline;
 }
 
 table {
@@ -92,6 +88,7 @@ table {
 
 .cocktail-image-container {
   flex: 0 1 auto;
+  margin: 20px;
 }
 
 .cocktail-image-large {
@@ -103,12 +100,24 @@ table {
   flex: 1;
 }
 
+.ingredients-table-container {
+  flex: 0 0 300px;
+}
+
 .ingredients-table {
-  flex: 0 1 200px;
   font-size: 18px;
+  margin-top: 24px;
+}
+
+.ingredients-table td {
+  margin-bottom: 10px;
+  border-bottom: 5px solid transparent;
 }
 
 button {
-  z-index: 99;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
