@@ -3,10 +3,10 @@ import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './App.css';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
-import { getFilterOptions } from '../../api/apiCalls/getFilterOptions'
+import { getFilterOptions } from '../../api/apiCalls/getFilterOptions';
 import RecipeContainer from '../RecipeContainer/RecipeContainer';
 import Header from '../Header/Header';
-import Welcome from '../Welcome/Welcome';
+import InventoryContainer from '../InventoryContainer/InventoryContainer';
 import { connect } from 'react-redux';
 import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';
 
@@ -34,7 +34,7 @@ export class App extends Component {
       <div className="App">
         <Header />
         <Route exact path='/' component={RecipeContainer} />
-{/*        <Route exact path='/recipes' component={RecipeContainer} /> */}
+        <Route exact path='/inventory' component={InventoryContainer} />
       </div>
     );
   }
