@@ -19,6 +19,14 @@ export class Header extends Component {
     const { name, value } = event.target;
     this.setState({ [name]: value });
   }
+
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    const value = this.state.search;
+    console.log(this.state.search)
+    const recipes = await getRecipes('search', 's', value);
+    this.props.addRecipes(recipes);
+  }
   
   handleFilterChange = async (event) => {
     const value = event.target.value;
@@ -57,11 +65,18 @@ export class Header extends Component {
 
     return <div className="header">
       <h1>The Bar Builder</h1>
-      <input 
-        name="search"
-        onChange={this.handleSearchChange}
-        placeholder="Search for a cocktail">
-      </input>
+      <form onSubmit={this.handleSubmit}>
+        <input 
+          name="search"
+          onChange={this.handleSearchChange}
+          placeholder="Search for a cocktail">
+        </input>
+        <button 
+          name="submit"
+          type="submit">
+          Submit
+        </button>
+      </form>
       <nav>
         <select 
           name="category-select" 
