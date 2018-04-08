@@ -57,7 +57,11 @@ export class Header extends Component {
 
     return <div className="header">
       <h1>The Bar Builder</h1>
-      <input name="search"></input>
+      <input 
+        name="search"
+        onChange={this.handleSearchChange}
+        placeholder="Search for a cocktail">
+      </input>
       <nav>
         <select 
           name="category-select" 
