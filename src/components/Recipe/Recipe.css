@@ -29,7 +29,7 @@ img.recipe-image {
 }
 
 .ingredient-list h3 {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .recipe-summary:hover .ingredient-list {
@@ -49,6 +49,7 @@ img.recipe-image {
   margin: 0 auto;
   cursor: zoom-out;
   z-index: 8;
+  border: 1px solid black;
 }
 
 .recipe-details {
@@ -117,7 +118,11 @@ table {
 button {
   z-index: 9;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 2px;
+  background-color: red;
+  font-weight: bold;
+  border: 1px solid black;
+  color: white;
 }
 
