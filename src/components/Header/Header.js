@@ -22,8 +22,10 @@ export class Header extends Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
+    this.props.history.push('/');
     const value = this.state.search;
     const recipes = await getRecipes('search', 's', value);
+    this.setState({ search: '' })
     this.props.addRecipes(recipes);
   }
   
@@ -68,6 +70,7 @@ export class Header extends Component {
       <form onSubmit={this.handleSubmit}>
         <input 
           name="search"
+          value={this.state.search}
           onChange={this.handleSearchChange}
           placeholder="Search for a cocktail">
         </input>

@@ -1,0 +1,9 @@
+.dashboard-container {
+  position: fixed;
+  flex: 0 0 200px;
+  top: 100px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: papayawhip;
+}

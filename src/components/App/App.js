@@ -6,6 +6,7 @@ import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { getFilterOptions } from '../../api/apiCalls/getFilterOptions';
 import RecipeContainer from '../RecipeContainer/RecipeContainer';
 import Header from '../Header/Header';
+import { Dashboard } from '../Dashboard/Dashboard';
 import InventoryContainer from '../InventoryContainer/InventoryContainer';
 import { connect } from 'react-redux';
 import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';
@@ -32,9 +33,14 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Route exact path='/' component={RecipeContainer} />
-        <Route exact path='/inventory' component={InventoryContainer} />
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Dashboard />
+          <Route exact path='/' component={RecipeContainer} />
+          <Route path='/inventory' component={InventoryContainer} />
+        </main>
       </div>
     );
   }
