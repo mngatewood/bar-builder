@@ -43,7 +43,8 @@ const RecipeContainer = ({recipes}) => {
       ingredient14={recipe.strIngredient14}
       measure14={recipe.strMeasure14}
       ingredient15={recipe.strIngredient15}
-      measure15={recipe.strMeasure15} />;
+      measure15={recipe.strMeasure15}
+      forceDetails={recipes.length === 1} />;
   });
 
   return (

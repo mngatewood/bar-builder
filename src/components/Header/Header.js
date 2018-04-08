@@ -30,7 +30,7 @@ export const Header = ({addRecipes, categories, ingredients, alcoholicOptions}) 
   const handleChange = async (event) => {
     const value = event.target.value;
     const type = event.target.id;
-    const recipes = await getRecipes(type, value);
+    const recipes = await getRecipes('filter', type, value);
     addRecipes(recipes);
   };
 
