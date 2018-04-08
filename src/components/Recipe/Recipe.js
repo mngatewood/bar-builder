@@ -80,7 +80,9 @@ export class Recipe extends Component {
           <p>{measure15}&nbsp;{ingredient15}</p>
         </div>
       </div>
-      <div className="recipe-details-container" hidden={detailsHidden}>
+      <div className="recipe-details-container" 
+        onClick={this.toggleRecipeDetails} 
+        hidden={detailsHidden}>
         <div className="recipe-details">
           <div className="cocktail-image-container">
             <img className="cocktail-image-large" src={thumbnail} alt="cocktail" />

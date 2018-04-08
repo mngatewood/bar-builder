@@ -4,6 +4,7 @@
   cursor: zoom-in;
   background-color: papayawhip;
   margin: 25px;
+  padding: 10px;
 }
 
 .recipe-summary h2 {
@@ -29,7 +30,7 @@ img.recipe-image {
 }
 
 .ingredient-list h3 {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .recipe-summary:hover .ingredient-list {
