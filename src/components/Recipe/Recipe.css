@@ -1,6 +1,6 @@
 .recipe-summary {
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 300px;
   cursor: zoom-in;
   background-color: papayawhip;
   margin: 25px;
@@ -12,21 +12,21 @@
 }
 
 img.recipe-image {
-  height: 420px;
-  width: 360px;
+  height: 320px;
+  width: 260px;
 }
 
 .ingredient-list {
   position: relative;
-  top: -424px;
+  top: -324px;
   left: 20px;
   right: 0;
-  height: 400px;
-  width: 340px;
+  height: 300px;
+  width: 240px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
-  line-height: 13px;
-  font-size: 18px;
+  /* line-height: 13px; */
+  font-size: 14px;
 }
 
 .ingredient-list h3 {
