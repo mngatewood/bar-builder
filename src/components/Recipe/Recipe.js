@@ -7,7 +7,7 @@ export class Recipe extends Component {
     super(props);
 
     this.state = {
-      detailsHidden: true
+      detailsHidden: !this.props.forceDetails
     };
   }
 
@@ -51,28 +51,34 @@ export class Recipe extends Component {
       ingredient14,
       measure14,
       ingredient15,
-      measure15 } = this.props;
+      measure15,
+      forceDetails } = this.props;
     const { detailsHidden } = this.state;
-    return <div className="recipe-summary" onClick={this.toggleRecipeDetails}>
-      <h3>{name}</h3>
-      <img className="recipe-image" src={thumbnail} alt="cocktail" />
-      <div className="ingredient-list hidden">
-        <h3>Ingredients:</h3>
-        <p>{measure1}&nbsp;{ingredient1}</p>
-        <p>{measure2}&nbsp;{ingredient2}</p>
-        <p>{measure3}&nbsp;{ingredient3}</p>
-        <p>{measure4}&nbsp;{ingredient4}</p>
-        <p>{measure5}&nbsp;{ingredient5}</p>
-        <p>{measure6}&nbsp;{ingredient6}</p>
-        <p>{measure7}&nbsp;{ingredient7}</p>
-        <p>{measure8}&nbsp;{ingredient8}</p>
-        <p>{measure9}&nbsp;{ingredient9}</p>
-        <p>{measure10}&nbsp;{ingredient10}</p>
-        <p>{measure11}&nbsp;{ingredient11}</p>
-        <p>{measure12}&nbsp;{ingredient12}</p>
-        <p>{measure13}&nbsp;{ingredient13}</p>
-        <p>{measure14}&nbsp;{ingredient14}</p>
-        <p>{measure15}&nbsp;{ingredient15}</p>
+    return <div>
+      <div className="recipe-summary" 
+        onClick={this.toggleRecipeDetails} 
+        hidden={forceDetails}>
+        <h3>{name}</h3>
+        <img className="recipe-image" 
+          src={thumbnail} alt="cocktail" />
+        <div className="ingredient-list hidden">
+          <h3>Ingredients:</h3>
+          <p>{measure1}&nbsp;{ingredient1}</p>
+          <p>{measure2}&nbsp;{ingredient2}</p>
+          <p>{measure3}&nbsp;{ingredient3}</p>
+          <p>{measure4}&nbsp;{ingredient4}</p>
+          <p>{measure5}&nbsp;{ingredient5}</p>
+          <p>{measure6}&nbsp;{ingredient6}</p>
+          <p>{measure7}&nbsp;{ingredient7}</p>
+          <p>{measure8}&nbsp;{ingredient8}</p>
+          <p>{measure9}&nbsp;{ingredient9}</p>
+          <p>{measure10}&nbsp;{ingredient10}</p>
+          <p>{measure11}&nbsp;{ingredient11}</p>
+          <p>{measure12}&nbsp;{ingredient12}</p>
+          <p>{measure13}&nbsp;{ingredient13}</p>
+          <p>{measure14}&nbsp;{ingredient14}</p>
+          <p>{measure15}&nbsp;{ingredient15}</p>
+        </div>
       </div>
       <div className="recipe-details-container" hidden={detailsHidden}>
         <div className="recipe-details">
@@ -216,5 +222,6 @@ Recipe.propTypes = {
   ingredient14: PropTypes.string,
   measure14: PropTypes.string,
   ingredient15: PropTypes.string,
-  measure15: PropTypes.string
+  measure15: PropTypes.string,
+  forceDetails: PropTypes.bool
 };
