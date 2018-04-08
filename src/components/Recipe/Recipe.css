@@ -25,8 +25,8 @@ img.recipe-image {
   width: 240px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
-  /* line-height: 13px; */
-  font-size: 14px;
+  line-height: 10px;
+  font-size: 12px;
 }
 
 .ingredient-list h3 {

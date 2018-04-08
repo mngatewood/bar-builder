@@ -10,7 +10,6 @@ import InventoryContainer from '../InventoryContainer/InventoryContainer';
 import { connect } from 'react-redux';
 import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';
 
-
 export class App extends Component {
   constructor() {
     super();
