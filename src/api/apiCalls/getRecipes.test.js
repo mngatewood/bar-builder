@@ -25,8 +25,8 @@ describe("getRecipes", () => {
     expect(window.fetch).toHaveBeenCalledWith(mockUrl);
   });
 
-  it.skip("returns a recipe when status is ok", async () => {
-    const expected = mockData.mockFetchResponse;
+  it("returns a recipe when status is ok", async () => {
+    const expected = mockData.mockFetchResponse
     await expect(getRecipes("filter", "a", "Optional_alcohol")).resolves.toEqual(expected);
   });
 

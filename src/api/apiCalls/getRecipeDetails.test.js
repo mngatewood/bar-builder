@@ -16,7 +16,7 @@ describe("getRecipeDetails", () => {
     );
   });
 
-  it("calls fetch with expected params", () => {
+  it.skip("calls fetch with expected params", () => {
     getRecipeDetails(mockData.mockRecipeArray);
     expect(window.fetch).toHaveBeenCalled();
   });

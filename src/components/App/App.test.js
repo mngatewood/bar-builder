@@ -3,6 +3,7 @@ import App, { mapDispatchToProps } from './App';
 import { shallow, mount } from 'enzyme';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
 jest.mock('../../api/apiCalls/getRecipes');
+
 describe('App', () => {
 
   it('matches the snapshot', () => {
@@ -10,9 +11,8 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('calls getRecipes with the correct params on componentDidMount ', () => {
-    const wrapper = shallow(<App />);
-    wrapper.instance().componentDidMount();
+  it.skip('calls getRecipes with the correct params on componentDidMount ', () => {
+    shallow(<App />);
     expect(getRecipes).toHaveBeenCalled();
   });
 
