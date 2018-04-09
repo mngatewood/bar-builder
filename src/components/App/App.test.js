@@ -10,9 +10,9 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.skip('calls getRecipes with the correct params on componentDidMount ', () => {
+  it('calls getRecipes with the correct params on componentDidMount ', () => {
     const wrapper = shallow(<App />);
-    // wrapper.instance().componentDidMount();
+    wrapper.instance().componentDidMount();
     expect(getRecipes).toHaveBeenCalled();
   });
 

@@ -113,13 +113,13 @@ export class Header extends Component {
   };
 }
   
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   categories: state.categories,
   ingredients: state.ingredients,
   alcoholicOptions: state.alcoholicOptions
 });
 
-export const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = dispatch => ({
   addRecipes: recipes => dispatch(addRecipes(recipes))
 });
 

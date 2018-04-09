@@ -21,13 +21,13 @@ describe("getRecipes", () => {
   });
   
   it("calls fetch with expected params", () => {
-    getRecipes("a", "Optional_alcohol");
+    getRecipes("filter", "a", "Optional_alcohol");
     expect(window.fetch).toHaveBeenCalledWith(mockUrl);
   });
 
   it.skip("returns a recipe when status is ok", async () => {
     const expected = mockData.mockFetchResponse;
-    await expect(getRecipes("a", "Optional_alcohol")).resolves.toEqual(expected);
+    await expect(getRecipes("filter", "a", "Optional_alcohol")).resolves.toEqual(expected);
   });
 
   it("throws an error when status is not ok", () => {
