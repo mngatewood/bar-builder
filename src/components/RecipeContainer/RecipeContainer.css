@@ -2,6 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 200px;
+  margin: 100px 0 0 200px;
   padding-top: 20px;
 }
