@@ -45,51 +45,12 @@ const Welcome = ({recipes}) => {
       measure14={recipe.strMeasure14}
       ingredient15={recipe.strIngredient15}
       measure15={recipe.strMeasure15}
-      forceDetails={recipes.length === 1} />;
+      forceDetails={true} />;
   });
 
-  // console.log(recipes.strDrink);
-
-  // const { strDrink,
-  //   strDrinkThumb,
-  //   strCategory,
-  //   strAlcoholic,
-  //   strGlass,
-  //   strInstructions,
-  //   strIngredient1,
-  //   strMeasure1,
-  //   strIngredient2,
-  //   strMeasure2,
-  //   strIngredient3,
-  //   strMeasure3,
-  //   strIngredient4,
-  //   strMeasure4,
-  //   strIngredient5,
-  //   strMeasure5,
-  //   strIngredient6,
-  //   strMeasure6,
-  //   strIngredient7,
-  //   strMeasure7,
-  //   strIngredient8,
-  //   strMeasure8,
-  //   strIngredient9,
-  //   strMeasure9,
-  //   strIngredient10,
-  //   strMeasure10,
-  //   strIngredient11,
-  //   strMeasure11,
-  //   strIngredient12,
-  //   strMeasure12,
-  //   strIngredient13,
-  //   strMeasure13,
-  //   strIngredient14,
-  //   strMeasure14,
-  //   strIngredient15,
-  //   strMeasure15 } = recipes;
-
   return  (
-    <div className="recipe-details-container">
-    {displayRecipe}
+    <div className="recipe-container">
+      {displayRecipe}
     </div>
   );
 };
@@ -102,4 +63,4 @@ Welcome.propTypes = {
   recipes: PropTypes.array
 };
 
-export default withRouter(connect(mapStateToProps)(Welcome));
+export default connect(mapStateToProps)(Welcome);

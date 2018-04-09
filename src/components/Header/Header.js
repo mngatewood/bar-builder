@@ -22,7 +22,7 @@ export class Header extends Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    this.props.history.push('/');
+    this.props.history.push('/recipes');
     const value = this.state.search;
     const recipes = await getRecipes('search', 's', value);
     this.setState({ search: '' })
@@ -31,11 +31,11 @@ export class Header extends Component {
   }
   
   handleFilterChange = async (event) => {
+    this.props.history.push('/recipes');
     const value = event.target.value;
     const type = event.target.id;
     const recipes = await getRecipes('filter', type, value);
     this.props.addRecipes(recipes);
-    this.props.history.push('/');
     window.scrollTo(0, 0);
   };
   
