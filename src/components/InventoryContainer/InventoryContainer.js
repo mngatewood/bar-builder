@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Ingredient from '../Ingredient/Ingredient';
 
 const InventoryContainer = ({ingredients}) => {
-  console.log(ingredients)
+  
   const displayIngredient = ingredients.map(ingredient => {
     return <Ingredient 
       key={ingredient.strIngredient1}

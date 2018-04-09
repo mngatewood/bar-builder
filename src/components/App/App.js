@@ -6,7 +6,7 @@ import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { getFilterOptions } from '../../api/apiCalls/getFilterOptions';
 import RecipeContainer from '../RecipeContainer/RecipeContainer';
 import Header from '../Header/Header';
-import { Dashboard } from '../Dashboard/Dashboard';
+import Dashboard from '../Dashboard/Dashboard';
 import InventoryContainer from '../InventoryContainer/InventoryContainer';
 import { connect } from 'react-redux';
 import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';

@@ -28,3 +28,12 @@ export const removeIngredient = (ingredient) => ({
   ingredient
 });
 
+export const addMenuRecipes = (recipes) => ({
+  type: 'ADD_MENU_RECIPES',
+  recipes
+});
+
+export const clearMenuRecipes = () => ({
+  type: 'CLEAR_MENU_RECIPES'
+});
+

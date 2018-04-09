@@ -1,3 +1,9 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  z-index: 29;
+}
+
 .title {
   background-color: pink;
   padding: 0;
@@ -11,15 +17,15 @@
 
 .header .search {
   position: absolute;
-  top: 5px;
-  right: 75px;
+  top: 20px;
+  right: 80px;
   font-size: 16px;
 }
 
 .header .submit {
   position: absolute;
-  top: 6px;
-  right: 5px;
+  top: 21px;
+  right: 10px;
   font-size: 16px;
 }
 

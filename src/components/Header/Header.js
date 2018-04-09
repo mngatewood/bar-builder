@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './Header.css';
 import PropTypes from 'prop-types';
@@ -27,6 +27,7 @@ export class Header extends Component {
     const recipes = await getRecipes('search', 's', value);
     this.setState({ search: '' })
     this.props.addRecipes(recipes);
+    window.scrollTo(0, 0);
   }
   
   handleFilterChange = async (event) => {
@@ -35,6 +36,7 @@ export class Header extends Component {
     const recipes = await getRecipes('filter', type, value);
     this.props.addRecipes(recipes);
     this.props.history.push('/');
+    window.scrollTo(0, 0);
   };
   
   render() {
@@ -67,7 +69,7 @@ export class Header extends Component {
 
     return <div className="header">
       <div className="title">
-        <h1>The Bar Builder</h1>
+        <Link to="/"><h1>The Bar Builder</h1></Link>
       </div>
       <form onSubmit={this.handleSubmit}>
         <input 
