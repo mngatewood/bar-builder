@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addMenuRecipes, clearMenuRecipes } from '../../actions';
 
-const Dashboard = ({ inventory, addMenuRecipes, clearMenuRecipes }) => {
+const Dashboard = ({ inventory, addMenuRecipes, clearMenuRecipes, history }) => {
 
   const handleMenuClick = () => {
     clearMenuRecipes();
@@ -14,6 +14,7 @@ const Dashboard = ({ inventory, addMenuRecipes, clearMenuRecipes }) => {
       const recipes = await getRecipes('filter', 'i', ingredient);
       addMenuRecipes(recipes);
     });
+    history.push('/menu');
   };
 
   return <aside className="dashboard-container">

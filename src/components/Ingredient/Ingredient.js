@@ -8,7 +8,7 @@ export class Ingredient extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: false
+      selected: this.props.inInventory
     };
   }
 
@@ -21,12 +21,13 @@ export class Ingredient extends Component {
   };
 
   render() {
-    const value = this.props.value;
+    const { value, inInventory } = this.props;
     return <li
       className="ingredient">
       <input
         type="checkbox"
         value={value}
+        checked={this.state.selected}
         onChange={this.handleChange} />
       <span>
         &nbsp;{value}

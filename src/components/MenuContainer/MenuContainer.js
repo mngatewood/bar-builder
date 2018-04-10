@@ -1,10 +1,11 @@
 import React from 'react';
-import './RecipeContainer.css';
+import './MenuContainer.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { withRouter} from 'react-router-dom';
 import { Recipe } from '../Recipe/Recipe';
 
-const RecipeContainer = ({recipes}) => {
+const Menu = ({recipes}) => {
   const displayRecipe = recipes.map(recipe => {
     return <Recipe
       key={recipe.idDrink}
@@ -43,22 +44,23 @@ const RecipeContainer = ({recipes}) => {
       ingredient14={recipe.strIngredient14}
       measure14={recipe.strMeasure14}
       ingredient15={recipe.strIngredient15}
+      measure15={recipe.strMeasure15}
       forceDetails={false} />;
   });
 
-  return (
+  return  (
     <div className="recipe-container">
       {displayRecipe}
     </div>
   );
 };
 
-export const mapStateToProps = state => ({
-  recipes: state.recipes
+export const mapStateToProps = (state) => ({
+  recipes: state.menu
 });
 
-RecipeContainer.propTypes = {
+Menu.propTypes = {
   recipes: PropTypes.array
 };
 
-export default connect(mapStateToProps)(RecipeContainer);
+export default connect(mapStateToProps)(Menu);
