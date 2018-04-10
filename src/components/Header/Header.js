@@ -11,7 +11,13 @@ export class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      search: ''
+      search: '',
+      categoryFilter: 'All Categories',
+      ingredientFilter: 'All Ingredients',
+      alcoholicFilter: 'All Alcoholic Content',
+      categoryRecipes: [],
+      ingredientRecipes: [],
+      alcoholicRecipes: []
     };
   }
   
@@ -30,14 +36,46 @@ export class Header extends Component {
     window.scrollTo(0, 0);
   }
   
-  handleFilterChange = async (event) => {
+  handleFilterChange = (event) => {
     this.props.history.push('/recipes');
-    const value = event.target.value;
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
     const type = event.target.id;
-    const recipes = await getRecipes('filter', type, value);
-    this.props.addRecipes(recipes);
-    window.scrollTo(0, 0);
-  };
+    this.updateRecipesArray(name, type, value)
+  }
+
+  updateRecipesArray = async (name, type, value) => {
+    console.log(value.slice(0, 3));
+    const newRecipes = value.slice(0, 3) === 'All' || null ?
+      [] :
+      await getRecipes('filter', type, value);
+    switch (name) {
+    case 'categoryFilter':
+      this.setState({ categoryRecipes: [...newRecipes] });
+      break;
+    case 'ingredientFilter':
+      this.setState({ ingredientRecipes: [...newRecipes] });
+      break;
+    case 'alcoholicFilter':
+      this.setState({ alcoholicRecipes: [...newRecipes] });
+      break;
+    }
+    this.filterRecipes();
+  }
+
+  filterRecipes = () => {
+    const { categoryRecipes, ingredientRecipes, alcoholicRecipes} = this.state;
+    const newRecipes = categoryRecipes.filter((categoryRecipe) => {
+      let match = false;
+      ingredientRecipes.forEach((ingredientRecipe) => {
+        if (categoryRecipe.idDrink === ingredientRecipe.idDrink) {
+          match = true;
+        } 
+      });
+      return match;
+    });
+    this.props.addRecipes(newRecipes);
+  }
   
   render() {
 
@@ -88,22 +126,25 @@ export class Header extends Component {
       </form>
       <nav>
         <select 
-          name="category-select" 
-          id="c" 
+          name="categoryFilter" 
+          id="c"
+          value={this.state.categoryFilter}
           onChange={this.handleFilterChange}>
           <option>All Categories</option>
           {categorySelectOptions}
         </select>
         <select 
-          name="ingredient-select" 
-          id="i" 
+          name="ingredientFilter" 
+          id="i"
+          value={this.state.ingredientFilter}
           onChange={this.handleFilterChange}>
           <option>All Ingredients</option>
           {ingredientSelectOptions}
         </select>
         <select 
-          name="alcoholic-select" 
+          name="alcoholicFilter" 
           id="a" 
+          value={this.state.alcoholicFilter}
           onChange={this.handleFilterChange}>
           <option>All Alcoholic Content</option>
           {alcoholicSelectOptions}
@@ -114,6 +155,7 @@ export class Header extends Component {
 }
   
 export const mapStateToProps = state => ({
+  recipes: state.recipes,
   categories: state.categories,
   ingredients: state.ingredients,
   alcoholicOptions: state.alcoholicOptions
@@ -125,6 +167,7 @@ export const mapDispatchToProps = dispatch => ({
 
 Header.propTypes = {
   addRecipes: PropTypes.func,
+  recipes: PropTypes.array,
   categories: PropTypes.array,
   ingredients: PropTypes.array,
   alcoholicOptions: PropTypes.array,

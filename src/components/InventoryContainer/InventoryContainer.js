@@ -9,7 +9,7 @@ const InventoryContainer = ({ingredients, inventory}) => {
   const displayIngredient = ingredients.map(ingredient => {
     let inInventory = false;
     inventory.forEach(onHandIngredient => {
-      if (onHandIngredient == ingredient.strIngredient1) {
+      if (onHandIngredient === ingredient.strIngredient1) {
         inInventory = true;
       }
     });
