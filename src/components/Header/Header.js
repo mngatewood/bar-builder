@@ -82,27 +82,33 @@ export class Header extends Component {
     const {categories, ingredients, alcoholicOptions} = this.props;
   
     const categorySelectOptions = categories.map(option => {
-      return <option
-        key={option.strCategory}
-        value={option.strCategory}>
-        {option.strCategory}
-      </option>;
+      if (option.strCategory !== null) {
+        return <option
+          key={option.strCategory}
+          value={option.strCategory}>
+          {option.strCategory}
+        </option>;
+      }
     });
 
     const ingredientSelectOptions = ingredients.map(option => {
-      return <option
-        key={option.strIngredient1}
-        value={option.strIngredient1}>
-        {option.strIngredient1}
-      </option>;
+      if (option.strIngredient1 !== null) {    
+        return <option
+          key={option.strIngredient1}
+          value={option.strIngredient1}>
+          {option.strIngredient1}
+        </option>;
+      }
     });
 
     const alcoholicSelectOptions = alcoholicOptions.map(option => {
-      return <option
-        key={option.strAlcoholic}
-        value={option.strAlcoholic}>
-        {option.strAlcoholic}
-      </option>;
+      if (option.strAlcoholic !== null) {
+        return <option
+          key={option.strAlcoholic}
+          value={option.strAlcoholic}>
+          {option.strAlcoholic}
+        </option>;
+      }
     });
 
     return <div className="header">
