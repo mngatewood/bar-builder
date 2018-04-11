@@ -97,7 +97,7 @@ export class Recipe extends Component {
                     <td className="table-text">{category}</td>
                   </tr>
                   <tr>
-                    <td className="table-category">Alcoholic: </td>
+                    <td className="table-category">Alcoholic Content: </td>
                     <td className="table-text">{alcoholic}</td>
                   </tr>
                   <tr>
