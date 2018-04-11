@@ -17,4 +17,5 @@
 li.ingredient {
   margin-top: 0;
   list-style-type: none;
+  line-height: 24px;
 }

@@ -141,7 +141,6 @@ export class Header extends Component {
     return <div className="header">
       <div className="title">
         <Link to="/"><h1>The Bar Builder&nbsp;&nbsp;&nbsp;&nbsp;</h1></Link>
-        <img className="bar" src={bar} alt="bar icon" />
       </div>
       <form onSubmit={this.handleSubmit}>
         <input 
