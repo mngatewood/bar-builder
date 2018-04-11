@@ -49,7 +49,7 @@ const Welcome = ({recipes}) => {
   });
 
   return  (
-    <div className="recipe-container">
+    <div className="welcome-container">
       {displayRecipe}
     </div>
   );

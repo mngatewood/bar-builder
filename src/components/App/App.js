@@ -38,12 +38,14 @@ export class App extends Component {
           <Header />
         </header>
         <main>
-          <Dashboard />
           <Route exact path='/' component={Welcome} />
           <Route exact path='/recipes' component={RecipeContainer} />
           <Route exact path='/inventory' component={InventoryContainer} />
           <Route exact path='/menu' component={MenuContainer} />
         </main>
+        <footer>
+          <Dashboard />
+        </footer>
       </div>
     );
   }

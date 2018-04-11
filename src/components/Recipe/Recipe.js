@@ -57,7 +57,7 @@ export class Recipe extends Component {
     return <div>
       <div className="recipe-summary" 
         onClick={this.toggleRecipeDetails}>
-        <h3>{name}</h3>
+        <h2>{name}</h2>
         <img className="recipe-image" 
           src={thumbnail} alt="cocktail" />
         <div className="ingredient-list hidden">
@@ -82,104 +82,106 @@ export class Recipe extends Component {
       <div className="recipe-details-container" 
         onClick={this.toggleRecipeDetails} 
         hidden={detailsHidden}>
-        <div className="recipe-details">
-          <div className="cocktail-image-container">
-            <img className="cocktail-image-large" src={thumbnail} alt="cocktail" />
-          </div>
-          <div className="instructions-table-container">
-            <h1>{name}</h1>
-            <button onClick={this.toggleRecipeDetails}>X</button>
-            <table className="instructions-table">
-              <tbody>       
-                <tr>
-                  <td className="table-category">Category: </td>
-                  <td className="table-text">{category}</td>
-                </tr>
-                <tr>
-                  <td className="table-category">Alcoholic: </td>
-                  <td className="table-text">{alcoholic}</td>
-                </tr>
-                <tr>
-                  <td className="table-category">Glass: </td>
-                  <td className="table-text">{glass}</td>
-                </tr>
-                <tr>
-                  <td className="table-category" colSpan="2">Instructions: </td>
-                </tr>
-                <tr>
-                  <td className="table-text" colSpan="2">{instructions}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className="ingredients-table-container">
-            <table className="ingredients-table">
-              <tbody>
-                <tr>
-                  <td className="table-category" colSpan="2">Ingredients: </td>
-                </tr>
-                <tr>
-                  <td>{ingredient1}</td>
-                  <td>{measure1}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient2}</td>
-                  <td>{measure2}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient3}</td>
-                  <td>{measure3}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient4}</td>
-                  <td>{measure4}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient5}</td>
-                  <td>{measure5}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient6}</td>
-                  <td>{measure6}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient7}</td>
-                  <td>{measure7}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient8}</td>
-                  <td>{measure8}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient9}</td>
-                  <td>{measure9}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient10}</td>
-                  <td>{measure10}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient11}</td>
-                  <td>{measure11}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient12}</td>
-                  <td>{measure12}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient13}</td>
-                  <td>{measure13}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient14}</td>
-                  <td>{measure14}</td>
-                </tr>
-                <tr>
-                  <td>{ingredient15}</td>
-                  <td>{measure15}</td>
-                </tr>
-              </tbody>
-            </table>
+        <button id="close-details" onClick={this.toggleRecipeDetails}>X</button>
+        <div className="recipe-details-outline">
+          <div className="recipe-details">
+            <div className="cocktail-image-container">
+              <img className="cocktail-image-large" src={thumbnail} alt="cocktail" />
+            </div>
+            <div className="instructions-table-container">
+              <h1>{name}</h1>
+              <table className="instructions-table">
+                <tbody>       
+                  <tr>
+                    <td className="table-category">Category: </td>
+                    <td className="table-text">{category}</td>
+                  </tr>
+                  <tr>
+                    <td className="table-category">Alcoholic: </td>
+                    <td className="table-text">{alcoholic}</td>
+                  </tr>
+                  <tr>
+                    <td className="table-category">Glass: </td>
+                    <td className="table-text">{glass}</td>
+                  </tr>
+                  <tr>
+                    <td className="table-category" colSpan="2">Instructions: </td>
+                  </tr>
+                  <tr>
+                    <td className="table-text" colSpan="2">{instructions}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="ingredients-table-container">
+              <table className="ingredients-table">
+                <tbody>
+                  <tr>
+                    <td className="table-category" colSpan="2">Ingredients: </td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient1}</td>
+                    <td>{measure1}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient2}</td>
+                    <td>{measure2}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient3}</td>
+                    <td>{measure3}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient4}</td>
+                    <td>{measure4}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient5}</td>
+                    <td>{measure5}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient6}</td>
+                    <td>{measure6}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient7}</td>
+                    <td>{measure7}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient8}</td>
+                    <td>{measure8}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient9}</td>
+                    <td>{measure9}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient10}</td>
+                    <td>{measure10}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient11}</td>
+                    <td>{measure11}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient12}</td>
+                    <td>{measure12}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient13}</td>
+                    <td>{measure13}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient14}</td>
+                    <td>{measure14}</td>
+                  </tr>
+                  <tr>
+                    <td>{ingredient15}</td>
+                    <td>{measure15}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
