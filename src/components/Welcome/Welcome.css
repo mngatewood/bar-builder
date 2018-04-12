@@ -39,7 +39,8 @@
   border-radius: 50%;
 }
 
-.welcome-container #close-details:after span {
+.welcome-container #close-details:after, 
+.welcome-container span {
   position: absolute;
   content: '';
   height: 100%;
@@ -55,7 +56,8 @@
   animation-delay: .66s;
 }
 
-.welcome-container .welcome-container span{
+.welcome-container .welcome-container, 
+.welcome-container span{
   animation-delay: 1.33s;
 }
 
