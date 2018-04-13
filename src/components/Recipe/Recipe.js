@@ -56,8 +56,7 @@ export class Recipe extends Component {
     const { detailsHidden } = this.state;
     return <div>
       <div className="recipe-summary" 
-        onClick={this.toggleRecipeDetails} 
-        hidden={forceDetails}>
+        onClick={this.toggleRecipeDetails}>
         <h3>{name}</h3>
         <img className="recipe-image" 
           src={thumbnail} alt="cocktail" />

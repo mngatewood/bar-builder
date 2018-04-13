@@ -9,6 +9,7 @@ import Header from '../Header/Header';
 import Welcome from '../Welcome/Welcome';
 import Dashboard from '../Dashboard/Dashboard';
 import InventoryContainer from '../InventoryContainer/InventoryContainer';
+import MenuContainer from '../MenuContainer/MenuContainer';
 import { connect } from 'react-redux';
 import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';
 
@@ -40,7 +41,8 @@ export class App extends Component {
           <Dashboard />
           <Route exact path='/' component={Welcome} />
           <Route exact path='/recipes' component={RecipeContainer} />
-          <Route path='/inventory' component={InventoryContainer} />
+          <Route exact path='/inventory' component={InventoryContainer} />
+          <Route exact path='/menu' component={MenuContainer} />
         </main>
       </div>
     );
