@@ -15,5 +15,12 @@
   font-weight: bold;
   color: rgba(116, 121, 89, 1);
   border-radius: 5px;
-  box-shadow: 5px 5px 5px rgba(116, 121, 89, 1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.dashboard-container button:hover {
+  filter: drop-shadow(5px 5px 5px rgba(83, 90, 107, 1));
+  color: rgba(83, 90, 107, 1);
+
 }

@@ -107,8 +107,16 @@ export class Header extends Component {
   render() {
 
     const {categories, ingredients, alcoholicOptions} = this.props;
-  
-    const categorySelectOptions = categories.map(option => {
+
+    const sortCategories = (a, b) => {
+      if (a.strCategory < b.strCategory)
+        return -1;
+      if (a.strCategory > b.strCategory)
+        return 1;
+      return 0;
+    }
+    const sortedCategories = categories.sort(sortCategories);
+    const categorySelectOptions = sortedCategories.map(option => {
       if (option.strCategory !== null) {
         return <option
           key={option.strCategory}
@@ -118,7 +126,15 @@ export class Header extends Component {
       }
     });
 
-    const ingredientSelectOptions = ingredients.map(option => {
+    const sortIngredients = (a, b) => {
+      if (a.strIngredient1 < b.strIngredient1)
+        return -1;
+      if (a.strIngredient1 > b.strIngredient1)
+        return 1;
+      return 0;
+    }
+    const sortedIngredients = ingredients.sort(sortIngredients);
+    const ingredientSelectOptions = sortedIngredients.map(option => {
       if (option.strIngredient1 !== null) {    
         return <option
           key={option.strIngredient1}
@@ -128,7 +144,15 @@ export class Header extends Component {
       }
     });
 
-    const alcoholicSelectOptions = alcoholicOptions.map(option => {
+    const sortAlcoholicOptions = (a, b) => {
+      if (a.strCategory < b.strCategory)
+        return -1;
+      if (a.strCategory > b.strCategory)
+        return 1;
+      return 0;
+    }
+    const sortedAlcoholicOptions = alcoholicOptions.sort(sortAlcoholicOptions);
+    const alcoholicSelectOptions = sortedAlcoholicOptions.map(option => {
       if (option.strAlcoholic !== null) {
         return <option
           key={option.strAlcoholic}
