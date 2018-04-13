@@ -157,30 +157,35 @@ export class Header extends Component {
         </button>
       </form>
       <nav>
-        <select 
-          name="categoryFilter" 
-          id="c"
-          value={this.state.categoryFilter}
-          onChange={this.handleFilterChange}>
-          <option>All Categories</option>
-          {categorySelectOptions}
-        </select>
-        <select 
-          name="ingredientFilter" 
-          id="i"
-          value={this.state.ingredientFilter}
-          onChange={this.handleFilterChange}>
-          <option>All Ingredients</option>
-          {ingredientSelectOptions}
-        </select>
-        <select 
-          name="alcoholicFilter" 
-          id="a" 
-          value={this.state.alcoholicFilter}
-          onChange={this.handleFilterChange}>
-          <option>All Alcoholic Content</option>
-          {alcoholicSelectOptions}
-        </select>
+        <div className="nav-title">
+          <h3>Filters:</h3>
+        </div>
+        <div className="nav-selects">
+          <select 
+            name="categoryFilter" 
+            id="c"
+            value={this.state.categoryFilter}
+            onChange={this.handleFilterChange}>
+            <option>All Categories</option>
+            {categorySelectOptions}
+          </select>
+          <select 
+            name="ingredientFilter" 
+            id="i"
+            value={this.state.ingredientFilter}
+            onChange={this.handleFilterChange}>
+            <option>All Ingredients</option>
+            {ingredientSelectOptions}
+          </select>
+          <select 
+            name="alcoholicFilter" 
+            id="a" 
+            value={this.state.alcoholicFilter}
+            onChange={this.handleFilterChange}>
+            <option>All Alcoholic Content</option>
+            {alcoholicSelectOptions}
+          </select>
+        </div>
       </nav>
     </div>;
   };

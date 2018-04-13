@@ -73,6 +73,21 @@
 nav {
   height: 50px;
   background-color: rgba(116, 121, 89, 1);
+  padding-left: 100px;
+}
+
+.nav-title {
+  position: absolute;
+  margin: 0 15px;
+  top: 50px;
+  color: rgba(245, 244, 193, 1);
+  text-shadow: 
+    -1px -1px 0 darkgreen, 
+    1px -1px 0 darkgreen, 
+    -1px 1px 0 darkgreen, 
+    1px 1px 0 darkgreen;
+  left: 0;
+  font-size: 20px;
 }
 
 select {
