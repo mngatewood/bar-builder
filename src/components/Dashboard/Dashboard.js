@@ -20,11 +20,11 @@ const Dashboard = ({ inventory, addMenuRecipes, clearMenuRecipes, history }) => 
   return <aside className="dashboard-container">
     <NavLink to='/inventory'>
       <button>
-        Inventory
+        Update My Inventory
       </button>
     </NavLink>
     <button onClick={handleMenuClick}>
-      Menu
+      View My Bar Menu
     </button>
   </aside>;
 };

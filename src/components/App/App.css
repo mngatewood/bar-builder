@@ -1,8 +1,11 @@
+body {
+  background-color: rgba(246, 239, 246, 1);
+}
+
 .App {
   text-align: center;
 }
 
 main {
-  display: flex;
   overflow: hidden;
 }

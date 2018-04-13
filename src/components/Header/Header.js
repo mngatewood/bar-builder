@@ -5,7 +5,7 @@ import './Header.css';
 import PropTypes from 'prop-types';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { addRecipes } from '../../actions/';
-
+import bar from '../../assets/bar.svg';
 
 export class Header extends Component {
   constructor(props) {
@@ -31,7 +31,7 @@ export class Header extends Component {
     this.props.history.push('/recipes');
     const value = this.state.search;
     const recipes = await getRecipes('search', 's', value);
-    this.setState({ search: '' })
+    this.setState({ search: '' });
     this.props.addRecipes(recipes);
     window.scrollTo(0, 0);
   }
@@ -41,23 +41,26 @@ export class Header extends Component {
     const { name, value } = event.target;
     this.setState({ [name]: value });
     const type = event.target.id;
-    this.updateRecipesArray(name, type, value)
+    this.updateRecipesArray(name, type, value);
   }
 
   updateRecipesArray = async (name, type, value) => {
-    console.log(value.slice(0, 3));
     const newRecipes = value.slice(0, 3) === 'All' || null ?
       [] :
       await getRecipes('filter', type, value);
+    const sortedRecipes = newRecipes.sort((drinkA, drinkB) => 
+      drinkA.idDrink - drinkB.idDrink);
     switch (name) {
     case 'categoryFilter':
-      this.setState({ categoryRecipes: [...newRecipes] });
+      this.setState({ categoryRecipes: sortedRecipes });
       break;
     case 'ingredientFilter':
-      this.setState({ ingredientRecipes: [...newRecipes] });
+      this.setState({ ingredientRecipes: sortedRecipes });
       break;
     case 'alcoholicFilter':
-      this.setState({ alcoholicRecipes: [...newRecipes] });
+      this.setState({ alcoholicRecipes: sortedRecipes });
+      break;
+    default:
       break;
     }
     this.filterRecipes();
@@ -65,16 +68,40 @@ export class Header extends Component {
 
   filterRecipes = () => {
     const { categoryRecipes, ingredientRecipes, alcoholicRecipes} = this.state;
-    const newRecipes = categoryRecipes.filter((categoryRecipe) => {
-      let match = false;
-      ingredientRecipes.forEach((ingredientRecipe) => {
-        if (categoryRecipe.idDrink === ingredientRecipe.idDrink) {
-          match = true;
-        } 
+    const unfilteredRecipes = [...categoryRecipes, ...ingredientRecipes, ...alcoholicRecipes];
+    const sortedRecipes = unfilteredRecipes.sort((drinkA, drinkB) =>
+      drinkA.idDrink - drinkB.idDrink);
+    let numberOfArrays = 0;
+    if (categoryRecipes.length > 0) { numberOfArrays++; }
+    if (ingredientRecipes.length > 0) { numberOfArrays++; }
+    if (alcoholicRecipes.length >0) { numberOfArrays++; }
+    if (numberOfArrays === 1) {
+      if (categoryRecipes.length > 0) { this.props.addRecipes(categoryRecipes); }
+      if (ingredientRecipes.length > 0) { this.props.addRecipes(ingredientRecipes); }
+      if (alcoholicRecipes.length > 0) { this.props.addRecipes(alcoholicRecipes); }
+    } else {
+      let filteredRecipes = [];
+      let lastRecipeID = 0;
+      sortedRecipes.forEach((thisRecipe) => {
+        if (thisRecipe.idDrink === lastRecipeID) {
+          filteredRecipes.push(thisRecipe);
+        }
+        lastRecipeID = thisRecipe.idDrink;
+      }); 
+      this.props.addRecipes(filteredRecipes);
+    } 
+    if (numberOfArrays > 2) {
+      let filteredRecipes = [];
+      let lastRecipeID = 0;
+      let sortedRecipes = [...this.state.recipes];
+      sortedRecipes.forEach((thisRecipe) => {
+        if (thisRecipe.idDrink === lastRecipeID) {
+          filteredRecipes.push(thisRecipe);
+        }
+        lastRecipeID = thisRecipe.idDrink;
       });
-      return match;
-    });
-    this.props.addRecipes(newRecipes);
+      this.props.addRecipes(filteredRecipes);
+    } 
   }
   
   render() {
@@ -113,7 +140,7 @@ export class Header extends Component {
 
     return <div className="header">
       <div className="title">
-        <Link to="/"><h1>The Bar Builder</h1></Link>
+        <Link to="/"><h1>The Bar Builder&nbsp;&nbsp;&nbsp;&nbsp;</h1></Link>
       </div>
       <form onSubmit={this.handleSubmit}>
         <input 
@@ -127,7 +154,6 @@ export class Header extends Component {
           className="submit"
           name="submit"
           type="submit">
-          Submit
         </button>
       </form>
       <nav>

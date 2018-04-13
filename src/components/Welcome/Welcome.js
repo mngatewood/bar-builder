@@ -49,8 +49,20 @@ const Welcome = ({recipes}) => {
   });
 
   return  (
-    <div className="recipe-container">
-      {displayRecipe}
+    <div>
+      <div className="welcome-title">
+        <h1>Welcome to The Bar Builder</h1>
+      </div>
+      <div className="welcome-container">
+        <div className="welcome-text">
+          <p>Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.</p>
+          <p>Click on "Update My Inventory" below to select ingredients that are already in your bar.</p>
+          <p>Once your inventory is updated, click "View My Bar Menu" to see recipes that can be made with ingredients you already have on-hand.</p>
+        </div>
+        <div className="recipe-summary-container">
+          {displayRecipe}
+        </div>
+      </div>
     </div>
   );
 };

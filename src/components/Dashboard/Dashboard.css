@@ -1,16 +1,19 @@
 .dashboard-container {
   position: fixed;
-  flex: 0 0 200px;
-  top: 100px;
+  bottom: 0;
   left: 0;
-  padding: 15px;
-  width: 180px;
-  height: 100%;
-  background-color: papayawhip;
+  width: 100vw;
+  height: 50px;
+  background-color: rgba(116, 121, 89, 1);
+  z-index: 29;
 }
 
 .dashboard-container button {
-  margin: 5px;
-  width: 150px;
-  font-size: 16px;
+  margin: 10px 25px;
+  font-size: 18px;
+  background-color: rgba(245, 244, 193, 1);
+  font-weight: bold;
+  color: rgba(116, 121, 89, 1);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(116, 121, 89, 1);
 }
