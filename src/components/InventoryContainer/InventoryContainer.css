@@ -1,13 +1,6 @@
-.inventory-container {
-  margin: 100px 0 40px 0px;
-  padding: 20px;
-}
-
-.inventory-container h2 {
-  margin-top: 0;
-}
-
-.ingredients-columns {
+.inventory-container .ingredients-container {
+  margin: 0px 0 50px 0px;
+  margin-top: 70px;
   -moz-column-count: 5;
   -webkit-column-count: 5;
   column-count: 5;  

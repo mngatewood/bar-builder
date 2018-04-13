@@ -1,0 +1,19 @@
+.menu-container .recipe-container {
+  margin: 0 0 100px 0;
+}
+
+.page-title {
+  position: relative;
+  z-index: 49;
+  width: 200px;
+  margin: 0 auto;
+  background-color: rgba(246, 239, 246, 1);
+  line-height: 36px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(246, 239, 246, 1);
+  font-family: "Poor Story"
+}
+
+.page-title h2 {
+  margin: 12px;
+}

@@ -48,11 +48,14 @@ const Menu = ({recipes}) => {
       forceDetails={false} />;
   });
 
-  return  (
+  return <div className="menu-container">
+    <div className="page-title">
+      <h2>My Bar Menu</h2>
+    </div>
     <div className="recipe-container">
       {displayRecipe}
     </div>
-  );
+  </div>
 };
 
 export const mapStateToProps = (state) => ({
