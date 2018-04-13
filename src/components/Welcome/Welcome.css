@@ -39,10 +39,10 @@
 .contents-container #close-details {
   top: 88px;
   right: 40px;
-  border-radius: 50%;
+  border-radius: 2px;
 }
 
-.contents-container #close-details:after, 
+/* .contents-container #close-details:after, 
 .contents-container span {
   position: absolute;
   content: '';
@@ -76,4 +76,4 @@
     transform: scale(2);
     opacity: 0;
   }
-}
+} */
