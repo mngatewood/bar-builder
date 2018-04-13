@@ -1,4 +1,8 @@
 .welcome-container {
+
+}
+
+.contents-container {
   display: flex;
   justify-content: space-around;
   margin: 80px 0 100px 0;
@@ -6,17 +10,17 @@
 
 .welcome-title {
   z-index: 199;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   position: absolute;
-  left: 50px;
+  top: 100px;
+  /* left: 50px; */
   width: 100%;
   font-family: "Kaushan Script";
 }
 
 .welcome-text {
   flex: 1 75%;
-  margin: 100px 50px 50px 50px;
+  margin: 80px 50px 50px 50px;
   font-family: "Convergence";
   font-size: 24px;
   text-align: left;
@@ -26,21 +30,21 @@
   display: flex;
   justify-content: center;
   flex: 1 25%;
-  margin: 60px 50px;
+  margin: 40px 50px;
 }
 
-.welcome-container .recipe-details {
+.contents-container .recipe-details {
   margin-top: 50px;
 }
 
-.welcome-container #close-details {
+.contents-container #close-details {
   top: 88px;
   right: 40px;
   border-radius: 50%;
 }
 
-.welcome-container #close-details:after, 
-.welcome-container span {
+.contents-container #close-details:after, 
+.contents-container span {
   position: absolute;
   content: '';
   height: 100%;
@@ -52,12 +56,12 @@
   animation: glow-grow 2s ease-out infinite;
 }
 
-.welcome-container #close-details:after {
+.contents-container #close-details:after {
   animation-delay: .66s;
 }
 
-.welcome-container .welcome-container, 
-.welcome-container span{
+.contents-container, 
+.contents-container span{
   animation-delay: 1.33s;
 }
 
