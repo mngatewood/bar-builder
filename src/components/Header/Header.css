@@ -46,7 +46,7 @@
   font-size: 18px;
   height: 24px;
   border-radius: 10px;
-  width: 230px;
+  width: 285px;
   padding-left: 10px;
 }
 
@@ -59,6 +59,7 @@
   height: 18px;
   border: 0;
   background-image: url('../../assets/search-icon.svg');
+  cursor: pointer;
 }
 
 .header img {
@@ -89,4 +90,16 @@ select {
     1px -1px 0 darkgreen,
     -1px 1px 0 darkgreen,
      1px 1px 0 darkgreen;
+  cursor: pointer;
+}
+
+select:hover {
+  text-shadow:
+   -3px -3px 0 rgba(0, 100, 0, 0.3),  
+    3px -3px 0 rgba(0, 100, 0, 0.3),
+    -3px 3px 0 rgba(0, 100, 0, 0.3),
+     3px 3px 0 rgba(0, 100, 0, 0.3);
+  filter: drop-shadow(5px 5px 5px);
+  color: rgba(246, 239, 246, 1);
+
 }
