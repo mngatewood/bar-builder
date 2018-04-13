@@ -45,13 +45,15 @@ const Welcome = ({recipes}) => {
       measure14={recipe.strMeasure14}
       ingredient15={recipe.strIngredient15}
       measure15={recipe.strMeasure15}
-      forceDetails={true} />;
+      forceDetails={false} />;
   });
 
   return  (
     <div className="welcome-container">
-      <div className="page-title">
-        <h2>Welcome</h2>
+      <div className="page-title-wrapper">
+        <div className="page-title">
+          <h2>Welcome</h2>
+        </div>
       </div>
       <div className="contents-container">
         <div className="welcome-title">

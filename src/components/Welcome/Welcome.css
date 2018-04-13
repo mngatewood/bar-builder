@@ -1,26 +1,25 @@
 .welcome-container {
-
 }
 
 .contents-container {
+  overflow: hidden;
   display: flex;
   justify-content: space-around;
   margin: 80px 0 100px 0;
 }
 
 .welcome-title {
-  z-index: 199;
-  /* margin-bottom: 50px; */
-  position: absolute;
+  z-index: 28;
+  position: fixed;
   top: 100px;
-  /* left: 50px; */
   width: 100%;
   font-family: "Kaushan Script";
+  background-color: rgba(246, 239, 246, 1);
 }
 
 .welcome-text {
   flex: 1 75%;
-  margin: 80px 50px 50px 50px;
+  margin: 90px 50px 50px 50px;
   font-family: "Convergence";
   font-size: 24px;
   text-align: left;
@@ -30,7 +29,7 @@
   display: flex;
   justify-content: center;
   flex: 1 25%;
-  margin: 40px 50px;
+  margin: 65px 50px;
 }
 
 .contents-container .recipe-details {
