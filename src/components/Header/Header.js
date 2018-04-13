@@ -107,9 +107,15 @@ export class Header extends Component {
   render() {
 
     const {categories, ingredients, alcoholicOptions} = this.props;
-  
-    const sortedCategories = categories.sort((categoryA, categoryB) => 
-      categoryA.strCategory - categoryB.strCategory);
+
+    const sortCategories = (a, b) => {
+      if (a.strCategory < b.strCategory)
+        return -1;
+      if (a.strCategory > b.strCategory)
+        return 1;
+      return 0;
+    }
+    const sortedCategories = categories.sort(sortCategories);
     const categorySelectOptions = sortedCategories.map(option => {
       if (option.strCategory !== null) {
         return <option
@@ -120,8 +126,14 @@ export class Header extends Component {
       }
     });
 
-    const sortedIngredients = ingredients.sort((ingredientA, ingredientB) => 
-      ingredientA.strIngredient1 - ingredientB.strIngredient1);
+    const sortIngredients = (a, b) => {
+      if (a.strIngredient1 < b.strIngredient1)
+        return -1;
+      if (a.strIngredient1 > b.strIngredient1)
+        return 1;
+      return 0;
+    }
+    const sortedIngredients = ingredients.sort(sortIngredients);
     const ingredientSelectOptions = sortedIngredients.map(option => {
       if (option.strIngredient1 !== null) {    
         return <option
@@ -132,12 +144,14 @@ export class Header extends Component {
       }
     });
 
-    const sortedAlcoholicOptions = alcoholicOptions.sort((optionA, optionB) => {
-      console.log("A: " + optionA.strAlcoholic);
-      console.log("B: " + optionB.strAlcoholic);
-      return optionA.strAlcoholic - optionB.strAlcoholic;
-    });
-    console.log(sortedAlcoholicOptions);
+    const sortAlcoholicOptions = (a, b) => {
+      if (a.strCategory < b.strCategory)
+        return -1;
+      if (a.strCategory > b.strCategory)
+        return 1;
+      return 0;
+    }
+    const sortedAlcoholicOptions = alcoholicOptions.sort(sortAlcoholicOptions);
     const alcoholicSelectOptions = sortedAlcoholicOptions.map(option => {
       if (option.strAlcoholic !== null) {
         return <option
