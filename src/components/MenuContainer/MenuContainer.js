@@ -49,8 +49,10 @@ const Menu = ({recipes}) => {
   });
 
   return <div className="menu-container">
-    <div className="page-title">
-      <h2>My Bar Menu</h2>
+    <div className="page-title-wrapper">
+      <div className="page-title">
+        <h2>My Bar Menu</h2>
+      </div>
     </div>
     <div className="recipe-container">
       {displayRecipe}

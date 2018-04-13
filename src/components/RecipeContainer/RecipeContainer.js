@@ -46,11 +46,16 @@ const RecipeContainer = ({recipes}) => {
       forceDetails={false} />;
   });
 
-  return (
+  return <div className="filtered-container">
+    <div className="page-title-wrapper">
+      <div className="page-title">
+        <h2>Filtered Recipes</h2>
+      </div>
+    </div>
     <div className="recipe-container">
       {displayRecipe}
     </div>
-  );
+  </div>;
 };
 
 export const mapStateToProps = state => ({

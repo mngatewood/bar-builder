@@ -21,8 +21,13 @@ const InventoryContainer = ({ingredients, inventory}) => {
 
   return (
     <div className="inventory-container">
-      <div className="page-title">
-        <h2>My Inventory</h2>
+      <div className="page-title-wrapper">
+        <div className="page-title">
+          <h2>My Inventory</h2>
+        </div>
+      </div>
+      <div>
+        <h3>Select your ingredients:</h3>
       </div>
       <div className="ingredients-container">
         <form>
