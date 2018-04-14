@@ -5,6 +5,7 @@ import './Header.css';
 import PropTypes from 'prop-types';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { addRecipes } from '../../actions/';
+import { filterRecipes } from '../../api/apiHelpers/filterRecipes';
 
 export class Header extends Component {
   constructor(props) {
@@ -45,7 +46,8 @@ export class Header extends Component {
     await this.updateRecipesArray(name, type, value);
     await this.updateFilterCount();
     await this.sortRecipes();
-    await this.filterRecipes(name);
+    const filteredRecipes = await filterRecipes(this.state);
+    this.props.addRecipes(filteredRecipes);
   }
 
   updateFilterCount = () => {
@@ -79,40 +81,6 @@ export class Header extends Component {
     this.setState({ unfilteredRecipes: sortedRecipes });
   }
 
-  filterRecipes = async () => {
-    const { filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes, unfilteredRecipes } = this.state;
-    let filteredRecipes;
-    if (filterCount === 1) {
-      if (categoryRecipes.length > 0) { filteredRecipes = categoryRecipes; }
-      if (ingredientRecipes.length > 0) { filteredRecipes = ingredientRecipes; }
-      if (alcoholicRecipes.length > 0) { filteredRecipes = alcoholicRecipes; }
-    }
-
-    if (filterCount === 2) {
-      filteredRecipes = [];
-      let lastRecipeID = 0;
-      unfilteredRecipes.forEach((thisRecipe) => {
-        if (thisRecipe.idDrink === lastRecipeID) {
-          filteredRecipes.push(thisRecipe);
-        }
-        lastRecipeID = thisRecipe.idDrink;
-      }); 
-    }
-
-    if (filterCount === 3 ) {
-      filteredRecipes = [];
-      let lastRecipeID = 0;
-      let twoRecipeID = 0;
-      unfilteredRecipes.forEach((thisRecipe) => {
-        if (thisRecipe.idDrink === twoRecipeID) {
-          filteredRecipes.push(thisRecipe);
-        }
-        twoRecipeID = lastRecipeID;
-        lastRecipeID = thisRecipe.idDrink;
-      }); 
-    }    
-    this.props.addRecipes(filteredRecipes);
-  }
   
   render() {
 
