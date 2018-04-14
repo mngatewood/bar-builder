@@ -8,6 +8,7 @@ import { addRecipes } from '../../actions/';
 import { filterRecipes } from '../../api/apiHelpers/filterRecipes';
 import { sortRecipes } from '../../api/apiHelpers/sortRecipes';
 import { updateRecipesArray } from '../../api/apiHelpers/updateRecipesArray';
+import { updateFilterCount } from '../../api/apiHelpers/updateFilterCount';
 
 export class Header extends Component {
   constructor(props) {
@@ -47,23 +48,14 @@ export class Header extends Component {
     const type = event.target.id;
     const updatedRecipesArray = await updateRecipesArray(name, type, value);
     this.setState(updatedRecipesArray);
-    await this.updateFilterCount();
+    const updatedFilterCount = await updateFilterCount(this.state);
+    this.setState(updatedFilterCount);
     const sortedRecipes = await sortRecipes(this.state);
     this.setState({ unfilteredRecipes: sortedRecipes });
     const filteredRecipes = await filterRecipes(this.state);
-    console.log(filteredRecipes);
     this.props.addRecipes(filteredRecipes);
   }
 
-  updateFilterCount = () => {
-    const { categoryRecipes, ingredientRecipes, alcoholicRecipes } = this.state;
-    let numberOfArrays = 0;
-    if (categoryRecipes.length > 0) { numberOfArrays++; }
-    if (ingredientRecipes.length > 0) { numberOfArrays++; }
-    if (alcoholicRecipes.length > 0) { numberOfArrays++; }
-    this.setState({ filterCount: numberOfArrays });
-  }
-  
   render() {
 
     const {categories, ingredients, alcoholicOptions} = this.props;
