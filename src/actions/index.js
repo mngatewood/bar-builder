@@ -3,6 +3,10 @@ export const addRecipes = (recipes) => ({
   recipes
 });
 
+export const clearRecipes = () => ({
+  type: 'CLEAR_RECIPES'
+});
+
 export const addCategories = (categories) => ({
   type: 'ADD_CATEGORIES',
   categories

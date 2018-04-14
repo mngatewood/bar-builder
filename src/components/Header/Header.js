@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import './Header.css';
 import PropTypes from 'prop-types';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
-import { addRecipes } from '../../actions/';
+import { addRecipes, clearRecipes } from '../../actions/';
 import bar from '../../assets/bar.svg';
 
 export class Header extends Component {
@@ -46,7 +46,7 @@ export class Header extends Component {
     await this.updateRecipesArray(name, type, value);
     await this.updateFilterCount();
     await this.sortRecipes();
-    // await this.filterRecipes();
+    await this.filterRecipes();
   }
 
   updateFilterCount = () => {
@@ -87,14 +87,14 @@ export class Header extends Component {
     this.setState({ unfilteredRecipes: sortedRecipes });
   }
 
-  // filterRecipes = async () => {
-  //   const { categoryRecipes, ingredientRecipes, alcoholicRecipes } = this.state;
-  //   const count = this.state.filterCount;
-  //   if (count === 1) {
-  //     if (categoryRecipes.length > 0) { this.props.addRecipes(categoryRecipes); }
-  //     if (ingredientRecipes.length > 0) { this.props.addRecipes(ingredientRecipes); }
-  //     if (alcoholicRecipes.length > 0) { this.props.addRecipes(alcoholicRecipes); }
-
+  filterRecipes = async () => {
+    const { filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes } = this.state;
+    let filteredRecipes
+    // const count = this.state.filterCount;
+    if (filterCount === 1) {
+      console.log(filterCount);
+      filteredRecipes = this.state.filteredRecipes;
+    }
   //   } else {
 
   //     let filteredRecipes = [];
@@ -118,8 +118,9 @@ export class Header extends Component {
   //       lastRecipeID = thisRecipe.idDrink;
   //     });
   //     this.props.addRecipes(filteredRecipes);
-  //   } 
-  // }
+    this.props.clearRecipes();
+    this.props.addRecipes(filteredRecipes);
+  }
   
   render() {
 
@@ -235,7 +236,8 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  addRecipes: recipes => dispatch(addRecipes(recipes))
+  addRecipes: recipes => dispatch(addRecipes(recipes)),
+  clearRecipes: () => dispatch(clearRecipes())
 });
 
 Header.propTypes = {
