@@ -88,6 +88,7 @@ export class Header extends Component {
       if (ingredientRecipes.length > 0) { filteredRecipes = ingredientRecipes; }
       if (alcoholicRecipes.length > 0) { filteredRecipes = alcoholicRecipes; }
     }
+
     if (filterCount === 2) {
       filteredRecipes = [];
       let lastRecipeID = 0;
@@ -97,6 +98,21 @@ export class Header extends Component {
         }
         lastRecipeID = thisRecipe.idDrink;
       }); 
+    }
+
+    if (filterCount === 3 ) {
+      filteredRecipes = [];
+      let lastRecipeID = 0;
+      let twoRecipeID = 0;
+      unfilteredRecipes.forEach((thisRecipe) => {
+        if (thisRecipe.idDrink === twoRecipeID) {
+          filteredRecipes.push(thisRecipe);
+        }
+        twoRecipeID = lastRecipeID;
+        lastRecipeID = thisRecipe.idDrink;
+      }); 
+
+    }
 
     //   if (numberOfArrays > 2) {
     //     let filteredRecipes = [];
