@@ -46,14 +46,10 @@ export class Header extends Component {
     const { name, value } = event.target;
     this.setState({ [name]: value });
     const type = event.target.id;
-    const updatedRecipesArray = await updateRecipesArray(name, type, value);
-    this.setState(updatedRecipesArray);
-    const updatedFilterCount = await updateFilterCount(this.state);
-    this.setState(updatedFilterCount);
-    const sortedRecipes = await sortRecipes(this.state);
-    this.setState({ unfilteredRecipes: sortedRecipes });
-    const filteredRecipes = await filterRecipes(this.state);
-    this.props.addRecipes(filteredRecipes);
+    this.setState(await updateRecipesArray(name, type, value));
+    this.setState(await updateFilterCount(this.state));
+    this.setState(await sortRecipes(this.state));
+    this.props.addRecipes(await filterRecipes(this.state));
   }
 
   render() {

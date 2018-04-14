@@ -3,5 +3,5 @@ export const sortRecipes = (props) => {
   const unfilteredRecipes = [...categoryRecipes, ...ingredientRecipes, ...alcoholicRecipes];
   const sortedRecipes = unfilteredRecipes.sort((drinkA, drinkB) =>
     drinkA.idDrink - drinkB.idDrink);
-  return sortedRecipes;
+  return { unfilteredRecipes: sortedRecipes };
 };
