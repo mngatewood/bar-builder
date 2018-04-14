@@ -9,6 +9,12 @@ import { filterRecipes } from '../../api/apiHelpers/filterRecipes';
 import { sortRecipes } from '../../api/apiHelpers/sortRecipes';
 import { updateRecipesArray } from '../../api/apiHelpers/updateRecipesArray';
 import { updateFilterCount } from '../../api/apiHelpers/updateFilterCount';
+import { sortCategories } from '../../api/apiHelpers/sortCategories';
+import { sortIngredients } from '../../api/apiHelpers/sortIngredients';
+import { sortAlcoholicOptions } from '../../api/apiHelpers/sortAlcoholicOptions';
+import { getCategoryOptions } from '../../api/apiHelpers/getCategoryOptions';
+import { getIngredientOptions } from '../../api/apiHelpers/getIngredientOptions';
+import { getAlcoholicOptions } from '../../api/apiHelpers/getAlcoholicOptions';
 
 export class Header extends Component {
   constructor(props) {
@@ -56,59 +62,13 @@ export class Header extends Component {
 
     const {categories, ingredients, alcoholicOptions} = this.props;
 
-    const sortCategories = (a, b) => {
-      if (a.strCategory < b.strCategory)
-        return -1;
-      if (a.strCategory > b.strCategory)
-        return 1;
-      return 0;
-    }
     const sortedCategories = categories.sort(sortCategories);
-    const categorySelectOptions = sortedCategories.map(option => {
-      if (option.strCategory !== null) {
-        return <option
-          key={option.strCategory}
-          value={option.strCategory}>
-          {option.strCategory}
-        </option>;
-      }
-    });
-
-    const sortIngredients = (a, b) => {
-      if (a.strIngredient1 < b.strIngredient1)
-        return -1;
-      if (a.strIngredient1 > b.strIngredient1)
-        return 1;
-      return 0;
-    }
     const sortedIngredients = ingredients.sort(sortIngredients);
-    const ingredientSelectOptions = sortedIngredients.map(option => {
-      if (option.strIngredient1 !== null) {    
-        return <option
-          key={option.strIngredient1}
-          value={option.strIngredient1}>
-          {option.strIngredient1}
-        </option>;
-      }
-    });
-
-    const sortAlcoholicOptions = (a, b) => {
-      if (a.strCategory < b.strCategory)
-        return -1;
-      if (a.strCategory > b.strCategory)
-        return 1;
-      return 0;
-    }
     const sortedAlcoholicOptions = alcoholicOptions.sort(sortAlcoholicOptions);
-    const alcoholicSelectOptions = sortedAlcoholicOptions.map(option => {
-      if (option.strAlcoholic !== null) {
-        return <option
-          key={option.strAlcoholic}
-          value={option.strAlcoholic}>
-          {option.strAlcoholic}
-        </option>;
-      }
-    });
+
+    const categorySelectOptions = getCategoryOptions(sortedCategories);
+    const ingredientSelectOptions = getIngredientOptions(sortedIngredients);
+    const alcoholicSelectOptions = getAlcoholicOptions(sortedAlcoholicOptions);
 
     return <div className="header">
       <div className="title">
