@@ -4,8 +4,7 @@ import { connect } from 'react-redux';
 import './Header.css';
 import PropTypes from 'prop-types';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
-import { addRecipes, clearRecipes } from '../../actions/';
-import bar from '../../assets/bar.svg';
+import { addRecipes } from '../../actions/';
 
 export class Header extends Component {
   constructor(props) {
@@ -111,21 +110,7 @@ export class Header extends Component {
         twoRecipeID = lastRecipeID;
         lastRecipeID = thisRecipe.idDrink;
       }); 
-
-    }
-
-    //   if (numberOfArrays > 2) {
-    //     let filteredRecipes = [];
-    //     let lastRecipeID = 0;
-    //     let sortedRecipes = [...this.state.recipes];
-    //     sortedRecipes.forEach((thisRecipe) => {
-    //       if (thisRecipe.idDrink === lastRecipeID) {
-    //         filteredRecipes.push(thisRecipe);
-    //       }
-    //       lastRecipeID = thisRecipe.idDrink;
-    //     });
-    //     this.props.addRecipes(filteredRecipes);
-    
+    }    
     this.props.addRecipes(filteredRecipes);
   }
   
@@ -244,7 +229,6 @@ export const mapStateToProps = state => ({
 
 export const mapDispatchToProps = dispatch => ({
   addRecipes: recipes => dispatch(addRecipes(recipes)),
-  clearRecipes: () => dispatch(clearRecipes())
 });
 
 Header.propTypes = {
