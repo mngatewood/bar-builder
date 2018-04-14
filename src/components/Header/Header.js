@@ -46,7 +46,7 @@ export class Header extends Component {
     await this.updateRecipesArray(name, type, value);
     await this.updateFilterCount();
     await this.sortRecipes();
-    await this.filterRecipes();
+    await this.filterRecipes(name);
   }
 
   updateFilterCount = () => {
@@ -65,17 +65,10 @@ export class Header extends Component {
     const sortedRecipes = newRecipes.sort((drinkA, drinkB) => 
       drinkA.idDrink - drinkB.idDrink);
     switch (name) {
-    case 'categoryFilter':
-      this.setState({ categoryRecipes: sortedRecipes });
-      break;
-    case 'ingredientFilter':
-      this.setState({ ingredientRecipes: sortedRecipes });
-      break;
-    case 'alcoholicFilter':
-      this.setState({ alcoholicRecipes: sortedRecipes });
-      break;
-    default:
-      break;
+    case 'categoryFilter': this.setState({ categoryRecipes: sortedRecipes }); break;
+    case 'ingredientFilter': this.setState({ ingredientRecipes: sortedRecipes }); break;
+    case 'alcoholicFilter': this.setState({ alcoholicRecipes: sortedRecipes }); break;
+    default: break;
     }
   }
 
@@ -88,37 +81,35 @@ export class Header extends Component {
   }
 
   filterRecipes = async () => {
-    const { filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes } = this.state;
-    let filteredRecipes
-    // const count = this.state.filterCount;
+    const { filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes, unfilteredRecipes } = this.state;
+    let filteredRecipes;
     if (filterCount === 1) {
-      console.log(filterCount);
-      filteredRecipes = this.state.filteredRecipes;
+      if (categoryRecipes.length > 0) { filteredRecipes = categoryRecipes; }
+      if (ingredientRecipes.length > 0) { filteredRecipes = ingredientRecipes; }
+      if (alcoholicRecipes.length > 0) { filteredRecipes = alcoholicRecipes; }
     }
-  //   } else {
+    if (filterCount === 2) {
+      filteredRecipes = [];
+      let lastRecipeID = 0;
+      unfilteredRecipes.forEach((thisRecipe) => {
+        if (thisRecipe.idDrink === lastRecipeID) {
+          filteredRecipes.push(thisRecipe);
+        }
+        lastRecipeID = thisRecipe.idDrink;
+      }); 
 
-  //     let filteredRecipes = [];
-  //     let lastRecipeID = 0;
-  //     sortedRecipes.forEach((thisRecipe) => {
-  //       if (thisRecipe.idDrink === lastRecipeID) {
-  //         filteredRecipes.push(thisRecipe);
-  //       }
-  //       lastRecipeID = thisRecipe.idDrink;
-  //     }); 
-  //     this.props.addRecipes(filteredRecipes);
-  //   } 
-  //   if (numberOfArrays > 2) {
-  //     let filteredRecipes = [];
-  //     let lastRecipeID = 0;
-  //     let sortedRecipes = [...this.state.recipes];
-  //     sortedRecipes.forEach((thisRecipe) => {
-  //       if (thisRecipe.idDrink === lastRecipeID) {
-  //         filteredRecipes.push(thisRecipe);
-  //       }
-  //       lastRecipeID = thisRecipe.idDrink;
-  //     });
-  //     this.props.addRecipes(filteredRecipes);
-    this.props.clearRecipes();
+    //   if (numberOfArrays > 2) {
+    //     let filteredRecipes = [];
+    //     let lastRecipeID = 0;
+    //     let sortedRecipes = [...this.state.recipes];
+    //     sortedRecipes.forEach((thisRecipe) => {
+    //       if (thisRecipe.idDrink === lastRecipeID) {
+    //         filteredRecipes.push(thisRecipe);
+    //       }
+    //       lastRecipeID = thisRecipe.idDrink;
+    //     });
+    //     this.props.addRecipes(filteredRecipes);
+    
     this.props.addRecipes(filteredRecipes);
   }
   
