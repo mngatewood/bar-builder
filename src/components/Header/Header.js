@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { addRecipes } from '../../actions/';
 import { filterRecipes } from '../../api/apiHelpers/filterRecipes';
+import { sortRecipes } from '../../api/apiHelpers/sortRecipes';
+import { updateRecipesArray } from '../../api/apiHelpers/updateRecipesArray';
 
 export class Header extends Component {
   constructor(props) {
@@ -43,10 +45,13 @@ export class Header extends Component {
     const { name, value } = event.target;
     this.setState({ [name]: value });
     const type = event.target.id;
-    await this.updateRecipesArray(name, type, value);
+    const updatedRecipesArray = await updateRecipesArray(name, type, value);
+    this.setState(updatedRecipesArray);
     await this.updateFilterCount();
-    await this.sortRecipes();
+    const sortedRecipes = await sortRecipes(this.state);
+    this.setState({ unfilteredRecipes: sortedRecipes });
     const filteredRecipes = await filterRecipes(this.state);
+    console.log(filteredRecipes);
     this.props.addRecipes(filteredRecipes);
   }
 
@@ -58,29 +63,6 @@ export class Header extends Component {
     if (alcoholicRecipes.length > 0) { numberOfArrays++; }
     this.setState({ filterCount: numberOfArrays });
   }
-
-  updateRecipesArray = async (name, type, value) => {
-    const newRecipes = value.slice(0, 3) === 'All' || null ?
-      [] :
-      await getRecipes('filter', type, value);
-    const sortedRecipes = newRecipes.sort((drinkA, drinkB) => 
-      drinkA.idDrink - drinkB.idDrink);
-    switch (name) {
-    case 'categoryFilter': this.setState({ categoryRecipes: sortedRecipes }); break;
-    case 'ingredientFilter': this.setState({ ingredientRecipes: sortedRecipes }); break;
-    case 'alcoholicFilter': this.setState({ alcoholicRecipes: sortedRecipes }); break;
-    default: break;
-    }
-  }
-
-  sortRecipes = () => {
-    const { categoryRecipes, ingredientRecipes, alcoholicRecipes } = this.state;
-    const unfilteredRecipes = [...categoryRecipes, ...ingredientRecipes, ...alcoholicRecipes];
-    const sortedRecipes = unfilteredRecipes.sort((drinkA, drinkB) =>
-      drinkA.idDrink - drinkB.idDrink);
-    this.setState({ unfilteredRecipes: sortedRecipes });
-  }
-
   
   render() {
 
