@@ -8,7 +8,7 @@ export const getRecipeDetails = (recipeArray) => {
       const recipeDetails = await recipeData.drinks[0];
       return recipeDetails;
     } catch (error) {
-      throw Error("Error retrieving recipe details");
+      throw Error("Error retrieving recipe details: " + error.message);
     }
   });
   return Promise.all(promises);
