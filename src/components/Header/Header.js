@@ -5,19 +5,30 @@ import './Header.css';
 import PropTypes from 'prop-types';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { addRecipes } from '../../actions/';
-import bar from '../../assets/bar.svg';
+import { filterRecipes } from '../../api/apiHelpers/filterRecipes';
+import { sortRecipes } from '../../api/apiHelpers/sortRecipes';
+import { updateRecipesArray } from '../../api/apiHelpers/updateRecipesArray';
+import { updateFilterCount } from '../../api/apiHelpers/updateFilterCount';
+import { sortCategories } from '../../api/apiHelpers/sortCategories';
+import { sortIngredients } from '../../api/apiHelpers/sortIngredients';
+import { sortAlcoholicOptions } from '../../api/apiHelpers/sortAlcoholicOptions';
+import { getCategoryOptions } from '../../api/apiHelpers/getCategoryOptions';
+import { getIngredientOptions } from '../../api/apiHelpers/getIngredientOptions';
+import { getAlcoholicOptions } from '../../api/apiHelpers/getAlcoholicOptions';
 
 export class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
       search: '',
+      filterCount: 0,
       categoryFilter: 'All Categories',
       ingredientFilter: 'All Ingredients',
       alcoholicFilter: 'All Alcoholic Content',
       categoryRecipes: [],
       ingredientRecipes: [],
-      alcoholicRecipes: []
+      alcoholicRecipes: [],
+      unfilteredRecipes: []
     };
   }
   
@@ -36,131 +47,28 @@ export class Header extends Component {
     window.scrollTo(0, 0);
   }
   
-  handleFilterChange = (event) => {
+  handleFilterChange = async (event) => {
     this.props.history.push('/recipes');
     const { name, value } = event.target;
     this.setState({ [name]: value });
     const type = event.target.id;
-    this.updateRecipesArray(name, type, value);
+    this.setState(await updateRecipesArray(name, type, value));
+    this.setState(await updateFilterCount(this.state));
+    this.setState(await sortRecipes(this.state));
+    this.props.addRecipes(await filterRecipes(this.state));
   }
 
-  updateRecipesArray = async (name, type, value) => {
-    const newRecipes = value.slice(0, 3) === 'All' || null ?
-      [] :
-      await getRecipes('filter', type, value);
-    const sortedRecipes = newRecipes.sort((drinkA, drinkB) => 
-      drinkA.idDrink - drinkB.idDrink);
-    switch (name) {
-    case 'categoryFilter':
-      this.setState({ categoryRecipes: sortedRecipes });
-      break;
-    case 'ingredientFilter':
-      this.setState({ ingredientRecipes: sortedRecipes });
-      break;
-    case 'alcoholicFilter':
-      this.setState({ alcoholicRecipes: sortedRecipes });
-      break;
-    default:
-      break;
-    }
-    this.filterRecipes();
-  }
-
-  filterRecipes = () => {
-    const { categoryRecipes, ingredientRecipes, alcoholicRecipes} = this.state;
-    const unfilteredRecipes = [...categoryRecipes, ...ingredientRecipes, ...alcoholicRecipes];
-    const sortedRecipes = unfilteredRecipes.sort((drinkA, drinkB) =>
-      drinkA.idDrink - drinkB.idDrink);
-    let numberOfArrays = 0;
-    if (categoryRecipes.length > 0) { numberOfArrays++; }
-    if (ingredientRecipes.length > 0) { numberOfArrays++; }
-    if (alcoholicRecipes.length >0) { numberOfArrays++; }
-    if (numberOfArrays === 1) {
-      if (categoryRecipes.length > 0) { this.props.addRecipes(categoryRecipes); }
-      if (ingredientRecipes.length > 0) { this.props.addRecipes(ingredientRecipes); }
-      if (alcoholicRecipes.length > 0) { this.props.addRecipes(alcoholicRecipes); }
-    } else {
-      let filteredRecipes = [];
-      let lastRecipeID = 0;
-      sortedRecipes.forEach((thisRecipe) => {
-        if (thisRecipe.idDrink === lastRecipeID) {
-          filteredRecipes.push(thisRecipe);
-        }
-        lastRecipeID = thisRecipe.idDrink;
-      }); 
-      this.props.addRecipes(filteredRecipes);
-    } 
-    if (numberOfArrays > 2) {
-      let filteredRecipes = [];
-      let lastRecipeID = 0;
-      let sortedRecipes = [...this.state.recipes];
-      sortedRecipes.forEach((thisRecipe) => {
-        if (thisRecipe.idDrink === lastRecipeID) {
-          filteredRecipes.push(thisRecipe);
-        }
-        lastRecipeID = thisRecipe.idDrink;
-      });
-      this.props.addRecipes(filteredRecipes);
-    } 
-  }
-  
   render() {
 
     const {categories, ingredients, alcoholicOptions} = this.props;
 
-    const sortCategories = (a, b) => {
-      if (a.strCategory < b.strCategory)
-        return -1;
-      if (a.strCategory > b.strCategory)
-        return 1;
-      return 0;
-    }
     const sortedCategories = categories.sort(sortCategories);
-    const categorySelectOptions = sortedCategories.map(option => {
-      if (option.strCategory !== null) {
-        return <option
-          key={option.strCategory}
-          value={option.strCategory}>
-          {option.strCategory}
-        </option>;
-      }
-    });
-
-    const sortIngredients = (a, b) => {
-      if (a.strIngredient1 < b.strIngredient1)
-        return -1;
-      if (a.strIngredient1 > b.strIngredient1)
-        return 1;
-      return 0;
-    }
     const sortedIngredients = ingredients.sort(sortIngredients);
-    const ingredientSelectOptions = sortedIngredients.map(option => {
-      if (option.strIngredient1 !== null) {    
-        return <option
-          key={option.strIngredient1}
-          value={option.strIngredient1}>
-          {option.strIngredient1}
-        </option>;
-      }
-    });
-
-    const sortAlcoholicOptions = (a, b) => {
-      if (a.strCategory < b.strCategory)
-        return -1;
-      if (a.strCategory > b.strCategory)
-        return 1;
-      return 0;
-    }
     const sortedAlcoholicOptions = alcoholicOptions.sort(sortAlcoholicOptions);
-    const alcoholicSelectOptions = sortedAlcoholicOptions.map(option => {
-      if (option.strAlcoholic !== null) {
-        return <option
-          key={option.strAlcoholic}
-          value={option.strAlcoholic}>
-          {option.strAlcoholic}
-        </option>;
-      }
-    });
+
+    const categorySelectOptions = getCategoryOptions(sortedCategories);
+    const ingredientSelectOptions = getIngredientOptions(sortedIngredients);
+    const alcoholicSelectOptions = getAlcoholicOptions(sortedAlcoholicOptions);
 
     return <div className="header">
       <div className="title">
@@ -223,7 +131,7 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  addRecipes: recipes => dispatch(addRecipes(recipes))
+  addRecipes: recipes => dispatch(addRecipes(recipes)),
 });
 
 Header.propTypes = {
