@@ -15,9 +15,9 @@ export class Dashboard extends Component {
   }
 
   handleMenuClick = async () => {
-    const { inventory, clearMenuRecipes, addMenuRecipes, history } = this.props
+    const { inventory, ingredients, clearMenuRecipes, addMenuRecipes, history } = this.props
     await clearMenuRecipes();
-    const menuRecipes = await getMenuRecipes(inventory);
+    const menuRecipes = await getMenuRecipes(inventory, ingredients);
     // console.log(menuRecipes);
     await addMenuRecipes(menuRecipes);
     history.push('/menu');
@@ -43,7 +43,8 @@ export class Dashboard extends Component {
 };
 
 export const mapStateToProps = state => ({
-  inventory: state.inventory
+  inventory: state.inventory,
+  ingredients: state.ingredients
 });
 
 export const mapDispatchToProps = dispatch => ({
