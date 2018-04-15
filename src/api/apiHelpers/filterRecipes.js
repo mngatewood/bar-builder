@@ -1,4 +1,4 @@
-export const filterRecipes = async (props) => {
+export const filterRecipes = (props) => {
   const { filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes, unfilteredRecipes } = props;
   let filteredRecipes;
 
