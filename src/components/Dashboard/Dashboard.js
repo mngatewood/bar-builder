@@ -1,36 +1,50 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Dashboard.css';
 import { NavLink, withRouter } from 'react-router-dom';
-import { getRecipes } from '../../api/apiCalls/getRecipes';
+import { getMenuRecipes } from '../../api/apiHelpers/getMenuRecipes';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addMenuRecipes, clearMenuRecipes } from '../../actions';
 
-const Dashboard = ({ inventory, addMenuRecipes, clearMenuRecipes, history }) => {
+export class Dashboard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuRecipes: []
+    }
+  }
 
-  const handleMenuClick = () => {
-    clearMenuRecipes();
-    inventory.forEach(async ingredient => {
-      const recipes = await getRecipes('filter', 'i', ingredient);
-      addMenuRecipes(recipes);
-    });
+  handleMenuClick = async () => {
+    const { inventory, ingredients, clearMenuRecipes, addMenuRecipes, history } = this.props
+    await clearMenuRecipes();
+    const menuRecipes = await getMenuRecipes(inventory, ingredients);
+    // console.log(menuRecipes);
+    await addMenuRecipes(menuRecipes);
     history.push('/menu');
   };
 
-  return <aside className="dashboard-container">
-    <NavLink to='/inventory'>
-      <button>
-        Update My Inventory
-      </button>
-    </NavLink>
-    <button onClick={handleMenuClick}>
-      View My Bar Menu
-    </button>
-  </aside>;
+  render() {
+
+    const { inventory, addMenuRecipes, clearMenuRecipes, history } = this.props
+
+    return <aside className="dashboard-container">
+      <NavLink to='/inventory'>
+        <button>
+          Update My Inventory
+        </button>
+      </NavLink>
+        <button onClick={this.handleMenuClick}>
+          View My Bar Menu
+        </button>
+    </aside>;
+
+  }
+
 };
 
 export const mapStateToProps = state => ({
-  inventory: state.inventory
+  inventory: state.inventory,
+  ingredients: state.ingredients
 });
 
 export const mapDispatchToProps = dispatch => ({

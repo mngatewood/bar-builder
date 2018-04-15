@@ -67,3 +67,17 @@ export const mockRecipeDetails = {
   strMeasure15: "",
   dateModified: "2016-02-03 15:26:58"
 }
+
+export const mockCategoryOptionsResponse = [
+  { strCategory: "Ordinary Drink" },
+  { strCategory: "Cocktail" },
+  { strCategory: "Milk / Float / Shake" },
+  { strCategory: "Other/Unknown" },
+  { strCategory: "Cocoa" },
+  { strCategory: "Shot" },
+  { strCategory: "Coffee / Tea" },
+  { strCategory: "Homemade Liqueur" },
+  { strCategory: "Punch / Party Drink" },
+  { strCategory: "Beer" },
+  { strCategory: "Soft Drink / Soda" }
+]
