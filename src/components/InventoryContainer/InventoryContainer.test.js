@@ -1,11 +1,11 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+import { InventoryContainer, mapStateToProps, mapDispatchToProps } from './InventoryContainer';
+
 describe("Inventory Container", () => {
 
-  beforeEach(() => {
-
-  });
-
   it.skip('matches the snapshot', () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<InventoryContainer />);
     expect(wrapper).toMatchSnapshot();
   });
 

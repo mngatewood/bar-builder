@@ -1,11 +1,11 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+import { MenuContainer } from './MenuContainer';
+
 describe("Welcome", () => {
 
-  beforeEach(() => {
-
-  });
-
   it.skip('matches the snapshot', () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<MenuContainer />);
     expect(wrapper).toMatchSnapshot();
   });
 
