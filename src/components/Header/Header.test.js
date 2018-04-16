@@ -1,4 +1,4 @@
-import Header, { mapStateToProps, mapDispatchToProps } from './Header';
+import { Header, mapStateToProps, mapDispatchToProps } from './Header';
 import React from 'react';
 import { shallow } from 'enzyme';
 import * as mock from '../../mockData/mockData';
@@ -7,7 +7,8 @@ import { updateRecipesArray } from '../../api/apiHelpers/updateRecipesArray';
 import { updateFilterCount } from '../../api/apiHelpers/updateFilterCount';
 import { sortRecipes } from '../../api/apiHelpers/sortRecipes';
 import { filterRecipes } from '../../api/apiHelpers/filterRecipes';
-import { addRecipes } from '../../actions/index'
+import { addRecipes } from '../../actions/index';
+jest.mock('../../api/apiCalls/getRecipes');
 jest.mock('../../api/apiHelpers/updateRecipesArray');
 jest.mock('../../api/apiHelpers/updateFilterCount');
 jest.mock('../../api/apiHelpers/sortRecipes');
@@ -15,8 +16,20 @@ jest.mock('../../api/apiHelpers/filterRecipes');
 
 describe('Header', () => {
 
+  let wrapper;
+
+  beforeEach(() => {
+
+    wrapper = shallow(<Header
+      recipes={mock.mockRecipeArray}
+      categories={mock.sortedCategoryOptions}
+      ingredients={mock.sortedIngredientOptions}
+      alcoholicOptions={mock.sortedAlcoholicOptions}
+    />);
+
+  })
+
   it('matches the snapshot', () => {
-    const wrapper = shallow(<Header />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -31,7 +44,6 @@ describe('Header', () => {
     expect(wrapper.state('alcoholicRecipes')).toEqual([]);
     expect(wrapper.state('unfilteredRecipes')).toEqual([]);
   });
-
 
   it('maps to the store', () => {
     const mockStore = {
@@ -56,34 +68,43 @@ describe('Header', () => {
 describe('handleSearchChange', () => {
 
   it('updates the state as the user types', () => {
-    const expected = {
-      search: 'margarita',
-    };
-    const event = {
+    const wrapper = shallow(<Header
+      categories={mock.sortedCategoryOptions}
+      ingredients={mock.sortedIngredientOptions}
+      alcoholicOptions={mock.sortedAlcoholicOptions}
+    />);
+    const expected = 'margarita';
+    let event = {
       target: {
         name: 'search',
         value: 'margarita'
       }
     };
     wrapper.instance().handleSearchChange(event);
-    expect(wrapper.state()).toEqual(expected);
+    expect(wrapper.state('search')).toEqual(expected);
   });
 
 });
 
 describe('handleSubmit', () => {
 
-  let wrapper;
-  let getRecipes;
-  let addRecipes;
+  let wrapper, event, getRecipes, addRecipes, history;
 
   beforeEach(() => {
 
-    wrapper = shallow(<Header />);
+    history={};
+    history.push=jest.fn();
+    event = { preventDefault: jest.fn() };
     getRecipes = jest.fn();
     addRecipes = jest.fn();
+    wrapper = shallow(<Header
+      categories={mock.sortedCategoryOptions}
+      ingredients={mock.sortedIngredientOptions}
+      alcoholicOptions={mock.sortedAlcoholicOptions}
+      history={history}
+      addRecipes={addRecipes}
+    />);
     wrapper.instance().handleSubmit(event);
-
   });
 
   it('calls getRecipes with expected params', () => {
@@ -91,7 +112,7 @@ describe('handleSubmit', () => {
   })
 
   it('clears the search field', () => {
-    expect(wrapper.state).toEqual({ state: '' })
+    expect(wrapper.state('search')).toEqual( '' )
   });
 
   it('calls addRecipes with expected params', () => {
@@ -100,22 +121,28 @@ describe('handleSubmit', () => {
 
 });
 
-describe('handleFilterChange', () => {
+describe.skip('handleFilterChange', () => {
 
-  let wrapper;
-  let updateRecipesArray;
-  let updateFilterCount;
-  let sortRecipes;
-  let filterRecipes;
+  let wrapper, history, updateRecipesArray, updateFilterCount, sortRecipes, filterRecipes, event, preventDefault, name, value;
 
   beforeEach(() => {
 
-    wrapper = shallow(<Header />);
+    history = {};
+    history.push = jest.fn();
+    // preventDefault = jest.fn();
     updateRecipesArray = jest.fn();
     updateFilterCount = jest.fn();
     sortRecipes = jest.fn();
     filterRecipes = jest.fn();
-    const event = {
+    wrapper = shallow(<Header
+      categories={mock.sortedCategoryOptions}
+      ingredients={mock.sortedIngredientOptions}
+      alcoholicOptions={mock.sortedAlcoholicOptions}
+      history={history}
+      addRecipes={addRecipes}
+      preventDefault={preventDefault}
+    />);
+    event = {
       target: {
         name: 'categoryFilter',
         value: 'Beer'
@@ -123,17 +150,20 @@ describe('handleFilterChange', () => {
     };
     wrapper.instance().handleSubmit(event);
 
-  })
+  });
 
   it('sets the state to the current filter value', () => {
+    const name = event.target.name;
+    const value = event.target.value;
+    wrapper.setState({ [name]: value });
     expect(wrapper.state('categoryFilter')).toEqual('Beer');
   });
 
-  it('sets the state to the currently filtered array of recipes', () => {
-    expect(wrapper.state('categoryRecipes')).toEqual(mock.mockUnsortedMenuRecipeArray);
+  it('sets the state to the currently filtered array of recipes', async () => {
+    await expect(wrapper.state('categoryRecipes')).toEqual(mock.mockUnsortedMenuRecipeArray);
   });
 
-  it('sets the state to the current number of selected filters', () => {
+  it('sets the state to the current number of selected filters', async () => {
     expect(wrapper.state('filterCount')).toEqual(1);
   });
 

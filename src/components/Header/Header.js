@@ -38,7 +38,7 @@ export class Header extends Component {
   }
 
   handleSubmit = async (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     this.props.history.push('/recipes');
     const value = this.state.search;
     const recipes = await getRecipes('search', 's', value);
@@ -48,7 +48,7 @@ export class Header extends Component {
   }
   
   handleFilterChange = async (event) => {
-    this.props.history.push('/recipes');
+    // this.props.history.push('/recipes');
     const { name, value } = event.target;
     this.setState({ [name]: value });
     const type = event.target.id;
@@ -115,7 +115,7 @@ export class Header extends Component {
         </select>
       </nav>
     </div>;
-  };
+  }
 }
   
 export const mapStateToProps = state => ({
@@ -126,7 +126,7 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  addRecipes: recipes => dispatch(addRecipes(recipes)),
+  addRecipes: recipes => dispatch(addRecipes(recipes))
 });
 
 Header.propTypes = {
