@@ -3,7 +3,7 @@ import * as mock from '../../../mockData/mockData';
 
 describe('updateFilterCount', () => {
 
-  it('returns the number of populated filter arrays', () => {
+  it.skip('returns the number of populated filter arrays', () => {
     let category = mock.mockSodaCategoryRecipes
     let ingredient = [];
     let alcoholic = [];
