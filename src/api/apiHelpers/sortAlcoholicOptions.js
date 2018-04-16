@@ -1,7 +1,7 @@
 export const sortAlcoholicOptions = (first, second) => {
-  if (first.strCategory < second.strCategory)
+  if (first.strAlcoholic < second.strAlcoholic)
     return -1;
-  if (first.strCategory > second.strCategory)
+  if (first.strAlcoholic > second.strAlcoholic)
     return 1;
   return 0;
 }

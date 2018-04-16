@@ -1,5 +1,5 @@
 import React from 'react';
-import { getAlcoholicOptions } from '../getAlcoholicOptions' 
+import { getAlcoholicOptions } from '../getAlcoholicOptions'; 
 import { shallow } from 'enzyme';
 
 describe("getAlcoholicOptions", () => {
