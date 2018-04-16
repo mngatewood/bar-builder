@@ -4,8 +4,6 @@ import * as mock from '../../../mockData/mockData';
 describe('updateRecipesArray', () => {
 
   let category;
-  let ingredient;
-  let alcoholic;
   
   beforeEach(() => {
 
@@ -36,4 +34,4 @@ describe('updateRecipesArray', () => {
       .rejects.toEqual(expected);
   });
 
-})
+});
