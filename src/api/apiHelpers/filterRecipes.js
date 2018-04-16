@@ -1,10 +1,10 @@
-export const filterRecipes = async (props) => {
+export const filterRecipes = (props) => {
   const { filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes, unfilteredRecipes } = props;
   let filteredRecipes;
 
   if (filterCount === 0) {
     filteredRecipes = [];
-  };
+  }
   
   if (filterCount === 1) {
     if (categoryRecipes.length > 0) { filteredRecipes = categoryRecipes; }

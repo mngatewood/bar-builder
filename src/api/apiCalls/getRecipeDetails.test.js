@@ -1,5 +1,5 @@
 import { getRecipeDetails } from '../apiCalls/getRecipeDetails';
-import * as mockData from '../../mockData/mockData';
+import * as mock from '../../mockData/mockData';
 
 describe("getRecipeDetails", () => {
 
@@ -11,29 +11,25 @@ describe("getRecipeDetails", () => {
     window.fetch = jest.fn().mockImplementation(() =>
       Promise.resolve({
         ok: true,
-        json: () => Promise.resolve(mockData.mockFetchResponse)
+        json: () => Promise.resolve(mock.mockRecipeDetails)
       })
     );
   });
 
-  it.skip("calls fetch with expected params", () => {
-    getRecipeDetails(mockData.mockRecipeArray);
+  it("calls fetch with expected params", () => {
+    getRecipeDetails(mock.mockRecipeArray);
     expect(window.fetch).toHaveBeenCalled();
   });
 
-  it.skip("returns recipe details when status is ok", async () => {
-    const expected = mockData.mockRecipeDetails;
-    await expect(getRecipeDetails(mockData.mockRecipeArray)).resolves.toEqual(expected);
+  it("returns an array of recipe details when status is ok", async () => {
+    const expected = mock.mockRecipeDetails.drinks;
+    await expect(getRecipeDetails(mock.mockRecipeArray)).resolves.toEqual(expected);
   });
 
   it("throws an error when status is not ok", () => {
-    window.fetch = jest.fn().mockImplementation(() =>
-      Promise.reject({
-        ok: false
-      })
-    );
-    const expected = Error("Error retrieving recipe details");
+    window.fetch = mock.mockFetchReject;
+    const expected = Error("Error retrieving recipe details: Something went wrong.");
 
-    expect(getRecipeDetails(mockData.mockRecipeArray)).rejects.toEqual(expected);
+    expect(getRecipeDetails(mock.mockRecipeArray)).rejects.toEqual(expected);
   });
 });

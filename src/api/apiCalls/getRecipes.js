@@ -13,7 +13,7 @@ export const getRecipes = async (queryType, filterType, filterValue) => {
     const recipeDetails = await getRecipeDetails(recipeSummary.drinks);
     return recipeDetails;
   } catch (error) {
-    throw Error("Error retrieving recipes");
+    throw Error("Error retrieving recipes: " + error.message);
   }
 };
 

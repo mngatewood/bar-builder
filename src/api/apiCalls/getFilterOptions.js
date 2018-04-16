@@ -7,7 +7,7 @@ export const getFilterOptions = async (filterType) => {
     const filterOptions = await response.json();
     return filterOptions.drinks;
   } catch (error) {
-    throw Error("Error retrieving options");
+    throw Error("Error retrieving options: " + error.message);
   }
 };
 

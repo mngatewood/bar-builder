@@ -12,9 +12,9 @@ import { updateFilterCount } from '../../api/apiHelpers/updateFilterCount';
 import { sortCategories } from '../../api/apiHelpers/sortCategories';
 import { sortIngredients } from '../../api/apiHelpers/sortIngredients';
 import { sortAlcoholicOptions } from '../../api/apiHelpers/sortAlcoholicOptions';
-import { getCategoryOptions } from '../../api/apiHelpers/getCategoryOptions';
-import { getIngredientOptions } from '../../api/apiHelpers/getIngredientOptions';
-import { getAlcoholicOptions } from '../../api/apiHelpers/getAlcoholicOptions';
+import { getCategoryOptions } from './helpers/getCategoryOptions';
+import { getIngredientOptions } from './helpers/getIngredientOptions';
+import { getAlcoholicOptions } from './helpers/getAlcoholicOptions';
 
 export class Header extends Component {
   constructor(props) {
