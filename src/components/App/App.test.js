@@ -12,7 +12,8 @@ describe('App', () => {
   });
 
   it.skip('calls getRecipes with the correct params on componentDidMount ', () => {
-    shallow(<App />);
+    const wrapper = shallow(<App />);
+    wrapper.instance().componentDidMount();
     expect(getRecipes).toHaveBeenCalled();
   });
 
@@ -20,6 +21,9 @@ describe('App', () => {
     const mockDispatch = jest.fn();
     const mapped = mapDispatchToProps(mockDispatch);
     mapped.addRecipes();
+    mapped.addCategories();
+    mapped.addIngredients();
+    mapped.addAlcoholicOptions();
     expect(mockDispatch).toHaveBeenCalled();
   });
 
