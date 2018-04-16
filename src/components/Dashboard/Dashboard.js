@@ -18,14 +18,13 @@ export class Dashboard extends Component {
     const { inventory, ingredients, clearMenuRecipes, addMenuRecipes, history } = this.props
     await clearMenuRecipes();
     const menuRecipes = await getMenuRecipes(inventory, ingredients);
-    // console.log(menuRecipes);
     await addMenuRecipes(menuRecipes);
     history.push('/menu');
   };
 
   render() {
 
-    const { inventory, addMenuRecipes, clearMenuRecipes, history } = this.props
+    // const { inventory, addMenuRecipes, clearMenuRecipes, history } = this.props
 
     return <aside className="dashboard-container">
       <NavLink to='/inventory'>
@@ -33,9 +32,9 @@ export class Dashboard extends Component {
           Update My Inventory
         </button>
       </NavLink>
-        <button onClick={this.handleMenuClick}>
+      <button onClick={this.handleMenuClick}>
           View My Bar Menu
-        </button>
+      </button>
     </aside>;
 
   }
