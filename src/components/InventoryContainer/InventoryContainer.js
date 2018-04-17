@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Ingredient from '../Ingredient/Ingredient';
 
-const InventoryContainer = ({ingredients, inventory}) => {
+export const InventoryContainer = ({ingredients, inventory}) => {
   
   const displayIngredient = ingredients.map(ingredient => {
     let inInventory = false;
