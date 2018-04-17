@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 export class Recipe extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       detailsHidden: !this.props.forceDetails
     };
