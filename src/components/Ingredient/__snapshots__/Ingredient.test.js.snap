@@ -4,7 +4,11 @@ exports[`Ingredient matches the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Ingredient />,
+  Symbol(enzyme.__unrendered__): <Ingredient
+    addIngredient={[Function]}
+    inInventory="false"
+    removeIngredient={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,7 +23,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <input
-          checked={undefined}
+          checked="false"
           onChange={[Function]}
           type="checkbox"
           value={undefined}
@@ -37,7 +41,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "checked": undefined,
+          "checked": "false",
           "onChange": [Function],
           "type": "checkbox",
           "value": undefined,
@@ -74,7 +78,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <input
-            checked={undefined}
+            checked="false"
             onChange={[Function]}
             type="checkbox"
             value={undefined}
@@ -92,7 +96,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "checked": undefined,
+            "checked": "false",
             "onChange": [Function],
             "type": "checkbox",
             "value": undefined,

@@ -1,26 +1,26 @@
 import Dashboard, { mapStateToProps, mapDispatchToProps } from './Dashboard';
-import { shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import React from 'react';
-import { addMenuRecipes, clearMenuRecipes } from '../../actions';
-import { getMenuRecipes } from '../../api/apiHelpers/getMenuRecipes';
 import * as mock from '../../mockData/mockData';
 
 describe("Dashboard", () => {
 
-  it.skip('matches the snapshot', () => {
+  it('matches the snapshot', () => {
     const wrapper = shallow(<Dashboard />);
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.skip('maps to the store', () => {
-    const mockStore = { inventory: mock.mockInventory };
-    const mapped = mapStateToProps(mock.mockStore);
-    expect(mapped).toEqual(mock.mockStore);
+  it('maps to the store', () => {
+    const mockStore = { 
+      inventory: mock.mockInventory,
+      ingredients: mock.sortedIngredientOptions };
+    const mapped = mapStateToProps(mockStore);
+    expect(mapped).toEqual(mockStore);
   });
 
-  it.skip('calls dispatch function when using mapDispatchToProps', () => {
+  it('calls dispatch function when using mapDispatchToProps', () => {
     const mockDispatch = jest.fn();
-    const mapped = mapDispatchToProps(mock.mockDispatch);
+    const mapped = mapDispatchToProps(mockDispatch);
     mapped.addMenuRecipes();
     mapped.clearMenuRecipes();
     expect(mockDispatch).toHaveBeenCalled();
@@ -30,33 +30,15 @@ describe("Dashboard", () => {
 
 describe("handleMenuClick", () => {
 
-  let wrapper;
-  let clearMenuRecipes;
-  let getMenuRecipes;
-  let addMenuRecipes;
+  it.skip('calls clearMenuRecipes, getMenuRecipes, addMenuRecipes with expected params', () => {
+    const wrapper = shallow(<Dashboard />);
+    const clearMenuRecipes = jest.fn();
+    const getMenuRecipes = jest.fn();
+    const addMenuRecipes = jest.fn();
 
-  beforeEach(() => {
-
-    wrapper = shallow(<Dashboard />);
-    clearMenuRecipes = jest.fn();
-    getMenuRecipes = jest.fn();
-    addMenuRecipes = jest.fn();
-
-  });
-
-  it.skip('calls clearMenuRecipes', () => {
-    console.log(wrapper)
     wrapper.instance().handleMenuClick();
     expect(clearMenuRecipes).toHaveBeenCalled;
-  });
-
-  it.skip('calls getMenuRecipes with expected parameters', () => {
-    wrapper.instance().handleMenuClick();
     expect(getMenuRecipes).toHaveBeenCalled;
-  });
-
-  it.skip('calls addMenuRecipes with expected parameters', () => {
-    wrapper.instance().handleMenuClick();
     expect(addMenuRecipes).toHaveBeenCalled;
   });
 

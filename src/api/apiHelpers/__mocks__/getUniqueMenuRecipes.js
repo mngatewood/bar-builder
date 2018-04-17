@@ -1,4 +1,4 @@
-import { mockRecipeArray } from '../../../ mockData / mockData';
+import { mockRecipeArray } from '../../../mockData/mockData';
 
 export const getFilterOptions = jest.fn().mockImplementation(() => {
   return Promise.resolve(mockRecipeArray);

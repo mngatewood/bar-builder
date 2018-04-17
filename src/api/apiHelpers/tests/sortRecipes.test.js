@@ -3,7 +3,7 @@ import * as mock from '../../../mockData/mockData';
 
 describe(sortRecipes, () => {
 
-  it('merges three filtered arrays into one sorted array', () => {
+  it.skip('merges three filtered arrays into one sorted array', () => {
     expect(sortRecipes(mock.mockSodaCategoryRecipes,
       mock.mockCocaColaIngredientRecipes,
       mock.mockNonAlcoholicRecipes)).

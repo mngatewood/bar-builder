@@ -1,0 +1,2493 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu Container matches the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    menu={
+        Array [
+            Object {
+              "idDrink": "12864",
+              "strDrink": "Apple Cider Punch #1",
+              "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg",
+            },
+            Object {
+              "idDrink": "15615",
+              "strDrink": "Chocolate Monkey",
+              "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg",
+            },
+            Object {
+              "idDrink": "12910",
+              "strDrink": "Egg Nog #4",
+              "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg",
+            },
+            Object {
+              "idDrink": "12916",
+              "strDrink": "Egg Nog - Healthy",
+              "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg",
+            },
+            Object {
+              "idDrink": "12914",
+              "strDrink": "Egg-Nog - Classic Cooked",
+              "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg",
+            },
+            Object {
+              "idDrink": "15997",
+              "strDrink": "GG",
+              "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg",
+            },
+            Object {
+              "idDrink": "12944",
+              "strDrink": "Gluehwein",
+              "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg",
+            },
+            Object {
+              "idDrink": "13042",
+              "strDrink": "Sunny Holiday Punch",
+              "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg",
+            },
+            Object {
+              "idDrink": "13056",
+              "strDrink": "Wine Cooler",
+              "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="page-title-wrapper"
+>
+          <div
+                    className="page-title"
+          >
+                    <h2>
+                              My Bar Menu
+                    </h2>
+          </div>
+</div>,
+        <div
+          className="recipe-container"
+>
+          <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Apple Cider Punch #1"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg"
+          />
+          <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Chocolate Monkey"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg"
+          />
+          <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Egg Nog #4"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg"
+          />
+          <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Egg Nog - Healthy"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg"
+          />
+          <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Egg-Nog - Classic Cooked"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg"
+          />
+          <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="GG"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
+          />
+          <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Gluehwein"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg"
+          />
+          <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Sunny Holiday Punch"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg"
+          />
+          <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Wine Cooler"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
+          />
+</div>,
+      ],
+      "className": "menu-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="page-title"
+>
+            <h2>
+                        My Bar Menu
+            </h2>
+</div>,
+          "className": "page-title-wrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h2>
+              My Bar Menu
+</h2>,
+            "className": "page-title",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "My Bar Menu",
+            },
+            "ref": null,
+            "rendered": "My Bar Menu",
+            "type": "h2",
+          },
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Recipe
+              alcoholic={undefined}
+              category={undefined}
+              forceDetails={false}
+              glass={undefined}
+              ingredient1={undefined}
+              ingredient10={undefined}
+              ingredient11={undefined}
+              ingredient12={undefined}
+              ingredient13={undefined}
+              ingredient14={undefined}
+              ingredient15={undefined}
+              ingredient2={undefined}
+              ingredient3={undefined}
+              ingredient4={undefined}
+              ingredient5={undefined}
+              ingredient6={undefined}
+              ingredient7={undefined}
+              ingredient8={undefined}
+              ingredient9={undefined}
+              instructions={undefined}
+              measure1={undefined}
+              measure10={undefined}
+              measure11={undefined}
+              measure12={undefined}
+              measure13={undefined}
+              measure14={undefined}
+              measure15={undefined}
+              measure2={undefined}
+              measure3={undefined}
+              measure4={undefined}
+              measure5={undefined}
+              measure6={undefined}
+              measure7={undefined}
+              measure8={undefined}
+              measure9={undefined}
+              name="Apple Cider Punch #1"
+              thumbnail="https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg"
+/>,
+            <Recipe
+              alcoholic={undefined}
+              category={undefined}
+              forceDetails={false}
+              glass={undefined}
+              ingredient1={undefined}
+              ingredient10={undefined}
+              ingredient11={undefined}
+              ingredient12={undefined}
+              ingredient13={undefined}
+              ingredient14={undefined}
+              ingredient15={undefined}
+              ingredient2={undefined}
+              ingredient3={undefined}
+              ingredient4={undefined}
+              ingredient5={undefined}
+              ingredient6={undefined}
+              ingredient7={undefined}
+              ingredient8={undefined}
+              ingredient9={undefined}
+              instructions={undefined}
+              measure1={undefined}
+              measure10={undefined}
+              measure11={undefined}
+              measure12={undefined}
+              measure13={undefined}
+              measure14={undefined}
+              measure15={undefined}
+              measure2={undefined}
+              measure3={undefined}
+              measure4={undefined}
+              measure5={undefined}
+              measure6={undefined}
+              measure7={undefined}
+              measure8={undefined}
+              measure9={undefined}
+              name="Chocolate Monkey"
+              thumbnail="https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg"
+/>,
+            <Recipe
+              alcoholic={undefined}
+              category={undefined}
+              forceDetails={false}
+              glass={undefined}
+              ingredient1={undefined}
+              ingredient10={undefined}
+              ingredient11={undefined}
+              ingredient12={undefined}
+              ingredient13={undefined}
+              ingredient14={undefined}
+              ingredient15={undefined}
+              ingredient2={undefined}
+              ingredient3={undefined}
+              ingredient4={undefined}
+              ingredient5={undefined}
+              ingredient6={undefined}
+              ingredient7={undefined}
+              ingredient8={undefined}
+              ingredient9={undefined}
+              instructions={undefined}
+              measure1={undefined}
+              measure10={undefined}
+              measure11={undefined}
+              measure12={undefined}
+              measure13={undefined}
+              measure14={undefined}
+              measure15={undefined}
+              measure2={undefined}
+              measure3={undefined}
+              measure4={undefined}
+              measure5={undefined}
+              measure6={undefined}
+              measure7={undefined}
+              measure8={undefined}
+              measure9={undefined}
+              name="Egg Nog #4"
+              thumbnail="https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg"
+/>,
+            <Recipe
+              alcoholic={undefined}
+              category={undefined}
+              forceDetails={false}
+              glass={undefined}
+              ingredient1={undefined}
+              ingredient10={undefined}
+              ingredient11={undefined}
+              ingredient12={undefined}
+              ingredient13={undefined}
+              ingredient14={undefined}
+              ingredient15={undefined}
+              ingredient2={undefined}
+              ingredient3={undefined}
+              ingredient4={undefined}
+              ingredient5={undefined}
+              ingredient6={undefined}
+              ingredient7={undefined}
+              ingredient8={undefined}
+              ingredient9={undefined}
+              instructions={undefined}
+              measure1={undefined}
+              measure10={undefined}
+              measure11={undefined}
+              measure12={undefined}
+              measure13={undefined}
+              measure14={undefined}
+              measure15={undefined}
+              measure2={undefined}
+              measure3={undefined}
+              measure4={undefined}
+              measure5={undefined}
+              measure6={undefined}
+              measure7={undefined}
+              measure8={undefined}
+              measure9={undefined}
+              name="Egg Nog - Healthy"
+              thumbnail="https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg"
+/>,
+            <Recipe
+              alcoholic={undefined}
+              category={undefined}
+              forceDetails={false}
+              glass={undefined}
+              ingredient1={undefined}
+              ingredient10={undefined}
+              ingredient11={undefined}
+              ingredient12={undefined}
+              ingredient13={undefined}
+              ingredient14={undefined}
+              ingredient15={undefined}
+              ingredient2={undefined}
+              ingredient3={undefined}
+              ingredient4={undefined}
+              ingredient5={undefined}
+              ingredient6={undefined}
+              ingredient7={undefined}
+              ingredient8={undefined}
+              ingredient9={undefined}
+              instructions={undefined}
+              measure1={undefined}
+              measure10={undefined}
+              measure11={undefined}
+              measure12={undefined}
+              measure13={undefined}
+              measure14={undefined}
+              measure15={undefined}
+              measure2={undefined}
+              measure3={undefined}
+              measure4={undefined}
+              measure5={undefined}
+              measure6={undefined}
+              measure7={undefined}
+              measure8={undefined}
+              measure9={undefined}
+              name="Egg-Nog - Classic Cooked"
+              thumbnail="https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg"
+/>,
+            <Recipe
+              alcoholic={undefined}
+              category={undefined}
+              forceDetails={false}
+              glass={undefined}
+              ingredient1={undefined}
+              ingredient10={undefined}
+              ingredient11={undefined}
+              ingredient12={undefined}
+              ingredient13={undefined}
+              ingredient14={undefined}
+              ingredient15={undefined}
+              ingredient2={undefined}
+              ingredient3={undefined}
+              ingredient4={undefined}
+              ingredient5={undefined}
+              ingredient6={undefined}
+              ingredient7={undefined}
+              ingredient8={undefined}
+              ingredient9={undefined}
+              instructions={undefined}
+              measure1={undefined}
+              measure10={undefined}
+              measure11={undefined}
+              measure12={undefined}
+              measure13={undefined}
+              measure14={undefined}
+              measure15={undefined}
+              measure2={undefined}
+              measure3={undefined}
+              measure4={undefined}
+              measure5={undefined}
+              measure6={undefined}
+              measure7={undefined}
+              measure8={undefined}
+              measure9={undefined}
+              name="GG"
+              thumbnail="https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
+/>,
+            <Recipe
+              alcoholic={undefined}
+              category={undefined}
+              forceDetails={false}
+              glass={undefined}
+              ingredient1={undefined}
+              ingredient10={undefined}
+              ingredient11={undefined}
+              ingredient12={undefined}
+              ingredient13={undefined}
+              ingredient14={undefined}
+              ingredient15={undefined}
+              ingredient2={undefined}
+              ingredient3={undefined}
+              ingredient4={undefined}
+              ingredient5={undefined}
+              ingredient6={undefined}
+              ingredient7={undefined}
+              ingredient8={undefined}
+              ingredient9={undefined}
+              instructions={undefined}
+              measure1={undefined}
+              measure10={undefined}
+              measure11={undefined}
+              measure12={undefined}
+              measure13={undefined}
+              measure14={undefined}
+              measure15={undefined}
+              measure2={undefined}
+              measure3={undefined}
+              measure4={undefined}
+              measure5={undefined}
+              measure6={undefined}
+              measure7={undefined}
+              measure8={undefined}
+              measure9={undefined}
+              name="Gluehwein"
+              thumbnail="https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg"
+/>,
+            <Recipe
+              alcoholic={undefined}
+              category={undefined}
+              forceDetails={false}
+              glass={undefined}
+              ingredient1={undefined}
+              ingredient10={undefined}
+              ingredient11={undefined}
+              ingredient12={undefined}
+              ingredient13={undefined}
+              ingredient14={undefined}
+              ingredient15={undefined}
+              ingredient2={undefined}
+              ingredient3={undefined}
+              ingredient4={undefined}
+              ingredient5={undefined}
+              ingredient6={undefined}
+              ingredient7={undefined}
+              ingredient8={undefined}
+              ingredient9={undefined}
+              instructions={undefined}
+              measure1={undefined}
+              measure10={undefined}
+              measure11={undefined}
+              measure12={undefined}
+              measure13={undefined}
+              measure14={undefined}
+              measure15={undefined}
+              measure2={undefined}
+              measure3={undefined}
+              measure4={undefined}
+              measure5={undefined}
+              measure6={undefined}
+              measure7={undefined}
+              measure8={undefined}
+              measure9={undefined}
+              name="Sunny Holiday Punch"
+              thumbnail="https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg"
+/>,
+            <Recipe
+              alcoholic={undefined}
+              category={undefined}
+              forceDetails={false}
+              glass={undefined}
+              ingredient1={undefined}
+              ingredient10={undefined}
+              ingredient11={undefined}
+              ingredient12={undefined}
+              ingredient13={undefined}
+              ingredient14={undefined}
+              ingredient15={undefined}
+              ingredient2={undefined}
+              ingredient3={undefined}
+              ingredient4={undefined}
+              ingredient5={undefined}
+              ingredient6={undefined}
+              ingredient7={undefined}
+              ingredient8={undefined}
+              ingredient9={undefined}
+              instructions={undefined}
+              measure1={undefined}
+              measure10={undefined}
+              measure11={undefined}
+              measure12={undefined}
+              measure13={undefined}
+              measure14={undefined}
+              measure15={undefined}
+              measure2={undefined}
+              measure3={undefined}
+              measure4={undefined}
+              measure5={undefined}
+              measure6={undefined}
+              measure7={undefined}
+              measure8={undefined}
+              measure9={undefined}
+              name="Wine Cooler"
+              thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
+/>,
+          ],
+          "className": "recipe-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "12864",
+            "nodeType": "class",
+            "props": Object {
+              "alcoholic": undefined,
+              "category": undefined,
+              "forceDetails": false,
+              "glass": undefined,
+              "ingredient1": undefined,
+              "ingredient10": undefined,
+              "ingredient11": undefined,
+              "ingredient12": undefined,
+              "ingredient13": undefined,
+              "ingredient14": undefined,
+              "ingredient15": undefined,
+              "ingredient2": undefined,
+              "ingredient3": undefined,
+              "ingredient4": undefined,
+              "ingredient5": undefined,
+              "ingredient6": undefined,
+              "ingredient7": undefined,
+              "ingredient8": undefined,
+              "ingredient9": undefined,
+              "instructions": undefined,
+              "measure1": undefined,
+              "measure10": undefined,
+              "measure11": undefined,
+              "measure12": undefined,
+              "measure13": undefined,
+              "measure14": undefined,
+              "measure15": undefined,
+              "measure2": undefined,
+              "measure3": undefined,
+              "measure4": undefined,
+              "measure5": undefined,
+              "measure6": undefined,
+              "measure7": undefined,
+              "measure8": undefined,
+              "measure9": undefined,
+              "name": "Apple Cider Punch #1",
+              "thumbnail": "https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "15615",
+            "nodeType": "class",
+            "props": Object {
+              "alcoholic": undefined,
+              "category": undefined,
+              "forceDetails": false,
+              "glass": undefined,
+              "ingredient1": undefined,
+              "ingredient10": undefined,
+              "ingredient11": undefined,
+              "ingredient12": undefined,
+              "ingredient13": undefined,
+              "ingredient14": undefined,
+              "ingredient15": undefined,
+              "ingredient2": undefined,
+              "ingredient3": undefined,
+              "ingredient4": undefined,
+              "ingredient5": undefined,
+              "ingredient6": undefined,
+              "ingredient7": undefined,
+              "ingredient8": undefined,
+              "ingredient9": undefined,
+              "instructions": undefined,
+              "measure1": undefined,
+              "measure10": undefined,
+              "measure11": undefined,
+              "measure12": undefined,
+              "measure13": undefined,
+              "measure14": undefined,
+              "measure15": undefined,
+              "measure2": undefined,
+              "measure3": undefined,
+              "measure4": undefined,
+              "measure5": undefined,
+              "measure6": undefined,
+              "measure7": undefined,
+              "measure8": undefined,
+              "measure9": undefined,
+              "name": "Chocolate Monkey",
+              "thumbnail": "https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "12910",
+            "nodeType": "class",
+            "props": Object {
+              "alcoholic": undefined,
+              "category": undefined,
+              "forceDetails": false,
+              "glass": undefined,
+              "ingredient1": undefined,
+              "ingredient10": undefined,
+              "ingredient11": undefined,
+              "ingredient12": undefined,
+              "ingredient13": undefined,
+              "ingredient14": undefined,
+              "ingredient15": undefined,
+              "ingredient2": undefined,
+              "ingredient3": undefined,
+              "ingredient4": undefined,
+              "ingredient5": undefined,
+              "ingredient6": undefined,
+              "ingredient7": undefined,
+              "ingredient8": undefined,
+              "ingredient9": undefined,
+              "instructions": undefined,
+              "measure1": undefined,
+              "measure10": undefined,
+              "measure11": undefined,
+              "measure12": undefined,
+              "measure13": undefined,
+              "measure14": undefined,
+              "measure15": undefined,
+              "measure2": undefined,
+              "measure3": undefined,
+              "measure4": undefined,
+              "measure5": undefined,
+              "measure6": undefined,
+              "measure7": undefined,
+              "measure8": undefined,
+              "measure9": undefined,
+              "name": "Egg Nog #4",
+              "thumbnail": "https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "12916",
+            "nodeType": "class",
+            "props": Object {
+              "alcoholic": undefined,
+              "category": undefined,
+              "forceDetails": false,
+              "glass": undefined,
+              "ingredient1": undefined,
+              "ingredient10": undefined,
+              "ingredient11": undefined,
+              "ingredient12": undefined,
+              "ingredient13": undefined,
+              "ingredient14": undefined,
+              "ingredient15": undefined,
+              "ingredient2": undefined,
+              "ingredient3": undefined,
+              "ingredient4": undefined,
+              "ingredient5": undefined,
+              "ingredient6": undefined,
+              "ingredient7": undefined,
+              "ingredient8": undefined,
+              "ingredient9": undefined,
+              "instructions": undefined,
+              "measure1": undefined,
+              "measure10": undefined,
+              "measure11": undefined,
+              "measure12": undefined,
+              "measure13": undefined,
+              "measure14": undefined,
+              "measure15": undefined,
+              "measure2": undefined,
+              "measure3": undefined,
+              "measure4": undefined,
+              "measure5": undefined,
+              "measure6": undefined,
+              "measure7": undefined,
+              "measure8": undefined,
+              "measure9": undefined,
+              "name": "Egg Nog - Healthy",
+              "thumbnail": "https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "12914",
+            "nodeType": "class",
+            "props": Object {
+              "alcoholic": undefined,
+              "category": undefined,
+              "forceDetails": false,
+              "glass": undefined,
+              "ingredient1": undefined,
+              "ingredient10": undefined,
+              "ingredient11": undefined,
+              "ingredient12": undefined,
+              "ingredient13": undefined,
+              "ingredient14": undefined,
+              "ingredient15": undefined,
+              "ingredient2": undefined,
+              "ingredient3": undefined,
+              "ingredient4": undefined,
+              "ingredient5": undefined,
+              "ingredient6": undefined,
+              "ingredient7": undefined,
+              "ingredient8": undefined,
+              "ingredient9": undefined,
+              "instructions": undefined,
+              "measure1": undefined,
+              "measure10": undefined,
+              "measure11": undefined,
+              "measure12": undefined,
+              "measure13": undefined,
+              "measure14": undefined,
+              "measure15": undefined,
+              "measure2": undefined,
+              "measure3": undefined,
+              "measure4": undefined,
+              "measure5": undefined,
+              "measure6": undefined,
+              "measure7": undefined,
+              "measure8": undefined,
+              "measure9": undefined,
+              "name": "Egg-Nog - Classic Cooked",
+              "thumbnail": "https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "15997",
+            "nodeType": "class",
+            "props": Object {
+              "alcoholic": undefined,
+              "category": undefined,
+              "forceDetails": false,
+              "glass": undefined,
+              "ingredient1": undefined,
+              "ingredient10": undefined,
+              "ingredient11": undefined,
+              "ingredient12": undefined,
+              "ingredient13": undefined,
+              "ingredient14": undefined,
+              "ingredient15": undefined,
+              "ingredient2": undefined,
+              "ingredient3": undefined,
+              "ingredient4": undefined,
+              "ingredient5": undefined,
+              "ingredient6": undefined,
+              "ingredient7": undefined,
+              "ingredient8": undefined,
+              "ingredient9": undefined,
+              "instructions": undefined,
+              "measure1": undefined,
+              "measure10": undefined,
+              "measure11": undefined,
+              "measure12": undefined,
+              "measure13": undefined,
+              "measure14": undefined,
+              "measure15": undefined,
+              "measure2": undefined,
+              "measure3": undefined,
+              "measure4": undefined,
+              "measure5": undefined,
+              "measure6": undefined,
+              "measure7": undefined,
+              "measure8": undefined,
+              "measure9": undefined,
+              "name": "GG",
+              "thumbnail": "https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "12944",
+            "nodeType": "class",
+            "props": Object {
+              "alcoholic": undefined,
+              "category": undefined,
+              "forceDetails": false,
+              "glass": undefined,
+              "ingredient1": undefined,
+              "ingredient10": undefined,
+              "ingredient11": undefined,
+              "ingredient12": undefined,
+              "ingredient13": undefined,
+              "ingredient14": undefined,
+              "ingredient15": undefined,
+              "ingredient2": undefined,
+              "ingredient3": undefined,
+              "ingredient4": undefined,
+              "ingredient5": undefined,
+              "ingredient6": undefined,
+              "ingredient7": undefined,
+              "ingredient8": undefined,
+              "ingredient9": undefined,
+              "instructions": undefined,
+              "measure1": undefined,
+              "measure10": undefined,
+              "measure11": undefined,
+              "measure12": undefined,
+              "measure13": undefined,
+              "measure14": undefined,
+              "measure15": undefined,
+              "measure2": undefined,
+              "measure3": undefined,
+              "measure4": undefined,
+              "measure5": undefined,
+              "measure6": undefined,
+              "measure7": undefined,
+              "measure8": undefined,
+              "measure9": undefined,
+              "name": "Gluehwein",
+              "thumbnail": "https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "13042",
+            "nodeType": "class",
+            "props": Object {
+              "alcoholic": undefined,
+              "category": undefined,
+              "forceDetails": false,
+              "glass": undefined,
+              "ingredient1": undefined,
+              "ingredient10": undefined,
+              "ingredient11": undefined,
+              "ingredient12": undefined,
+              "ingredient13": undefined,
+              "ingredient14": undefined,
+              "ingredient15": undefined,
+              "ingredient2": undefined,
+              "ingredient3": undefined,
+              "ingredient4": undefined,
+              "ingredient5": undefined,
+              "ingredient6": undefined,
+              "ingredient7": undefined,
+              "ingredient8": undefined,
+              "ingredient9": undefined,
+              "instructions": undefined,
+              "measure1": undefined,
+              "measure10": undefined,
+              "measure11": undefined,
+              "measure12": undefined,
+              "measure13": undefined,
+              "measure14": undefined,
+              "measure15": undefined,
+              "measure2": undefined,
+              "measure3": undefined,
+              "measure4": undefined,
+              "measure5": undefined,
+              "measure6": undefined,
+              "measure7": undefined,
+              "measure8": undefined,
+              "measure9": undefined,
+              "name": "Sunny Holiday Punch",
+              "thumbnail": "https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "13056",
+            "nodeType": "class",
+            "props": Object {
+              "alcoholic": undefined,
+              "category": undefined,
+              "forceDetails": false,
+              "glass": undefined,
+              "ingredient1": undefined,
+              "ingredient10": undefined,
+              "ingredient11": undefined,
+              "ingredient12": undefined,
+              "ingredient13": undefined,
+              "ingredient14": undefined,
+              "ingredient15": undefined,
+              "ingredient2": undefined,
+              "ingredient3": undefined,
+              "ingredient4": undefined,
+              "ingredient5": undefined,
+              "ingredient6": undefined,
+              "ingredient7": undefined,
+              "ingredient8": undefined,
+              "ingredient9": undefined,
+              "instructions": undefined,
+              "measure1": undefined,
+              "measure10": undefined,
+              "measure11": undefined,
+              "measure12": undefined,
+              "measure13": undefined,
+              "measure14": undefined,
+              "measure15": undefined,
+              "measure2": undefined,
+              "measure3": undefined,
+              "measure4": undefined,
+              "measure5": undefined,
+              "measure6": undefined,
+              "measure7": undefined,
+              "measure8": undefined,
+              "measure9": undefined,
+              "name": "Wine Cooler",
+              "thumbnail": "https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="page-title-wrapper"
+>
+            <div
+                        className="page-title"
+            >
+                        <h2>
+                                    My Bar Menu
+                        </h2>
+            </div>
+</div>,
+          <div
+            className="recipe-container"
+>
+            <Recipe
+                        alcoholic={undefined}
+                        category={undefined}
+                        forceDetails={false}
+                        glass={undefined}
+                        ingredient1={undefined}
+                        ingredient10={undefined}
+                        ingredient11={undefined}
+                        ingredient12={undefined}
+                        ingredient13={undefined}
+                        ingredient14={undefined}
+                        ingredient15={undefined}
+                        ingredient2={undefined}
+                        ingredient3={undefined}
+                        ingredient4={undefined}
+                        ingredient5={undefined}
+                        ingredient6={undefined}
+                        ingredient7={undefined}
+                        ingredient8={undefined}
+                        ingredient9={undefined}
+                        instructions={undefined}
+                        measure1={undefined}
+                        measure10={undefined}
+                        measure11={undefined}
+                        measure12={undefined}
+                        measure13={undefined}
+                        measure14={undefined}
+                        measure15={undefined}
+                        measure2={undefined}
+                        measure3={undefined}
+                        measure4={undefined}
+                        measure5={undefined}
+                        measure6={undefined}
+                        measure7={undefined}
+                        measure8={undefined}
+                        measure9={undefined}
+                        name="Apple Cider Punch #1"
+                        thumbnail="https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg"
+            />
+            <Recipe
+                        alcoholic={undefined}
+                        category={undefined}
+                        forceDetails={false}
+                        glass={undefined}
+                        ingredient1={undefined}
+                        ingredient10={undefined}
+                        ingredient11={undefined}
+                        ingredient12={undefined}
+                        ingredient13={undefined}
+                        ingredient14={undefined}
+                        ingredient15={undefined}
+                        ingredient2={undefined}
+                        ingredient3={undefined}
+                        ingredient4={undefined}
+                        ingredient5={undefined}
+                        ingredient6={undefined}
+                        ingredient7={undefined}
+                        ingredient8={undefined}
+                        ingredient9={undefined}
+                        instructions={undefined}
+                        measure1={undefined}
+                        measure10={undefined}
+                        measure11={undefined}
+                        measure12={undefined}
+                        measure13={undefined}
+                        measure14={undefined}
+                        measure15={undefined}
+                        measure2={undefined}
+                        measure3={undefined}
+                        measure4={undefined}
+                        measure5={undefined}
+                        measure6={undefined}
+                        measure7={undefined}
+                        measure8={undefined}
+                        measure9={undefined}
+                        name="Chocolate Monkey"
+                        thumbnail="https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg"
+            />
+            <Recipe
+                        alcoholic={undefined}
+                        category={undefined}
+                        forceDetails={false}
+                        glass={undefined}
+                        ingredient1={undefined}
+                        ingredient10={undefined}
+                        ingredient11={undefined}
+                        ingredient12={undefined}
+                        ingredient13={undefined}
+                        ingredient14={undefined}
+                        ingredient15={undefined}
+                        ingredient2={undefined}
+                        ingredient3={undefined}
+                        ingredient4={undefined}
+                        ingredient5={undefined}
+                        ingredient6={undefined}
+                        ingredient7={undefined}
+                        ingredient8={undefined}
+                        ingredient9={undefined}
+                        instructions={undefined}
+                        measure1={undefined}
+                        measure10={undefined}
+                        measure11={undefined}
+                        measure12={undefined}
+                        measure13={undefined}
+                        measure14={undefined}
+                        measure15={undefined}
+                        measure2={undefined}
+                        measure3={undefined}
+                        measure4={undefined}
+                        measure5={undefined}
+                        measure6={undefined}
+                        measure7={undefined}
+                        measure8={undefined}
+                        measure9={undefined}
+                        name="Egg Nog #4"
+                        thumbnail="https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg"
+            />
+            <Recipe
+                        alcoholic={undefined}
+                        category={undefined}
+                        forceDetails={false}
+                        glass={undefined}
+                        ingredient1={undefined}
+                        ingredient10={undefined}
+                        ingredient11={undefined}
+                        ingredient12={undefined}
+                        ingredient13={undefined}
+                        ingredient14={undefined}
+                        ingredient15={undefined}
+                        ingredient2={undefined}
+                        ingredient3={undefined}
+                        ingredient4={undefined}
+                        ingredient5={undefined}
+                        ingredient6={undefined}
+                        ingredient7={undefined}
+                        ingredient8={undefined}
+                        ingredient9={undefined}
+                        instructions={undefined}
+                        measure1={undefined}
+                        measure10={undefined}
+                        measure11={undefined}
+                        measure12={undefined}
+                        measure13={undefined}
+                        measure14={undefined}
+                        measure15={undefined}
+                        measure2={undefined}
+                        measure3={undefined}
+                        measure4={undefined}
+                        measure5={undefined}
+                        measure6={undefined}
+                        measure7={undefined}
+                        measure8={undefined}
+                        measure9={undefined}
+                        name="Egg Nog - Healthy"
+                        thumbnail="https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg"
+            />
+            <Recipe
+                        alcoholic={undefined}
+                        category={undefined}
+                        forceDetails={false}
+                        glass={undefined}
+                        ingredient1={undefined}
+                        ingredient10={undefined}
+                        ingredient11={undefined}
+                        ingredient12={undefined}
+                        ingredient13={undefined}
+                        ingredient14={undefined}
+                        ingredient15={undefined}
+                        ingredient2={undefined}
+                        ingredient3={undefined}
+                        ingredient4={undefined}
+                        ingredient5={undefined}
+                        ingredient6={undefined}
+                        ingredient7={undefined}
+                        ingredient8={undefined}
+                        ingredient9={undefined}
+                        instructions={undefined}
+                        measure1={undefined}
+                        measure10={undefined}
+                        measure11={undefined}
+                        measure12={undefined}
+                        measure13={undefined}
+                        measure14={undefined}
+                        measure15={undefined}
+                        measure2={undefined}
+                        measure3={undefined}
+                        measure4={undefined}
+                        measure5={undefined}
+                        measure6={undefined}
+                        measure7={undefined}
+                        measure8={undefined}
+                        measure9={undefined}
+                        name="Egg-Nog - Classic Cooked"
+                        thumbnail="https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg"
+            />
+            <Recipe
+                        alcoholic={undefined}
+                        category={undefined}
+                        forceDetails={false}
+                        glass={undefined}
+                        ingredient1={undefined}
+                        ingredient10={undefined}
+                        ingredient11={undefined}
+                        ingredient12={undefined}
+                        ingredient13={undefined}
+                        ingredient14={undefined}
+                        ingredient15={undefined}
+                        ingredient2={undefined}
+                        ingredient3={undefined}
+                        ingredient4={undefined}
+                        ingredient5={undefined}
+                        ingredient6={undefined}
+                        ingredient7={undefined}
+                        ingredient8={undefined}
+                        ingredient9={undefined}
+                        instructions={undefined}
+                        measure1={undefined}
+                        measure10={undefined}
+                        measure11={undefined}
+                        measure12={undefined}
+                        measure13={undefined}
+                        measure14={undefined}
+                        measure15={undefined}
+                        measure2={undefined}
+                        measure3={undefined}
+                        measure4={undefined}
+                        measure5={undefined}
+                        measure6={undefined}
+                        measure7={undefined}
+                        measure8={undefined}
+                        measure9={undefined}
+                        name="GG"
+                        thumbnail="https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
+            />
+            <Recipe
+                        alcoholic={undefined}
+                        category={undefined}
+                        forceDetails={false}
+                        glass={undefined}
+                        ingredient1={undefined}
+                        ingredient10={undefined}
+                        ingredient11={undefined}
+                        ingredient12={undefined}
+                        ingredient13={undefined}
+                        ingredient14={undefined}
+                        ingredient15={undefined}
+                        ingredient2={undefined}
+                        ingredient3={undefined}
+                        ingredient4={undefined}
+                        ingredient5={undefined}
+                        ingredient6={undefined}
+                        ingredient7={undefined}
+                        ingredient8={undefined}
+                        ingredient9={undefined}
+                        instructions={undefined}
+                        measure1={undefined}
+                        measure10={undefined}
+                        measure11={undefined}
+                        measure12={undefined}
+                        measure13={undefined}
+                        measure14={undefined}
+                        measure15={undefined}
+                        measure2={undefined}
+                        measure3={undefined}
+                        measure4={undefined}
+                        measure5={undefined}
+                        measure6={undefined}
+                        measure7={undefined}
+                        measure8={undefined}
+                        measure9={undefined}
+                        name="Gluehwein"
+                        thumbnail="https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg"
+            />
+            <Recipe
+                        alcoholic={undefined}
+                        category={undefined}
+                        forceDetails={false}
+                        glass={undefined}
+                        ingredient1={undefined}
+                        ingredient10={undefined}
+                        ingredient11={undefined}
+                        ingredient12={undefined}
+                        ingredient13={undefined}
+                        ingredient14={undefined}
+                        ingredient15={undefined}
+                        ingredient2={undefined}
+                        ingredient3={undefined}
+                        ingredient4={undefined}
+                        ingredient5={undefined}
+                        ingredient6={undefined}
+                        ingredient7={undefined}
+                        ingredient8={undefined}
+                        ingredient9={undefined}
+                        instructions={undefined}
+                        measure1={undefined}
+                        measure10={undefined}
+                        measure11={undefined}
+                        measure12={undefined}
+                        measure13={undefined}
+                        measure14={undefined}
+                        measure15={undefined}
+                        measure2={undefined}
+                        measure3={undefined}
+                        measure4={undefined}
+                        measure5={undefined}
+                        measure6={undefined}
+                        measure7={undefined}
+                        measure8={undefined}
+                        measure9={undefined}
+                        name="Sunny Holiday Punch"
+                        thumbnail="https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg"
+            />
+            <Recipe
+                        alcoholic={undefined}
+                        category={undefined}
+                        forceDetails={false}
+                        glass={undefined}
+                        ingredient1={undefined}
+                        ingredient10={undefined}
+                        ingredient11={undefined}
+                        ingredient12={undefined}
+                        ingredient13={undefined}
+                        ingredient14={undefined}
+                        ingredient15={undefined}
+                        ingredient2={undefined}
+                        ingredient3={undefined}
+                        ingredient4={undefined}
+                        ingredient5={undefined}
+                        ingredient6={undefined}
+                        ingredient7={undefined}
+                        ingredient8={undefined}
+                        ingredient9={undefined}
+                        instructions={undefined}
+                        measure1={undefined}
+                        measure10={undefined}
+                        measure11={undefined}
+                        measure12={undefined}
+                        measure13={undefined}
+                        measure14={undefined}
+                        measure15={undefined}
+                        measure2={undefined}
+                        measure3={undefined}
+                        measure4={undefined}
+                        measure5={undefined}
+                        measure6={undefined}
+                        measure7={undefined}
+                        measure8={undefined}
+                        measure9={undefined}
+                        name="Wine Cooler"
+                        thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
+            />
+</div>,
+        ],
+        "className": "menu-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="page-title"
+>
+              <h2>
+                            My Bar Menu
+              </h2>
+</div>,
+            "className": "page-title-wrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h2>
+                My Bar Menu
+</h2>,
+              "className": "page-title",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "My Bar Menu",
+              },
+              "ref": null,
+              "rendered": "My Bar Menu",
+              "type": "h2",
+            },
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Recipe
+                alcoholic={undefined}
+                category={undefined}
+                forceDetails={false}
+                glass={undefined}
+                ingredient1={undefined}
+                ingredient10={undefined}
+                ingredient11={undefined}
+                ingredient12={undefined}
+                ingredient13={undefined}
+                ingredient14={undefined}
+                ingredient15={undefined}
+                ingredient2={undefined}
+                ingredient3={undefined}
+                ingredient4={undefined}
+                ingredient5={undefined}
+                ingredient6={undefined}
+                ingredient7={undefined}
+                ingredient8={undefined}
+                ingredient9={undefined}
+                instructions={undefined}
+                measure1={undefined}
+                measure10={undefined}
+                measure11={undefined}
+                measure12={undefined}
+                measure13={undefined}
+                measure14={undefined}
+                measure15={undefined}
+                measure2={undefined}
+                measure3={undefined}
+                measure4={undefined}
+                measure5={undefined}
+                measure6={undefined}
+                measure7={undefined}
+                measure8={undefined}
+                measure9={undefined}
+                name="Apple Cider Punch #1"
+                thumbnail="https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg"
+/>,
+              <Recipe
+                alcoholic={undefined}
+                category={undefined}
+                forceDetails={false}
+                glass={undefined}
+                ingredient1={undefined}
+                ingredient10={undefined}
+                ingredient11={undefined}
+                ingredient12={undefined}
+                ingredient13={undefined}
+                ingredient14={undefined}
+                ingredient15={undefined}
+                ingredient2={undefined}
+                ingredient3={undefined}
+                ingredient4={undefined}
+                ingredient5={undefined}
+                ingredient6={undefined}
+                ingredient7={undefined}
+                ingredient8={undefined}
+                ingredient9={undefined}
+                instructions={undefined}
+                measure1={undefined}
+                measure10={undefined}
+                measure11={undefined}
+                measure12={undefined}
+                measure13={undefined}
+                measure14={undefined}
+                measure15={undefined}
+                measure2={undefined}
+                measure3={undefined}
+                measure4={undefined}
+                measure5={undefined}
+                measure6={undefined}
+                measure7={undefined}
+                measure8={undefined}
+                measure9={undefined}
+                name="Chocolate Monkey"
+                thumbnail="https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg"
+/>,
+              <Recipe
+                alcoholic={undefined}
+                category={undefined}
+                forceDetails={false}
+                glass={undefined}
+                ingredient1={undefined}
+                ingredient10={undefined}
+                ingredient11={undefined}
+                ingredient12={undefined}
+                ingredient13={undefined}
+                ingredient14={undefined}
+                ingredient15={undefined}
+                ingredient2={undefined}
+                ingredient3={undefined}
+                ingredient4={undefined}
+                ingredient5={undefined}
+                ingredient6={undefined}
+                ingredient7={undefined}
+                ingredient8={undefined}
+                ingredient9={undefined}
+                instructions={undefined}
+                measure1={undefined}
+                measure10={undefined}
+                measure11={undefined}
+                measure12={undefined}
+                measure13={undefined}
+                measure14={undefined}
+                measure15={undefined}
+                measure2={undefined}
+                measure3={undefined}
+                measure4={undefined}
+                measure5={undefined}
+                measure6={undefined}
+                measure7={undefined}
+                measure8={undefined}
+                measure9={undefined}
+                name="Egg Nog #4"
+                thumbnail="https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg"
+/>,
+              <Recipe
+                alcoholic={undefined}
+                category={undefined}
+                forceDetails={false}
+                glass={undefined}
+                ingredient1={undefined}
+                ingredient10={undefined}
+                ingredient11={undefined}
+                ingredient12={undefined}
+                ingredient13={undefined}
+                ingredient14={undefined}
+                ingredient15={undefined}
+                ingredient2={undefined}
+                ingredient3={undefined}
+                ingredient4={undefined}
+                ingredient5={undefined}
+                ingredient6={undefined}
+                ingredient7={undefined}
+                ingredient8={undefined}
+                ingredient9={undefined}
+                instructions={undefined}
+                measure1={undefined}
+                measure10={undefined}
+                measure11={undefined}
+                measure12={undefined}
+                measure13={undefined}
+                measure14={undefined}
+                measure15={undefined}
+                measure2={undefined}
+                measure3={undefined}
+                measure4={undefined}
+                measure5={undefined}
+                measure6={undefined}
+                measure7={undefined}
+                measure8={undefined}
+                measure9={undefined}
+                name="Egg Nog - Healthy"
+                thumbnail="https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg"
+/>,
+              <Recipe
+                alcoholic={undefined}
+                category={undefined}
+                forceDetails={false}
+                glass={undefined}
+                ingredient1={undefined}
+                ingredient10={undefined}
+                ingredient11={undefined}
+                ingredient12={undefined}
+                ingredient13={undefined}
+                ingredient14={undefined}
+                ingredient15={undefined}
+                ingredient2={undefined}
+                ingredient3={undefined}
+                ingredient4={undefined}
+                ingredient5={undefined}
+                ingredient6={undefined}
+                ingredient7={undefined}
+                ingredient8={undefined}
+                ingredient9={undefined}
+                instructions={undefined}
+                measure1={undefined}
+                measure10={undefined}
+                measure11={undefined}
+                measure12={undefined}
+                measure13={undefined}
+                measure14={undefined}
+                measure15={undefined}
+                measure2={undefined}
+                measure3={undefined}
+                measure4={undefined}
+                measure5={undefined}
+                measure6={undefined}
+                measure7={undefined}
+                measure8={undefined}
+                measure9={undefined}
+                name="Egg-Nog - Classic Cooked"
+                thumbnail="https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg"
+/>,
+              <Recipe
+                alcoholic={undefined}
+                category={undefined}
+                forceDetails={false}
+                glass={undefined}
+                ingredient1={undefined}
+                ingredient10={undefined}
+                ingredient11={undefined}
+                ingredient12={undefined}
+                ingredient13={undefined}
+                ingredient14={undefined}
+                ingredient15={undefined}
+                ingredient2={undefined}
+                ingredient3={undefined}
+                ingredient4={undefined}
+                ingredient5={undefined}
+                ingredient6={undefined}
+                ingredient7={undefined}
+                ingredient8={undefined}
+                ingredient9={undefined}
+                instructions={undefined}
+                measure1={undefined}
+                measure10={undefined}
+                measure11={undefined}
+                measure12={undefined}
+                measure13={undefined}
+                measure14={undefined}
+                measure15={undefined}
+                measure2={undefined}
+                measure3={undefined}
+                measure4={undefined}
+                measure5={undefined}
+                measure6={undefined}
+                measure7={undefined}
+                measure8={undefined}
+                measure9={undefined}
+                name="GG"
+                thumbnail="https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
+/>,
+              <Recipe
+                alcoholic={undefined}
+                category={undefined}
+                forceDetails={false}
+                glass={undefined}
+                ingredient1={undefined}
+                ingredient10={undefined}
+                ingredient11={undefined}
+                ingredient12={undefined}
+                ingredient13={undefined}
+                ingredient14={undefined}
+                ingredient15={undefined}
+                ingredient2={undefined}
+                ingredient3={undefined}
+                ingredient4={undefined}
+                ingredient5={undefined}
+                ingredient6={undefined}
+                ingredient7={undefined}
+                ingredient8={undefined}
+                ingredient9={undefined}
+                instructions={undefined}
+                measure1={undefined}
+                measure10={undefined}
+                measure11={undefined}
+                measure12={undefined}
+                measure13={undefined}
+                measure14={undefined}
+                measure15={undefined}
+                measure2={undefined}
+                measure3={undefined}
+                measure4={undefined}
+                measure5={undefined}
+                measure6={undefined}
+                measure7={undefined}
+                measure8={undefined}
+                measure9={undefined}
+                name="Gluehwein"
+                thumbnail="https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg"
+/>,
+              <Recipe
+                alcoholic={undefined}
+                category={undefined}
+                forceDetails={false}
+                glass={undefined}
+                ingredient1={undefined}
+                ingredient10={undefined}
+                ingredient11={undefined}
+                ingredient12={undefined}
+                ingredient13={undefined}
+                ingredient14={undefined}
+                ingredient15={undefined}
+                ingredient2={undefined}
+                ingredient3={undefined}
+                ingredient4={undefined}
+                ingredient5={undefined}
+                ingredient6={undefined}
+                ingredient7={undefined}
+                ingredient8={undefined}
+                ingredient9={undefined}
+                instructions={undefined}
+                measure1={undefined}
+                measure10={undefined}
+                measure11={undefined}
+                measure12={undefined}
+                measure13={undefined}
+                measure14={undefined}
+                measure15={undefined}
+                measure2={undefined}
+                measure3={undefined}
+                measure4={undefined}
+                measure5={undefined}
+                measure6={undefined}
+                measure7={undefined}
+                measure8={undefined}
+                measure9={undefined}
+                name="Sunny Holiday Punch"
+                thumbnail="https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg"
+/>,
+              <Recipe
+                alcoholic={undefined}
+                category={undefined}
+                forceDetails={false}
+                glass={undefined}
+                ingredient1={undefined}
+                ingredient10={undefined}
+                ingredient11={undefined}
+                ingredient12={undefined}
+                ingredient13={undefined}
+                ingredient14={undefined}
+                ingredient15={undefined}
+                ingredient2={undefined}
+                ingredient3={undefined}
+                ingredient4={undefined}
+                ingredient5={undefined}
+                ingredient6={undefined}
+                ingredient7={undefined}
+                ingredient8={undefined}
+                ingredient9={undefined}
+                instructions={undefined}
+                measure1={undefined}
+                measure10={undefined}
+                measure11={undefined}
+                measure12={undefined}
+                measure13={undefined}
+                measure14={undefined}
+                measure15={undefined}
+                measure2={undefined}
+                measure3={undefined}
+                measure4={undefined}
+                measure5={undefined}
+                measure6={undefined}
+                measure7={undefined}
+                measure8={undefined}
+                measure9={undefined}
+                name="Wine Cooler"
+                thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
+/>,
+            ],
+            "className": "recipe-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "12864",
+              "nodeType": "class",
+              "props": Object {
+                "alcoholic": undefined,
+                "category": undefined,
+                "forceDetails": false,
+                "glass": undefined,
+                "ingredient1": undefined,
+                "ingredient10": undefined,
+                "ingredient11": undefined,
+                "ingredient12": undefined,
+                "ingredient13": undefined,
+                "ingredient14": undefined,
+                "ingredient15": undefined,
+                "ingredient2": undefined,
+                "ingredient3": undefined,
+                "ingredient4": undefined,
+                "ingredient5": undefined,
+                "ingredient6": undefined,
+                "ingredient7": undefined,
+                "ingredient8": undefined,
+                "ingredient9": undefined,
+                "instructions": undefined,
+                "measure1": undefined,
+                "measure10": undefined,
+                "measure11": undefined,
+                "measure12": undefined,
+                "measure13": undefined,
+                "measure14": undefined,
+                "measure15": undefined,
+                "measure2": undefined,
+                "measure3": undefined,
+                "measure4": undefined,
+                "measure5": undefined,
+                "measure6": undefined,
+                "measure7": undefined,
+                "measure8": undefined,
+                "measure9": undefined,
+                "name": "Apple Cider Punch #1",
+                "thumbnail": "https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "15615",
+              "nodeType": "class",
+              "props": Object {
+                "alcoholic": undefined,
+                "category": undefined,
+                "forceDetails": false,
+                "glass": undefined,
+                "ingredient1": undefined,
+                "ingredient10": undefined,
+                "ingredient11": undefined,
+                "ingredient12": undefined,
+                "ingredient13": undefined,
+                "ingredient14": undefined,
+                "ingredient15": undefined,
+                "ingredient2": undefined,
+                "ingredient3": undefined,
+                "ingredient4": undefined,
+                "ingredient5": undefined,
+                "ingredient6": undefined,
+                "ingredient7": undefined,
+                "ingredient8": undefined,
+                "ingredient9": undefined,
+                "instructions": undefined,
+                "measure1": undefined,
+                "measure10": undefined,
+                "measure11": undefined,
+                "measure12": undefined,
+                "measure13": undefined,
+                "measure14": undefined,
+                "measure15": undefined,
+                "measure2": undefined,
+                "measure3": undefined,
+                "measure4": undefined,
+                "measure5": undefined,
+                "measure6": undefined,
+                "measure7": undefined,
+                "measure8": undefined,
+                "measure9": undefined,
+                "name": "Chocolate Monkey",
+                "thumbnail": "https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "12910",
+              "nodeType": "class",
+              "props": Object {
+                "alcoholic": undefined,
+                "category": undefined,
+                "forceDetails": false,
+                "glass": undefined,
+                "ingredient1": undefined,
+                "ingredient10": undefined,
+                "ingredient11": undefined,
+                "ingredient12": undefined,
+                "ingredient13": undefined,
+                "ingredient14": undefined,
+                "ingredient15": undefined,
+                "ingredient2": undefined,
+                "ingredient3": undefined,
+                "ingredient4": undefined,
+                "ingredient5": undefined,
+                "ingredient6": undefined,
+                "ingredient7": undefined,
+                "ingredient8": undefined,
+                "ingredient9": undefined,
+                "instructions": undefined,
+                "measure1": undefined,
+                "measure10": undefined,
+                "measure11": undefined,
+                "measure12": undefined,
+                "measure13": undefined,
+                "measure14": undefined,
+                "measure15": undefined,
+                "measure2": undefined,
+                "measure3": undefined,
+                "measure4": undefined,
+                "measure5": undefined,
+                "measure6": undefined,
+                "measure7": undefined,
+                "measure8": undefined,
+                "measure9": undefined,
+                "name": "Egg Nog #4",
+                "thumbnail": "https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "12916",
+              "nodeType": "class",
+              "props": Object {
+                "alcoholic": undefined,
+                "category": undefined,
+                "forceDetails": false,
+                "glass": undefined,
+                "ingredient1": undefined,
+                "ingredient10": undefined,
+                "ingredient11": undefined,
+                "ingredient12": undefined,
+                "ingredient13": undefined,
+                "ingredient14": undefined,
+                "ingredient15": undefined,
+                "ingredient2": undefined,
+                "ingredient3": undefined,
+                "ingredient4": undefined,
+                "ingredient5": undefined,
+                "ingredient6": undefined,
+                "ingredient7": undefined,
+                "ingredient8": undefined,
+                "ingredient9": undefined,
+                "instructions": undefined,
+                "measure1": undefined,
+                "measure10": undefined,
+                "measure11": undefined,
+                "measure12": undefined,
+                "measure13": undefined,
+                "measure14": undefined,
+                "measure15": undefined,
+                "measure2": undefined,
+                "measure3": undefined,
+                "measure4": undefined,
+                "measure5": undefined,
+                "measure6": undefined,
+                "measure7": undefined,
+                "measure8": undefined,
+                "measure9": undefined,
+                "name": "Egg Nog - Healthy",
+                "thumbnail": "https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "12914",
+              "nodeType": "class",
+              "props": Object {
+                "alcoholic": undefined,
+                "category": undefined,
+                "forceDetails": false,
+                "glass": undefined,
+                "ingredient1": undefined,
+                "ingredient10": undefined,
+                "ingredient11": undefined,
+                "ingredient12": undefined,
+                "ingredient13": undefined,
+                "ingredient14": undefined,
+                "ingredient15": undefined,
+                "ingredient2": undefined,
+                "ingredient3": undefined,
+                "ingredient4": undefined,
+                "ingredient5": undefined,
+                "ingredient6": undefined,
+                "ingredient7": undefined,
+                "ingredient8": undefined,
+                "ingredient9": undefined,
+                "instructions": undefined,
+                "measure1": undefined,
+                "measure10": undefined,
+                "measure11": undefined,
+                "measure12": undefined,
+                "measure13": undefined,
+                "measure14": undefined,
+                "measure15": undefined,
+                "measure2": undefined,
+                "measure3": undefined,
+                "measure4": undefined,
+                "measure5": undefined,
+                "measure6": undefined,
+                "measure7": undefined,
+                "measure8": undefined,
+                "measure9": undefined,
+                "name": "Egg-Nog - Classic Cooked",
+                "thumbnail": "https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "15997",
+              "nodeType": "class",
+              "props": Object {
+                "alcoholic": undefined,
+                "category": undefined,
+                "forceDetails": false,
+                "glass": undefined,
+                "ingredient1": undefined,
+                "ingredient10": undefined,
+                "ingredient11": undefined,
+                "ingredient12": undefined,
+                "ingredient13": undefined,
+                "ingredient14": undefined,
+                "ingredient15": undefined,
+                "ingredient2": undefined,
+                "ingredient3": undefined,
+                "ingredient4": undefined,
+                "ingredient5": undefined,
+                "ingredient6": undefined,
+                "ingredient7": undefined,
+                "ingredient8": undefined,
+                "ingredient9": undefined,
+                "instructions": undefined,
+                "measure1": undefined,
+                "measure10": undefined,
+                "measure11": undefined,
+                "measure12": undefined,
+                "measure13": undefined,
+                "measure14": undefined,
+                "measure15": undefined,
+                "measure2": undefined,
+                "measure3": undefined,
+                "measure4": undefined,
+                "measure5": undefined,
+                "measure6": undefined,
+                "measure7": undefined,
+                "measure8": undefined,
+                "measure9": undefined,
+                "name": "GG",
+                "thumbnail": "https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "12944",
+              "nodeType": "class",
+              "props": Object {
+                "alcoholic": undefined,
+                "category": undefined,
+                "forceDetails": false,
+                "glass": undefined,
+                "ingredient1": undefined,
+                "ingredient10": undefined,
+                "ingredient11": undefined,
+                "ingredient12": undefined,
+                "ingredient13": undefined,
+                "ingredient14": undefined,
+                "ingredient15": undefined,
+                "ingredient2": undefined,
+                "ingredient3": undefined,
+                "ingredient4": undefined,
+                "ingredient5": undefined,
+                "ingredient6": undefined,
+                "ingredient7": undefined,
+                "ingredient8": undefined,
+                "ingredient9": undefined,
+                "instructions": undefined,
+                "measure1": undefined,
+                "measure10": undefined,
+                "measure11": undefined,
+                "measure12": undefined,
+                "measure13": undefined,
+                "measure14": undefined,
+                "measure15": undefined,
+                "measure2": undefined,
+                "measure3": undefined,
+                "measure4": undefined,
+                "measure5": undefined,
+                "measure6": undefined,
+                "measure7": undefined,
+                "measure8": undefined,
+                "measure9": undefined,
+                "name": "Gluehwein",
+                "thumbnail": "https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "13042",
+              "nodeType": "class",
+              "props": Object {
+                "alcoholic": undefined,
+                "category": undefined,
+                "forceDetails": false,
+                "glass": undefined,
+                "ingredient1": undefined,
+                "ingredient10": undefined,
+                "ingredient11": undefined,
+                "ingredient12": undefined,
+                "ingredient13": undefined,
+                "ingredient14": undefined,
+                "ingredient15": undefined,
+                "ingredient2": undefined,
+                "ingredient3": undefined,
+                "ingredient4": undefined,
+                "ingredient5": undefined,
+                "ingredient6": undefined,
+                "ingredient7": undefined,
+                "ingredient8": undefined,
+                "ingredient9": undefined,
+                "instructions": undefined,
+                "measure1": undefined,
+                "measure10": undefined,
+                "measure11": undefined,
+                "measure12": undefined,
+                "measure13": undefined,
+                "measure14": undefined,
+                "measure15": undefined,
+                "measure2": undefined,
+                "measure3": undefined,
+                "measure4": undefined,
+                "measure5": undefined,
+                "measure6": undefined,
+                "measure7": undefined,
+                "measure8": undefined,
+                "measure9": undefined,
+                "name": "Sunny Holiday Punch",
+                "thumbnail": "https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "13056",
+              "nodeType": "class",
+              "props": Object {
+                "alcoholic": undefined,
+                "category": undefined,
+                "forceDetails": false,
+                "glass": undefined,
+                "ingredient1": undefined,
+                "ingredient10": undefined,
+                "ingredient11": undefined,
+                "ingredient12": undefined,
+                "ingredient13": undefined,
+                "ingredient14": undefined,
+                "ingredient15": undefined,
+                "ingredient2": undefined,
+                "ingredient3": undefined,
+                "ingredient4": undefined,
+                "ingredient5": undefined,
+                "ingredient6": undefined,
+                "ingredient7": undefined,
+                "ingredient8": undefined,
+                "ingredient9": undefined,
+                "instructions": undefined,
+                "measure1": undefined,
+                "measure10": undefined,
+                "measure11": undefined,
+                "measure12": undefined,
+                "measure13": undefined,
+                "measure14": undefined,
+                "measure15": undefined,
+                "measure2": undefined,
+                "measure3": undefined,
+                "measure4": undefined,
+                "measure5": undefined,
+                "measure6": undefined,
+                "measure7": undefined,
+                "measure8": undefined,
+                "measure9": undefined,
+                "name": "Wine Cooler",
+                "thumbnail": "https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

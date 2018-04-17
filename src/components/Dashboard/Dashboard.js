@@ -23,8 +23,6 @@ export class Dashboard extends Component {
 
   render() {
 
-    // const { inventory, addMenuRecipes, clearMenuRecipes, history } = this.props
-
     return <aside className="dashboard-container">
       <NavLink to='/inventory'>
         <button>
