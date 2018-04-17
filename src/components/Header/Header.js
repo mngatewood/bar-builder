@@ -70,6 +70,22 @@ export class Header extends Component {
       // this.state.unfilteredRecipes));
   }
 
+  handleRedirect = () => {
+    const resetState = {
+      search: '',
+      filterCount: 0,
+      categoryFilter: 'All Categories',
+      ingredientFilter: 'All Ingredients',
+      alcoholicFilter: 'All Alcoholic Content',
+      categoryRecipes: [],
+      ingredientRecipes: [],
+      alcoholicRecipes: [],
+      unfilteredRecipes: []
+    };
+    this.setState(resetState);
+    this.props.clearRecipes();
+  }
+
   render() {
 
     const {categories, ingredients, alcoholicOptions} = this.props;
@@ -84,7 +100,7 @@ export class Header extends Component {
 
     return <div className="header">
       <div className="title">
-        <Link to="/"><h1>The Bar Builder&nbsp;&nbsp;&nbsp;&nbsp;</h1></Link>
+        <Link to="/" onClick={this.handleRedirect}><h1>The Bar Builder&nbsp;&nbsp;&nbsp;&nbsp;</h1></Link>
       </div>
       <form onSubmit={this.handleSubmit}>
         <input 
@@ -134,7 +150,8 @@ export const mapStateToProps = state => ({
   recipes: state.recipes,
   categories: state.categories,
   ingredients: state.ingredients,
-  alcoholicOptions: state.alcoholicOptions
+  alcoholicOptions: state.alcoholicOptions,
+  clearRecipes: state.clearRecipes
 });
 
 export const mapDispatchToProps = dispatch => ({
@@ -147,7 +164,8 @@ Header.propTypes = {
   categories: PropTypes.array,
   ingredients: PropTypes.array,
   alcoholicOptions: PropTypes.array,
-  history: PropTypes.object
+  history: PropTypes.object,
+  clearRecipes: PropTypes.func
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
