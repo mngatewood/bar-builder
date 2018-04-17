@@ -99,7 +99,6 @@ select:hover {
     3px -3px 0 rgba(0, 100, 0, 0.3),
     -3px 3px 0 rgba(0, 100, 0, 0.3),
      3px 3px 0 rgba(0, 100, 0, 0.3);
-  filter: drop-shadow(5px 5px 5px);
   color: rgba(246, 239, 246, 1);
 
 }
