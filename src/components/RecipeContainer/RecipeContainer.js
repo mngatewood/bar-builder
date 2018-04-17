@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Recipe } from '../Recipe/Recipe';
 
-const RecipeContainer = ({recipes}) => {
+export const RecipeContainer = ({recipes}) => {
   const displayRecipe = recipes.map(recipe => {
     return <Recipe
       key={recipe.idDrink}
