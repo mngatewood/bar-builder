@@ -2,23 +2,36 @@
 }
 
 .contents-container {
-  overflow: hidden;
-  display: flex;
-  justify-content: space-around;
-  margin: 80px 0 100px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 430px;
+  /* overflow: hidden; */
+  /* display: flex; */
+  /* justify-content: space-around; */
+  margin: 100px 0 0 0;
 }
 
 .welcome-title {
+  /* display: grid; */
   /* z-index: 28; */
-  position: fixed;
-  top: 100px;
-  left: 0;
-  width: 65%;
-  font-family: "Kaushan Script";
-  background-color: rgba(246, 239, 246, 1);
+  grid-column: 1 / 3;
+  grid-row: 1 / 1;
+  /* position: fixed; */
+  /* top: 100px;
+  left: 0;*/
+  /* width: 100%; */ 
+  height: 55px;
 }
 
-.welcome-text {
+.welcome-title h1 {
+  font-family: "Kaushan Script";
+  background-color: rgba(246, 239, 246, 1);
+  font-size: 36px;
+  margin: 25px 25px 0 25px;
+
+}
+
+/* .welcome-text {
   flex: 1 75%;
   margin: 90px 50px 50px 50px;
   font-family: "Convergence";
@@ -34,15 +47,57 @@
   max-width: 450px;
   text-align: right;
   float: right;
+} */
+
+.guide-left {
+  display: grid;
+  grid-row: 2 / 2;
+  grid-column: 1 / 2;
+} 
+
+.guide1, .guide2, .guide3, .guide4 {
+  font-family: "Poor Story";
+  font-size: 32px;
+  padding: 25px;
+
 }
 
-.welcome-footer {
+.guide1 {
+  grid-row: 1;
+  text-align: left;
+  
+}
+
+.guide2 {
+  grid-row: 2;
+  text-align: right;
+}
+
+.guide3 {
+  grid-row: 4 / 4;
+  grid-column: 1 / 2;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.guide4 {
+  grid-row: 4 / 4;
+  grid-column: 2 / 3;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.guide3 p, .guide4 p {
+  margin-top: 0;
+}
+
+/* .welcome-footer {
   display: flex;
   position: fixed;
   bottom: 60px;
   font-family: "Convergence";
   font-size: 24px;
-}
+} */
 
 .welcome-footer p.inventoryGuide {
   /* display: inline-block; */
@@ -53,19 +108,24 @@
   margin: 0 80px 40px 20px;
 }
 
-.welcome-footer p.menuGuide {
+/* .welcome-footer p.menuGuide {
   width: 40%;
   text-align: left;
   margin: 0 20px 40px 80px;
-}
+} */
 
 .recipe-summary-container {
   display: flex;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
   justify-content: center;
-  flex: 1 25%;
-  margin: 65px 50px;
+  margin: 50px;
   top: -40px;
   position: relative
+}
+
+.recipe-summary-container .ingredient-list {
+  top: -328px;
 }
 
 .contents-container .recipe-details {
@@ -85,8 +145,8 @@
 .arrow1 {
 	position: absolute;
   margin: 0 auto;
-  width: 100px;
-  top: 0px;
+  width: 10%;
+  top: 100px;
   margin-left: 25px;
 }
 
@@ -132,13 +192,13 @@
 /* Arrow 2 */
 
 .arrow2 {
-	position: relative;
+	position: absolute;
   margin: 0 auto;
-  width: 0px;
-  top: 200px;
+  width: 10%;
+  top: 140px;
+  left: -100px;
   margin-left: 25px;
-  left: 140px;
-  transform: rotate(-70deg);
+  transform: rotate(50deg)
 }
 
 .arrow2 .curve2 {
@@ -151,8 +211,8 @@
 
 .arrow2 .point2 {
 	position: absolute;
-	left: 34px;
-	top: 390px;
+	left: 40px;
+	top: 315px;
 }
 
 .arrow2 .point2:before, .arrow2 .point2:after {
@@ -163,16 +223,16 @@
 }
 
 .arrow2 .point2:before {
-	top: -309px;
+	top: -307px;
 	left: -32px;
-	transform:rotate(-80deg);
-	-webkit-transform:rotate(-80deg);
-  -moz-transform:rotate(-80deg);
-  -ms-transform: rotate(-80deg);
+	transform:rotate(-100deg);
+	-webkit-transform:rotate(-100deg);
+  -moz-transform:rotate(-100deg);
+  -ms-transform: rotate(-100deg);
 }
 
 .arrow2 .point2:after {
-  top: -319px;
+  top: -297px;
 	left: -19px;
 	transform:rotate(3deg);
 	-webkit-transform: rotate(3deg);
@@ -186,8 +246,8 @@
 	position: absolute;
   margin: 0 auto;
   width: 100px;
-  bottom: -20px;
-  left: 38%;
+  bottom: 50px;
+  left: 36%;
   margin-left: 25px;
   transform: rotate(180deg);
 }
@@ -237,8 +297,8 @@
 	position: absolute;
   margin: 0 auto;
   width: 100px;
-  bottom: -14px;
-  left: 52%;
+  bottom: 52px;
+  left: 53%;
   margin-left: 25px;
 }
 
