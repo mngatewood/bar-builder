@@ -1,22 +1,36 @@
 import React from 'react';
-import App, { mapDispatchToProps } from './App';
+import { App, mapDispatchToProps } from './App';
 import { shallow } from 'enzyme';
-// import { getRecipes } from '../../api/apiCalls/getRecipes';
-// import { getFilterOptions } from '../../api/apiCalls/getFilterOptions'
-// jest.mock('../../api/apiCalls/getRecipes');
-// jest.mock('../../api/apiCalls/getFilterOptions');
+import { getRecipes } from '../../api/apiCalls/getRecipes';
+import { getFilterOptions } from '../../api/apiCalls/getFilterOptions'
+jest.mock('../../api/apiCalls/getRecipes');
+jest.mock('../../api/apiCalls/getFilterOptions');
 
 describe('App', () => {
 
+  let addRecipes, addCategories, addIngredients, addAlcoholicOptions, wrapper;
+
+  beforeEach(() => {
+
+    addRecipes = jest.fn();
+    addCategories = jest.fn();
+    addIngredients = jest.fn();
+    addAlcoholicOptions = jest.fn();
+    wrapper = shallow(
+      <App
+        addRecipes={addRecipes}
+        addCategories={addCategories}
+        addIngredients={addIngredients}
+        addAlcoholicOptions={addAlcoholicOptions}
+      />);
+  });
+
   it('matches the snapshot', () => {
-    const wrapper = shallow(<App />);
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.skip('calls getRecipes with the correct params on componentDidMount ', async () => {
-    // const getFilterOptions = jest.fn();
-    const getRecipes = jest.fn();
-    shallow(<App />);
+  it('calls getRecipes with the correct params on componentDidMount ', async () => {
+    wrapper;
     expect(getRecipes).toHaveBeenCalled();
   });
 
