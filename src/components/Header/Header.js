@@ -48,7 +48,7 @@ export class Header extends Component {
   }
   
   handleFilterChange = async (event) => {
-    // this.props.history.push('/recipes');
+    this.props.history.push('/recipes');
     const { name, value } = event.target;
     this.setState({ [name]: value });
     const type = event.target.id;
