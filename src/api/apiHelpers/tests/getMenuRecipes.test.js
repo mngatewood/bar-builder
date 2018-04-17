@@ -4,18 +4,18 @@ import { filterMenuRecipes } from '../filterMenuRecipes';
 import { getUniqueMenuRecipes } from '../getUniqueMenuRecipes';
 import * as mock from '../../../mockData/mockData';
 jest.mock('../../apiCalls/getRecipes');
-jest.mock('../../apiHelpers/filterMenuRecipes');
-jest.mock('../../apiHelpers/getUniqueMenuRecipes');
+jest.mock('../filterMenuRecipes');
+jest.mock('../getUniqueMenuRecipes');
 
 describe("getMenuRecipes", () => {
 
-  it.skip("calls getRecipes with expected params", () => {
-    getMenuRecipes(mock.mockInventory, mock.mockIngredientsList);
+  it.skip("calls getRecipes with expected params", async () => {
+    await getMenuRecipes(mock.mockInventory, mock.mockIngredientsList);
     expect(getRecipes).toHaveBeenCalled;
   });
 
-  it.skip("calls filterMenuRecipes with expected params", () => {
-    getMenuRecipes(mock.mockInventory, mock.mockIngredientsList);
+  it.skip("calls filterMenuRecipes with expected params", async () => {
+    await getMenuRecipes(mock.mockInventory, mock.mockIngredientsList);
     expect(filterMenuRecipes).toHaveBeenCalled;
   });
 

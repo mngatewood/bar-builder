@@ -1,7 +1,7 @@
-import { getRecipes } from '../apiCalls/getRecipes';
-import { getRecipeDetails } from '../../api/apiCalls/getRecipeDetails';
-import * as mock from '../../mockData/mockData';
-jest.mock('../../api/apiCalls/getRecipeDetails');
+import { getRecipes } from '../getRecipes';
+import { getRecipeDetails } from '../../apiCalls/getRecipeDetails';
+import * as mock from '../../../mockData/mockData';
+jest.mock('../../apiCalls/getRecipeDetails');
 
 describe("getRecipes", () => {
 

@@ -1,5 +1,5 @@
-import { getFilterOptions } from '../apiCalls/getFilterOptions';
-import * as mock from '../../mockData/mockData';
+import { getFilterOptions } from '../getFilterOptions';
+import * as mock from '../../../mockData/mockData';
 
 describe("getRecipeDetails", () => {
 
