@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { withRouter} from 'react-router-dom';
 import { Recipe } from '../Recipe/Recipe';
 
-const Welcome = ({recipes}) => {
+export const Welcome = ({recipes}) => {
   const displayRecipe = recipes.map(recipe => {
     return <Recipe
       key={recipe.idDrink}
