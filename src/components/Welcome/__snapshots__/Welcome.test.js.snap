@@ -85,47 +85,93 @@ ShallowWrapper {
           <div
                     className="welcome-title"
           >
-                    <div
-                              className="arrow1"
-                    >
-                              <div
-                                        className="curve1"
-                              />
-                              <div
-                                        className="point1"
-                              />
-                    </div>
                     <h1>
                               Welcome to The Bar Builder
                     </h1>
           </div>
           <div
-                    className="welcome-text"
+                    className="guide-left"
           >
-                    <p
-                              className="filterGuide"
+                    <div
+                              className="guide1"
                     >
-                              Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
-                    </p>
-                    <p
-                              className="summaryGuide"
+                              <p
+                                        className="filterGuide"
+                              >
+                                        Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+                              </p>
+                              <div
+                                        className="arrow1"
+                              >
+                                        <div
+                                                  className="curve1"
+                                        />
+                                        <div
+                                                  className="point1"
+                                        />
+                              </div>
+                    </div>
+                    <div
+                              className="guide2"
                     >
-                              Hover over a drink to view ingredients or click to view a detailed recipe.
-                    </p>
+                              <p
+                                        className="summaryGuide"
+                              >
+                                        Hover over a drink to view ingredients or click to view a detailed recipe.
+                              </p>
+                    </div>
           </div>
           <div
-                    className="arrow2"
+                    className="guide3"
           >
+                    <p
+                              className="inventoryGuide"
+                    >
+                              Click on "Update My Inventory" below to select ingredients that you own.
+                    </p>
                     <div
-                              className="curve2"
-                    />
+                              className="arrow3"
+                    >
+                              <div
+                                        className="curve3"
+                              />
+                              <div
+                                        className="point3"
+                              />
+                    </div>
+          </div>
+          <div
+                    className="guide4"
+          >
+                    <p
+                              className="menuGuide"
+                    >
+                              Then click "View My Bar Menu" to see recipes that you can make.
+                    </p>
                     <div
-                              className="point2"
-                    />
+                              className="arrow4"
+                    >
+                              <div
+                                        className="curve4"
+                              />
+                              <div
+                                        className="point4"
+                              />
+                    </div>
           </div>
           <div
                     className="recipe-summary-container"
           >
+                    <div
+                              className="arrow2"
+                    >
+                              <div
+                                        className="curve2"
+                              />
+                              <div
+                                        className="point2"
+                              />
+                    </div>
                     <Recipe
                               alcoholic={undefined}
                               category={undefined}
@@ -478,40 +524,6 @@ ShallowWrapper {
                               thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
                     />
           </div>
-          <div
-                    className="welcome-footer"
-          >
-                    <p
-                              className="inventoryGuide"
-                    >
-                              Click on "Update My Inventory" below to select ingredients that you already own.
-                    </p>
-                    <p
-                              className="menuGuide"
-                    >
-                              Then click "View My Bar Menu" to see recipes that you can make.
-                    </p>
-                    <div
-                              className="arrow3"
-                    >
-                              <div
-                                        className="curve3"
-                              />
-                              <div
-                                        className="point3"
-                              />
-                    </div>
-                    <div
-                              className="arrow4"
-                    >
-                              <div
-                                        className="curve4"
-                              />
-                              <div
-                                        className="point4"
-                              />
-                    </div>
-          </div>
 </div>,
       ],
       "className": "welcome-container",
@@ -568,47 +580,93 @@ ShallowWrapper {
             <div
               className="welcome-title"
 >
-              <div
-                            className="arrow1"
-              >
-                            <div
-                                          className="curve1"
-                            />
-                            <div
-                                          className="point1"
-                            />
-              </div>
               <h1>
                             Welcome to The Bar Builder
               </h1>
 </div>,
             <div
-              className="welcome-text"
+              className="guide-left"
 >
-              <p
-                            className="filterGuide"
+              <div
+                            className="guide1"
               >
-                            Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
-              </p>
-              <p
-                            className="summaryGuide"
+                            <p
+                                          className="filterGuide"
+                            >
+                                          Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+                            </p>
+                            <div
+                                          className="arrow1"
+                            >
+                                          <div
+                                                        className="curve1"
+                                          />
+                                          <div
+                                                        className="point1"
+                                          />
+                            </div>
+              </div>
+              <div
+                            className="guide2"
               >
-                            Hover over a drink to view ingredients or click to view a detailed recipe.
-              </p>
+                            <p
+                                          className="summaryGuide"
+                            >
+                                          Hover over a drink to view ingredients or click to view a detailed recipe.
+                            </p>
+              </div>
 </div>,
             <div
-              className="arrow2"
+              className="guide3"
 >
+              <p
+                            className="inventoryGuide"
+              >
+                            Click on "Update My Inventory" below to select ingredients that you own.
+              </p>
               <div
-                            className="curve2"
-              />
+                            className="arrow3"
+              >
+                            <div
+                                          className="curve3"
+                            />
+                            <div
+                                          className="point3"
+                            />
+              </div>
+</div>,
+            <div
+              className="guide4"
+>
+              <p
+                            className="menuGuide"
+              >
+                            Then click "View My Bar Menu" to see recipes that you can make.
+              </p>
               <div
-                            className="point2"
-              />
+                            className="arrow4"
+              >
+                            <div
+                                          className="curve4"
+                            />
+                            <div
+                                          className="point4"
+                            />
+              </div>
 </div>,
             <div
               className="recipe-summary-container"
 >
+              <div
+                            className="arrow2"
+              >
+                            <div
+                                          className="curve2"
+                            />
+                            <div
+                                          className="point2"
+                            />
+              </div>
               <Recipe
                             alcoholic={undefined}
                             category={undefined}
@@ -961,40 +1019,6 @@ ShallowWrapper {
                             thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
               />
 </div>,
-            <div
-              className="welcome-footer"
->
-              <p
-                            className="inventoryGuide"
-              >
-                            Click on "Update My Inventory" below to select ingredients that you already own.
-              </p>
-              <p
-                            className="menuGuide"
-              >
-                            Then click "View My Bar Menu" to see recipes that you can make.
-              </p>
-              <div
-                            className="arrow3"
-              >
-                            <div
-                                          className="curve3"
-                            />
-                            <div
-                                          className="point3"
-                            />
-              </div>
-              <div
-                            className="arrow4"
-              >
-                            <div
-                                          className="curve4"
-                            />
-                            <div
-                                          className="point4"
-                            />
-              </div>
-</div>,
           ],
           "className": "contents-container",
         },
@@ -1005,22 +1029,61 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": <h1>
+                Welcome to The Bar Builder
+</h1>,
+              "className": "welcome-title",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Welcome to The Bar Builder",
+              },
+              "ref": null,
+              "rendered": "Welcome to The Bar Builder",
+              "type": "h1",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "children": Array [
                 <div
-                  className="arrow1"
+                  className="guide1"
 >
+                  <p
+                                    className="filterGuide"
+                  >
+                                    Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+                  </p>
                   <div
-                                    className="curve1"
-                  />
-                  <div
-                                    className="point1"
-                  />
+                                    className="arrow1"
+                  >
+                                    <div
+                                                      className="curve1"
+                                    />
+                                    <div
+                                                      className="point1"
+                                    />
+                  </div>
 </div>,
-                <h1>
-                  Welcome to The Bar Builder
-</h1>,
+                <div
+                  className="guide2"
+>
+                  <p
+                                    className="summaryGuide"
+                  >
+                                    Hover over a drink to view ingredients or click to view a detailed recipe.
+                  </p>
+</div>,
               ],
-              "className": "welcome-title",
+              "className": "guide-left",
             },
             "ref": null,
             "rendered": Array [
@@ -1030,14 +1093,23 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
+                    <p
+                      className="filterGuide"
+>
+                      Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+</p>,
                     <div
-                      className="curve1"
-/>,
-                    <div
-                      className="point1"
-/>,
+                      className="arrow1"
+>
+                      <div
+                                            className="curve1"
+                      />
+                      <div
+                                            className="point1"
+                      />
+</div>,
                   ],
-                  "className": "arrow1",
+                  "className": "guide1",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -1046,21 +1118,53 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "className": "curve1",
+                      "children": "Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.",
+                      "className": "filterGuide",
                     },
                     "ref": null,
-                    "rendered": null,
-                    "type": "div",
+                    "rendered": "Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.",
+                    "type": "p",
                   },
                   Object {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "className": "point1",
+                      "children": Array [
+                        <div
+                          className="curve1"
+/>,
+                        <div
+                          className="point1"
+/>,
+                      ],
+                      "className": "arrow1",
                     },
                     "ref": null,
-                    "rendered": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "curve1",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "point1",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "div",
+                      },
+                    ],
                     "type": "div",
                   },
                 ],
@@ -1071,100 +1175,26 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Welcome to The Bar Builder",
-                },
-                "ref": null,
-                "rendered": "Welcome to The Bar Builder",
-                "type": "h1",
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <p
-                  className="filterGuide"
+                  "children": <p
+                    className="summaryGuide"
 >
-                  Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+                    Hover over a drink to view ingredients or click to view a detailed recipe.
 </p>,
-                <p
-                  className="summaryGuide"
->
-                  Hover over a drink to view ingredients or click to view a detailed recipe.
-</p>,
-              ],
-              "className": "welcome-text",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.",
-                  "className": "filterGuide",
+                  "className": "guide2",
                 },
                 "ref": null,
-                "rendered": "Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.",
-                "type": "p",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Hover over a drink to view ingredients or click to view a detailed recipe.",
-                  "className": "summaryGuide",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Hover over a drink to view ingredients or click to view a detailed recipe.",
+                    "className": "summaryGuide",
+                  },
+                  "ref": null,
+                  "rendered": "Hover over a drink to view ingredients or click to view a detailed recipe.",
+                  "type": "p",
                 },
-                "ref": null,
-                "rendered": "Hover over a drink to view ingredients or click to view a detailed recipe.",
-                "type": "p",
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <div
-                  className="curve2"
-/>,
-                <div
-                  className="point2"
-/>,
-              ],
-              "className": "arrow2",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "curve2",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "point2",
-                },
-                "ref": null,
-                "rendered": null,
                 "type": "div",
               },
             ],
@@ -1176,362 +1206,582 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <Recipe
-                  alcoholic={undefined}
-                  category={undefined}
-                  forceDetails={false}
-                  glass={undefined}
-                  ingredient1={undefined}
-                  ingredient10={undefined}
-                  ingredient11={undefined}
-                  ingredient12={undefined}
-                  ingredient13={undefined}
-                  ingredient14={undefined}
-                  ingredient15={undefined}
-                  ingredient2={undefined}
-                  ingredient3={undefined}
-                  ingredient4={undefined}
-                  ingredient5={undefined}
-                  ingredient6={undefined}
-                  ingredient7={undefined}
-                  ingredient8={undefined}
-                  ingredient9={undefined}
-                  instructions={undefined}
-                  measure1={undefined}
-                  measure10={undefined}
-                  measure11={undefined}
-                  measure12={undefined}
-                  measure13={undefined}
-                  measure14={undefined}
-                  measure15={undefined}
-                  measure2={undefined}
-                  measure3={undefined}
-                  measure4={undefined}
-                  measure5={undefined}
-                  measure6={undefined}
-                  measure7={undefined}
-                  measure8={undefined}
-                  measure9={undefined}
-                  name="Apple Cider Punch #1"
-                  thumbnail="https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg"
+                <p
+                  className="inventoryGuide"
+>
+                  Click on "Update My Inventory" below to select ingredients that you own.
+</p>,
+                <div
+                  className="arrow3"
+>
+                  <div
+                                    className="curve3"
+                  />
+                  <div
+                                    className="point3"
+                  />
+</div>,
+              ],
+              "className": "guide3",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Click on \\"Update My Inventory\\" below to select ingredients that you own.",
+                  "className": "inventoryGuide",
+                },
+                "ref": null,
+                "rendered": "Click on \\"Update My Inventory\\" below to select ingredients that you own.",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="curve3"
 />,
-                <Recipe
-                  alcoholic={undefined}
-                  category={undefined}
-                  forceDetails={false}
-                  glass={undefined}
-                  ingredient1={undefined}
-                  ingredient10={undefined}
-                  ingredient11={undefined}
-                  ingredient12={undefined}
-                  ingredient13={undefined}
-                  ingredient14={undefined}
-                  ingredient15={undefined}
-                  ingredient2={undefined}
-                  ingredient3={undefined}
-                  ingredient4={undefined}
-                  ingredient5={undefined}
-                  ingredient6={undefined}
-                  ingredient7={undefined}
-                  ingredient8={undefined}
-                  ingredient9={undefined}
-                  instructions={undefined}
-                  measure1={undefined}
-                  measure10={undefined}
-                  measure11={undefined}
-                  measure12={undefined}
-                  measure13={undefined}
-                  measure14={undefined}
-                  measure15={undefined}
-                  measure2={undefined}
-                  measure3={undefined}
-                  measure4={undefined}
-                  measure5={undefined}
-                  measure6={undefined}
-                  measure7={undefined}
-                  measure8={undefined}
-                  measure9={undefined}
-                  name="Chocolate Monkey"
-                  thumbnail="https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg"
+                    <div
+                      className="point3"
 />,
-                <Recipe
-                  alcoholic={undefined}
-                  category={undefined}
-                  forceDetails={false}
-                  glass={undefined}
-                  ingredient1={undefined}
-                  ingredient10={undefined}
-                  ingredient11={undefined}
-                  ingredient12={undefined}
-                  ingredient13={undefined}
-                  ingredient14={undefined}
-                  ingredient15={undefined}
-                  ingredient2={undefined}
-                  ingredient3={undefined}
-                  ingredient4={undefined}
-                  ingredient5={undefined}
-                  ingredient6={undefined}
-                  ingredient7={undefined}
-                  ingredient8={undefined}
-                  ingredient9={undefined}
-                  instructions={undefined}
-                  measure1={undefined}
-                  measure10={undefined}
-                  measure11={undefined}
-                  measure12={undefined}
-                  measure13={undefined}
-                  measure14={undefined}
-                  measure15={undefined}
-                  measure2={undefined}
-                  measure3={undefined}
-                  measure4={undefined}
-                  measure5={undefined}
-                  measure6={undefined}
-                  measure7={undefined}
-                  measure8={undefined}
-                  measure9={undefined}
-                  name="Egg Nog #4"
-                  thumbnail="https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg"
+                  ],
+                  "className": "arrow3",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "curve3",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "point3",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="menuGuide"
+>
+                  Then click "View My Bar Menu" to see recipes that you can make.
+</p>,
+                <div
+                  className="arrow4"
+>
+                  <div
+                                    className="curve4"
+                  />
+                  <div
+                                    className="point4"
+                  />
+</div>,
+              ],
+              "className": "guide4",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Then click \\"View My Bar Menu\\" to see recipes that you can make.",
+                  "className": "menuGuide",
+                },
+                "ref": null,
+                "rendered": "Then click \\"View My Bar Menu\\" to see recipes that you can make.",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="curve4"
 />,
-                <Recipe
-                  alcoholic={undefined}
-                  category={undefined}
-                  forceDetails={false}
-                  glass={undefined}
-                  ingredient1={undefined}
-                  ingredient10={undefined}
-                  ingredient11={undefined}
-                  ingredient12={undefined}
-                  ingredient13={undefined}
-                  ingredient14={undefined}
-                  ingredient15={undefined}
-                  ingredient2={undefined}
-                  ingredient3={undefined}
-                  ingredient4={undefined}
-                  ingredient5={undefined}
-                  ingredient6={undefined}
-                  ingredient7={undefined}
-                  ingredient8={undefined}
-                  ingredient9={undefined}
-                  instructions={undefined}
-                  measure1={undefined}
-                  measure10={undefined}
-                  measure11={undefined}
-                  measure12={undefined}
-                  measure13={undefined}
-                  measure14={undefined}
-                  measure15={undefined}
-                  measure2={undefined}
-                  measure3={undefined}
-                  measure4={undefined}
-                  measure5={undefined}
-                  measure6={undefined}
-                  measure7={undefined}
-                  measure8={undefined}
-                  measure9={undefined}
-                  name="Egg Nog - Healthy"
-                  thumbnail="https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg"
+                    <div
+                      className="point4"
 />,
-                <Recipe
-                  alcoholic={undefined}
-                  category={undefined}
-                  forceDetails={false}
-                  glass={undefined}
-                  ingredient1={undefined}
-                  ingredient10={undefined}
-                  ingredient11={undefined}
-                  ingredient12={undefined}
-                  ingredient13={undefined}
-                  ingredient14={undefined}
-                  ingredient15={undefined}
-                  ingredient2={undefined}
-                  ingredient3={undefined}
-                  ingredient4={undefined}
-                  ingredient5={undefined}
-                  ingredient6={undefined}
-                  ingredient7={undefined}
-                  ingredient8={undefined}
-                  ingredient9={undefined}
-                  instructions={undefined}
-                  measure1={undefined}
-                  measure10={undefined}
-                  measure11={undefined}
-                  measure12={undefined}
-                  measure13={undefined}
-                  measure14={undefined}
-                  measure15={undefined}
-                  measure2={undefined}
-                  measure3={undefined}
-                  measure4={undefined}
-                  measure5={undefined}
-                  measure6={undefined}
-                  measure7={undefined}
-                  measure8={undefined}
-                  measure9={undefined}
-                  name="Egg-Nog - Classic Cooked"
-                  thumbnail="https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg"
+                  ],
+                  "className": "arrow4",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "curve4",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "point4",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="arrow2"
+>
+                  <div
+                                    className="curve2"
+                  />
+                  <div
+                                    className="point2"
+                  />
+</div>,
+                Array [
+                  <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Apple Cider Punch #1"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg"
 />,
-                <Recipe
-                  alcoholic={undefined}
-                  category={undefined}
-                  forceDetails={false}
-                  glass={undefined}
-                  ingredient1={undefined}
-                  ingredient10={undefined}
-                  ingredient11={undefined}
-                  ingredient12={undefined}
-                  ingredient13={undefined}
-                  ingredient14={undefined}
-                  ingredient15={undefined}
-                  ingredient2={undefined}
-                  ingredient3={undefined}
-                  ingredient4={undefined}
-                  ingredient5={undefined}
-                  ingredient6={undefined}
-                  ingredient7={undefined}
-                  ingredient8={undefined}
-                  ingredient9={undefined}
-                  instructions={undefined}
-                  measure1={undefined}
-                  measure10={undefined}
-                  measure11={undefined}
-                  measure12={undefined}
-                  measure13={undefined}
-                  measure14={undefined}
-                  measure15={undefined}
-                  measure2={undefined}
-                  measure3={undefined}
-                  measure4={undefined}
-                  measure5={undefined}
-                  measure6={undefined}
-                  measure7={undefined}
-                  measure8={undefined}
-                  measure9={undefined}
-                  name="GG"
-                  thumbnail="https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
+                  <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Chocolate Monkey"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg"
 />,
-                <Recipe
-                  alcoholic={undefined}
-                  category={undefined}
-                  forceDetails={false}
-                  glass={undefined}
-                  ingredient1={undefined}
-                  ingredient10={undefined}
-                  ingredient11={undefined}
-                  ingredient12={undefined}
-                  ingredient13={undefined}
-                  ingredient14={undefined}
-                  ingredient15={undefined}
-                  ingredient2={undefined}
-                  ingredient3={undefined}
-                  ingredient4={undefined}
-                  ingredient5={undefined}
-                  ingredient6={undefined}
-                  ingredient7={undefined}
-                  ingredient8={undefined}
-                  ingredient9={undefined}
-                  instructions={undefined}
-                  measure1={undefined}
-                  measure10={undefined}
-                  measure11={undefined}
-                  measure12={undefined}
-                  measure13={undefined}
-                  measure14={undefined}
-                  measure15={undefined}
-                  measure2={undefined}
-                  measure3={undefined}
-                  measure4={undefined}
-                  measure5={undefined}
-                  measure6={undefined}
-                  measure7={undefined}
-                  measure8={undefined}
-                  measure9={undefined}
-                  name="Gluehwein"
-                  thumbnail="https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg"
+                  <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Egg Nog #4"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg"
 />,
-                <Recipe
-                  alcoholic={undefined}
-                  category={undefined}
-                  forceDetails={false}
-                  glass={undefined}
-                  ingredient1={undefined}
-                  ingredient10={undefined}
-                  ingredient11={undefined}
-                  ingredient12={undefined}
-                  ingredient13={undefined}
-                  ingredient14={undefined}
-                  ingredient15={undefined}
-                  ingredient2={undefined}
-                  ingredient3={undefined}
-                  ingredient4={undefined}
-                  ingredient5={undefined}
-                  ingredient6={undefined}
-                  ingredient7={undefined}
-                  ingredient8={undefined}
-                  ingredient9={undefined}
-                  instructions={undefined}
-                  measure1={undefined}
-                  measure10={undefined}
-                  measure11={undefined}
-                  measure12={undefined}
-                  measure13={undefined}
-                  measure14={undefined}
-                  measure15={undefined}
-                  measure2={undefined}
-                  measure3={undefined}
-                  measure4={undefined}
-                  measure5={undefined}
-                  measure6={undefined}
-                  measure7={undefined}
-                  measure8={undefined}
-                  measure9={undefined}
-                  name="Sunny Holiday Punch"
-                  thumbnail="https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg"
+                  <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Egg Nog - Healthy"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg"
 />,
-                <Recipe
-                  alcoholic={undefined}
-                  category={undefined}
-                  forceDetails={false}
-                  glass={undefined}
-                  ingredient1={undefined}
-                  ingredient10={undefined}
-                  ingredient11={undefined}
-                  ingredient12={undefined}
-                  ingredient13={undefined}
-                  ingredient14={undefined}
-                  ingredient15={undefined}
-                  ingredient2={undefined}
-                  ingredient3={undefined}
-                  ingredient4={undefined}
-                  ingredient5={undefined}
-                  ingredient6={undefined}
-                  ingredient7={undefined}
-                  ingredient8={undefined}
-                  ingredient9={undefined}
-                  instructions={undefined}
-                  measure1={undefined}
-                  measure10={undefined}
-                  measure11={undefined}
-                  measure12={undefined}
-                  measure13={undefined}
-                  measure14={undefined}
-                  measure15={undefined}
-                  measure2={undefined}
-                  measure3={undefined}
-                  measure4={undefined}
-                  measure5={undefined}
-                  measure6={undefined}
-                  measure7={undefined}
-                  measure8={undefined}
-                  measure9={undefined}
-                  name="Wine Cooler"
-                  thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
+                  <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Egg-Nog - Classic Cooked"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg"
 />,
+                  <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="GG"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
+/>,
+                  <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Gluehwein"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg"
+/>,
+                  <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Sunny Holiday Punch"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg"
+/>,
+                  <Recipe
+                    alcoholic={undefined}
+                    category={undefined}
+                    forceDetails={false}
+                    glass={undefined}
+                    ingredient1={undefined}
+                    ingredient10={undefined}
+                    ingredient11={undefined}
+                    ingredient12={undefined}
+                    ingredient13={undefined}
+                    ingredient14={undefined}
+                    ingredient15={undefined}
+                    ingredient2={undefined}
+                    ingredient3={undefined}
+                    ingredient4={undefined}
+                    ingredient5={undefined}
+                    ingredient6={undefined}
+                    ingredient7={undefined}
+                    ingredient8={undefined}
+                    ingredient9={undefined}
+                    instructions={undefined}
+                    measure1={undefined}
+                    measure10={undefined}
+                    measure11={undefined}
+                    measure12={undefined}
+                    measure13={undefined}
+                    measure14={undefined}
+                    measure15={undefined}
+                    measure2={undefined}
+                    measure3={undefined}
+                    measure4={undefined}
+                    measure5={undefined}
+                    measure6={undefined}
+                    measure7={undefined}
+                    measure8={undefined}
+                    measure9={undefined}
+                    name="Wine Cooler"
+                    thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
+/>,
+                ],
               ],
               "className": "recipe-summary-container",
             },
             "ref": null,
             "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="curve2"
+/>,
+                    <div
+                      className="point2"
+/>,
+                  ],
+                  "className": "arrow2",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "curve2",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "point2",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
               Object {
                 "instance": null,
                 "key": "12864",
@@ -1958,158 +2208,6 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <p
-                  className="inventoryGuide"
->
-                  Click on "Update My Inventory" below to select ingredients that you already own.
-</p>,
-                <p
-                  className="menuGuide"
->
-                  Then click "View My Bar Menu" to see recipes that you can make.
-</p>,
-                <div
-                  className="arrow3"
->
-                  <div
-                                    className="curve3"
-                  />
-                  <div
-                                    className="point3"
-                  />
-</div>,
-                <div
-                  className="arrow4"
->
-                  <div
-                                    className="curve4"
-                  />
-                  <div
-                                    className="point4"
-                  />
-</div>,
-              ],
-              "className": "welcome-footer",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Click on \\"Update My Inventory\\" below to select ingredients that you already own.",
-                  "className": "inventoryGuide",
-                },
-                "ref": null,
-                "rendered": "Click on \\"Update My Inventory\\" below to select ingredients that you already own.",
-                "type": "p",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Then click \\"View My Bar Menu\\" to see recipes that you can make.",
-                  "className": "menuGuide",
-                },
-                "ref": null,
-                "rendered": "Then click \\"View My Bar Menu\\" to see recipes that you can make.",
-                "type": "p",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <div
-                      className="curve3"
-/>,
-                    <div
-                      className="point3"
-/>,
-                  ],
-                  "className": "arrow3",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "curve3",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "point3",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "div",
-                  },
-                ],
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <div
-                      className="curve4"
-/>,
-                    <div
-                      className="point4"
-/>,
-                  ],
-                  "className": "arrow4",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "curve4",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "point4",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "div",
-                  },
-                ],
-                "type": "div",
-              },
-            ],
-            "type": "div",
-          },
         ],
         "type": "div",
       },
@@ -2140,47 +2238,93 @@ ShallowWrapper {
             <div
                         className="welcome-title"
             >
-                        <div
-                                    className="arrow1"
-                        >
-                                    <div
-                                                className="curve1"
-                                    />
-                                    <div
-                                                className="point1"
-                                    />
-                        </div>
                         <h1>
                                     Welcome to The Bar Builder
                         </h1>
             </div>
             <div
-                        className="welcome-text"
+                        className="guide-left"
             >
-                        <p
-                                    className="filterGuide"
+                        <div
+                                    className="guide1"
                         >
-                                    Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
-                        </p>
-                        <p
-                                    className="summaryGuide"
+                                    <p
+                                                className="filterGuide"
+                                    >
+                                                Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+                                    </p>
+                                    <div
+                                                className="arrow1"
+                                    >
+                                                <div
+                                                            className="curve1"
+                                                />
+                                                <div
+                                                            className="point1"
+                                                />
+                                    </div>
+                        </div>
+                        <div
+                                    className="guide2"
                         >
-                                    Hover over a drink to view ingredients or click to view a detailed recipe.
-                        </p>
+                                    <p
+                                                className="summaryGuide"
+                                    >
+                                                Hover over a drink to view ingredients or click to view a detailed recipe.
+                                    </p>
+                        </div>
             </div>
             <div
-                        className="arrow2"
+                        className="guide3"
             >
+                        <p
+                                    className="inventoryGuide"
+                        >
+                                    Click on "Update My Inventory" below to select ingredients that you own.
+                        </p>
                         <div
-                                    className="curve2"
-                        />
+                                    className="arrow3"
+                        >
+                                    <div
+                                                className="curve3"
+                                    />
+                                    <div
+                                                className="point3"
+                                    />
+                        </div>
+            </div>
+            <div
+                        className="guide4"
+            >
+                        <p
+                                    className="menuGuide"
+                        >
+                                    Then click "View My Bar Menu" to see recipes that you can make.
+                        </p>
                         <div
-                                    className="point2"
-                        />
+                                    className="arrow4"
+                        >
+                                    <div
+                                                className="curve4"
+                                    />
+                                    <div
+                                                className="point4"
+                                    />
+                        </div>
             </div>
             <div
                         className="recipe-summary-container"
             >
+                        <div
+                                    className="arrow2"
+                        >
+                                    <div
+                                                className="curve2"
+                                    />
+                                    <div
+                                                className="point2"
+                                    />
+                        </div>
                         <Recipe
                                     alcoholic={undefined}
                                     category={undefined}
@@ -2533,40 +2677,6 @@ ShallowWrapper {
                                     thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
                         />
             </div>
-            <div
-                        className="welcome-footer"
-            >
-                        <p
-                                    className="inventoryGuide"
-                        >
-                                    Click on "Update My Inventory" below to select ingredients that you already own.
-                        </p>
-                        <p
-                                    className="menuGuide"
-                        >
-                                    Then click "View My Bar Menu" to see recipes that you can make.
-                        </p>
-                        <div
-                                    className="arrow3"
-                        >
-                                    <div
-                                                className="curve3"
-                                    />
-                                    <div
-                                                className="point3"
-                                    />
-                        </div>
-                        <div
-                                    className="arrow4"
-                        >
-                                    <div
-                                                className="curve4"
-                                    />
-                                    <div
-                                                className="point4"
-                                    />
-                        </div>
-            </div>
 </div>,
         ],
         "className": "welcome-container",
@@ -2623,47 +2733,93 @@ ShallowWrapper {
               <div
                 className="welcome-title"
 >
-                <div
-                                className="arrow1"
-                >
-                                <div
-                                                className="curve1"
-                                />
-                                <div
-                                                className="point1"
-                                />
-                </div>
                 <h1>
                                 Welcome to The Bar Builder
                 </h1>
 </div>,
               <div
-                className="welcome-text"
+                className="guide-left"
 >
-                <p
-                                className="filterGuide"
+                <div
+                                className="guide1"
                 >
-                                Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
-                </p>
-                <p
-                                className="summaryGuide"
+                                <p
+                                                className="filterGuide"
+                                >
+                                                Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+                                </p>
+                                <div
+                                                className="arrow1"
+                                >
+                                                <div
+                                                                className="curve1"
+                                                />
+                                                <div
+                                                                className="point1"
+                                                />
+                                </div>
+                </div>
+                <div
+                                className="guide2"
                 >
-                                Hover over a drink to view ingredients or click to view a detailed recipe.
-                </p>
+                                <p
+                                                className="summaryGuide"
+                                >
+                                                Hover over a drink to view ingredients or click to view a detailed recipe.
+                                </p>
+                </div>
 </div>,
               <div
-                className="arrow2"
+                className="guide3"
 >
+                <p
+                                className="inventoryGuide"
+                >
+                                Click on "Update My Inventory" below to select ingredients that you own.
+                </p>
                 <div
-                                className="curve2"
-                />
+                                className="arrow3"
+                >
+                                <div
+                                                className="curve3"
+                                />
+                                <div
+                                                className="point3"
+                                />
+                </div>
+</div>,
+              <div
+                className="guide4"
+>
+                <p
+                                className="menuGuide"
+                >
+                                Then click "View My Bar Menu" to see recipes that you can make.
+                </p>
                 <div
-                                className="point2"
-                />
+                                className="arrow4"
+                >
+                                <div
+                                                className="curve4"
+                                />
+                                <div
+                                                className="point4"
+                                />
+                </div>
 </div>,
               <div
                 className="recipe-summary-container"
 >
+                <div
+                                className="arrow2"
+                >
+                                <div
+                                                className="curve2"
+                                />
+                                <div
+                                                className="point2"
+                                />
+                </div>
                 <Recipe
                                 alcoholic={undefined}
                                 category={undefined}
@@ -3016,40 +3172,6 @@ ShallowWrapper {
                                 thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
                 />
 </div>,
-              <div
-                className="welcome-footer"
->
-                <p
-                                className="inventoryGuide"
-                >
-                                Click on "Update My Inventory" below to select ingredients that you already own.
-                </p>
-                <p
-                                className="menuGuide"
-                >
-                                Then click "View My Bar Menu" to see recipes that you can make.
-                </p>
-                <div
-                                className="arrow3"
-                >
-                                <div
-                                                className="curve3"
-                                />
-                                <div
-                                                className="point3"
-                                />
-                </div>
-                <div
-                                className="arrow4"
-                >
-                                <div
-                                                className="curve4"
-                                />
-                                <div
-                                                className="point4"
-                                />
-                </div>
-</div>,
             ],
             "className": "contents-container",
           },
@@ -3060,22 +3182,61 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "children": <h1>
+                  Welcome to The Bar Builder
+</h1>,
+                "className": "welcome-title",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Welcome to The Bar Builder",
+                },
+                "ref": null,
+                "rendered": "Welcome to The Bar Builder",
+                "type": "h1",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
                 "children": Array [
                   <div
-                    className="arrow1"
+                    className="guide1"
 >
+                    <p
+                                        className="filterGuide"
+                    >
+                                        Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+                    </p>
                     <div
-                                        className="curve1"
-                    />
-                    <div
-                                        className="point1"
-                    />
+                                        className="arrow1"
+                    >
+                                        <div
+                                                            className="curve1"
+                                        />
+                                        <div
+                                                            className="point1"
+                                        />
+                    </div>
 </div>,
-                  <h1>
-                    Welcome to The Bar Builder
-</h1>,
+                  <div
+                    className="guide2"
+>
+                    <p
+                                        className="summaryGuide"
+                    >
+                                        Hover over a drink to view ingredients or click to view a detailed recipe.
+                    </p>
+</div>,
                 ],
-                "className": "welcome-title",
+                "className": "guide-left",
               },
               "ref": null,
               "rendered": Array [
@@ -3085,14 +3246,23 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
+                      <p
+                        className="filterGuide"
+>
+                        Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+</p>,
                       <div
-                        className="curve1"
-/>,
-                      <div
-                        className="point1"
-/>,
+                        className="arrow1"
+>
+                        <div
+                                                className="curve1"
+                        />
+                        <div
+                                                className="point1"
+                        />
+</div>,
                     ],
-                    "className": "arrow1",
+                    "className": "guide1",
                   },
                   "ref": null,
                   "rendered": Array [
@@ -3101,21 +3271,53 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "className": "curve1",
+                        "children": "Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.",
+                        "className": "filterGuide",
                       },
                       "ref": null,
-                      "rendered": null,
-                      "type": "div",
+                      "rendered": "Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.",
+                      "type": "p",
                     },
                     Object {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "className": "point1",
+                        "children": Array [
+                          <div
+                            className="curve1"
+/>,
+                          <div
+                            className="point1"
+/>,
+                        ],
+                        "className": "arrow1",
                       },
                       "ref": null,
-                      "rendered": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "curve1",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "point1",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "div",
+                        },
+                      ],
                       "type": "div",
                     },
                   ],
@@ -3126,100 +3328,26 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Welcome to The Bar Builder",
-                  },
-                  "ref": null,
-                  "rendered": "Welcome to The Bar Builder",
-                  "type": "h1",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <p
-                    className="filterGuide"
+                    "children": <p
+                      className="summaryGuide"
 >
-                    Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.
+                      Hover over a drink to view ingredients or click to view a detailed recipe.
 </p>,
-                  <p
-                    className="summaryGuide"
->
-                    Hover over a drink to view ingredients or click to view a detailed recipe.
-</p>,
-                ],
-                "className": "welcome-text",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.",
-                    "className": "filterGuide",
+                    "className": "guide2",
                   },
                   "ref": null,
-                  "rendered": "Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.",
-                  "type": "p",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Hover over a drink to view ingredients or click to view a detailed recipe.",
-                    "className": "summaryGuide",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Hover over a drink to view ingredients or click to view a detailed recipe.",
+                      "className": "summaryGuide",
+                    },
+                    "ref": null,
+                    "rendered": "Hover over a drink to view ingredients or click to view a detailed recipe.",
+                    "type": "p",
                   },
-                  "ref": null,
-                  "rendered": "Hover over a drink to view ingredients or click to view a detailed recipe.",
-                  "type": "p",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <div
-                    className="curve2"
-/>,
-                  <div
-                    className="point2"
-/>,
-                ],
-                "className": "arrow2",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "curve2",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "point2",
-                  },
-                  "ref": null,
-                  "rendered": null,
                   "type": "div",
                 },
               ],
@@ -3231,362 +3359,582 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <Recipe
-                    alcoholic={undefined}
-                    category={undefined}
-                    forceDetails={false}
-                    glass={undefined}
-                    ingredient1={undefined}
-                    ingredient10={undefined}
-                    ingredient11={undefined}
-                    ingredient12={undefined}
-                    ingredient13={undefined}
-                    ingredient14={undefined}
-                    ingredient15={undefined}
-                    ingredient2={undefined}
-                    ingredient3={undefined}
-                    ingredient4={undefined}
-                    ingredient5={undefined}
-                    ingredient6={undefined}
-                    ingredient7={undefined}
-                    ingredient8={undefined}
-                    ingredient9={undefined}
-                    instructions={undefined}
-                    measure1={undefined}
-                    measure10={undefined}
-                    measure11={undefined}
-                    measure12={undefined}
-                    measure13={undefined}
-                    measure14={undefined}
-                    measure15={undefined}
-                    measure2={undefined}
-                    measure3={undefined}
-                    measure4={undefined}
-                    measure5={undefined}
-                    measure6={undefined}
-                    measure7={undefined}
-                    measure8={undefined}
-                    measure9={undefined}
-                    name="Apple Cider Punch #1"
-                    thumbnail="https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg"
+                  <p
+                    className="inventoryGuide"
+>
+                    Click on "Update My Inventory" below to select ingredients that you own.
+</p>,
+                  <div
+                    className="arrow3"
+>
+                    <div
+                                        className="curve3"
+                    />
+                    <div
+                                        className="point3"
+                    />
+</div>,
+                ],
+                "className": "guide3",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Click on \\"Update My Inventory\\" below to select ingredients that you own.",
+                    "className": "inventoryGuide",
+                  },
+                  "ref": null,
+                  "rendered": "Click on \\"Update My Inventory\\" below to select ingredients that you own.",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="curve3"
 />,
-                  <Recipe
-                    alcoholic={undefined}
-                    category={undefined}
-                    forceDetails={false}
-                    glass={undefined}
-                    ingredient1={undefined}
-                    ingredient10={undefined}
-                    ingredient11={undefined}
-                    ingredient12={undefined}
-                    ingredient13={undefined}
-                    ingredient14={undefined}
-                    ingredient15={undefined}
-                    ingredient2={undefined}
-                    ingredient3={undefined}
-                    ingredient4={undefined}
-                    ingredient5={undefined}
-                    ingredient6={undefined}
-                    ingredient7={undefined}
-                    ingredient8={undefined}
-                    ingredient9={undefined}
-                    instructions={undefined}
-                    measure1={undefined}
-                    measure10={undefined}
-                    measure11={undefined}
-                    measure12={undefined}
-                    measure13={undefined}
-                    measure14={undefined}
-                    measure15={undefined}
-                    measure2={undefined}
-                    measure3={undefined}
-                    measure4={undefined}
-                    measure5={undefined}
-                    measure6={undefined}
-                    measure7={undefined}
-                    measure8={undefined}
-                    measure9={undefined}
-                    name="Chocolate Monkey"
-                    thumbnail="https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg"
+                      <div
+                        className="point3"
 />,
-                  <Recipe
-                    alcoholic={undefined}
-                    category={undefined}
-                    forceDetails={false}
-                    glass={undefined}
-                    ingredient1={undefined}
-                    ingredient10={undefined}
-                    ingredient11={undefined}
-                    ingredient12={undefined}
-                    ingredient13={undefined}
-                    ingredient14={undefined}
-                    ingredient15={undefined}
-                    ingredient2={undefined}
-                    ingredient3={undefined}
-                    ingredient4={undefined}
-                    ingredient5={undefined}
-                    ingredient6={undefined}
-                    ingredient7={undefined}
-                    ingredient8={undefined}
-                    ingredient9={undefined}
-                    instructions={undefined}
-                    measure1={undefined}
-                    measure10={undefined}
-                    measure11={undefined}
-                    measure12={undefined}
-                    measure13={undefined}
-                    measure14={undefined}
-                    measure15={undefined}
-                    measure2={undefined}
-                    measure3={undefined}
-                    measure4={undefined}
-                    measure5={undefined}
-                    measure6={undefined}
-                    measure7={undefined}
-                    measure8={undefined}
-                    measure9={undefined}
-                    name="Egg Nog #4"
-                    thumbnail="https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg"
+                    ],
+                    "className": "arrow3",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "curve3",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "point3",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="menuGuide"
+>
+                    Then click "View My Bar Menu" to see recipes that you can make.
+</p>,
+                  <div
+                    className="arrow4"
+>
+                    <div
+                                        className="curve4"
+                    />
+                    <div
+                                        className="point4"
+                    />
+</div>,
+                ],
+                "className": "guide4",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Then click \\"View My Bar Menu\\" to see recipes that you can make.",
+                    "className": "menuGuide",
+                  },
+                  "ref": null,
+                  "rendered": "Then click \\"View My Bar Menu\\" to see recipes that you can make.",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="curve4"
 />,
-                  <Recipe
-                    alcoholic={undefined}
-                    category={undefined}
-                    forceDetails={false}
-                    glass={undefined}
-                    ingredient1={undefined}
-                    ingredient10={undefined}
-                    ingredient11={undefined}
-                    ingredient12={undefined}
-                    ingredient13={undefined}
-                    ingredient14={undefined}
-                    ingredient15={undefined}
-                    ingredient2={undefined}
-                    ingredient3={undefined}
-                    ingredient4={undefined}
-                    ingredient5={undefined}
-                    ingredient6={undefined}
-                    ingredient7={undefined}
-                    ingredient8={undefined}
-                    ingredient9={undefined}
-                    instructions={undefined}
-                    measure1={undefined}
-                    measure10={undefined}
-                    measure11={undefined}
-                    measure12={undefined}
-                    measure13={undefined}
-                    measure14={undefined}
-                    measure15={undefined}
-                    measure2={undefined}
-                    measure3={undefined}
-                    measure4={undefined}
-                    measure5={undefined}
-                    measure6={undefined}
-                    measure7={undefined}
-                    measure8={undefined}
-                    measure9={undefined}
-                    name="Egg Nog - Healthy"
-                    thumbnail="https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg"
+                      <div
+                        className="point4"
 />,
-                  <Recipe
-                    alcoholic={undefined}
-                    category={undefined}
-                    forceDetails={false}
-                    glass={undefined}
-                    ingredient1={undefined}
-                    ingredient10={undefined}
-                    ingredient11={undefined}
-                    ingredient12={undefined}
-                    ingredient13={undefined}
-                    ingredient14={undefined}
-                    ingredient15={undefined}
-                    ingredient2={undefined}
-                    ingredient3={undefined}
-                    ingredient4={undefined}
-                    ingredient5={undefined}
-                    ingredient6={undefined}
-                    ingredient7={undefined}
-                    ingredient8={undefined}
-                    ingredient9={undefined}
-                    instructions={undefined}
-                    measure1={undefined}
-                    measure10={undefined}
-                    measure11={undefined}
-                    measure12={undefined}
-                    measure13={undefined}
-                    measure14={undefined}
-                    measure15={undefined}
-                    measure2={undefined}
-                    measure3={undefined}
-                    measure4={undefined}
-                    measure5={undefined}
-                    measure6={undefined}
-                    measure7={undefined}
-                    measure8={undefined}
-                    measure9={undefined}
-                    name="Egg-Nog - Classic Cooked"
-                    thumbnail="https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg"
+                    ],
+                    "className": "arrow4",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "curve4",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "point4",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="arrow2"
+>
+                    <div
+                                        className="curve2"
+                    />
+                    <div
+                                        className="point2"
+                    />
+</div>,
+                  Array [
+                    <Recipe
+                      alcoholic={undefined}
+                      category={undefined}
+                      forceDetails={false}
+                      glass={undefined}
+                      ingredient1={undefined}
+                      ingredient10={undefined}
+                      ingredient11={undefined}
+                      ingredient12={undefined}
+                      ingredient13={undefined}
+                      ingredient14={undefined}
+                      ingredient15={undefined}
+                      ingredient2={undefined}
+                      ingredient3={undefined}
+                      ingredient4={undefined}
+                      ingredient5={undefined}
+                      ingredient6={undefined}
+                      ingredient7={undefined}
+                      ingredient8={undefined}
+                      ingredient9={undefined}
+                      instructions={undefined}
+                      measure1={undefined}
+                      measure10={undefined}
+                      measure11={undefined}
+                      measure12={undefined}
+                      measure13={undefined}
+                      measure14={undefined}
+                      measure15={undefined}
+                      measure2={undefined}
+                      measure3={undefined}
+                      measure4={undefined}
+                      measure5={undefined}
+                      measure6={undefined}
+                      measure7={undefined}
+                      measure8={undefined}
+                      measure9={undefined}
+                      name="Apple Cider Punch #1"
+                      thumbnail="https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg"
 />,
-                  <Recipe
-                    alcoholic={undefined}
-                    category={undefined}
-                    forceDetails={false}
-                    glass={undefined}
-                    ingredient1={undefined}
-                    ingredient10={undefined}
-                    ingredient11={undefined}
-                    ingredient12={undefined}
-                    ingredient13={undefined}
-                    ingredient14={undefined}
-                    ingredient15={undefined}
-                    ingredient2={undefined}
-                    ingredient3={undefined}
-                    ingredient4={undefined}
-                    ingredient5={undefined}
-                    ingredient6={undefined}
-                    ingredient7={undefined}
-                    ingredient8={undefined}
-                    ingredient9={undefined}
-                    instructions={undefined}
-                    measure1={undefined}
-                    measure10={undefined}
-                    measure11={undefined}
-                    measure12={undefined}
-                    measure13={undefined}
-                    measure14={undefined}
-                    measure15={undefined}
-                    measure2={undefined}
-                    measure3={undefined}
-                    measure4={undefined}
-                    measure5={undefined}
-                    measure6={undefined}
-                    measure7={undefined}
-                    measure8={undefined}
-                    measure9={undefined}
-                    name="GG"
-                    thumbnail="https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
+                    <Recipe
+                      alcoholic={undefined}
+                      category={undefined}
+                      forceDetails={false}
+                      glass={undefined}
+                      ingredient1={undefined}
+                      ingredient10={undefined}
+                      ingredient11={undefined}
+                      ingredient12={undefined}
+                      ingredient13={undefined}
+                      ingredient14={undefined}
+                      ingredient15={undefined}
+                      ingredient2={undefined}
+                      ingredient3={undefined}
+                      ingredient4={undefined}
+                      ingredient5={undefined}
+                      ingredient6={undefined}
+                      ingredient7={undefined}
+                      ingredient8={undefined}
+                      ingredient9={undefined}
+                      instructions={undefined}
+                      measure1={undefined}
+                      measure10={undefined}
+                      measure11={undefined}
+                      measure12={undefined}
+                      measure13={undefined}
+                      measure14={undefined}
+                      measure15={undefined}
+                      measure2={undefined}
+                      measure3={undefined}
+                      measure4={undefined}
+                      measure5={undefined}
+                      measure6={undefined}
+                      measure7={undefined}
+                      measure8={undefined}
+                      measure9={undefined}
+                      name="Chocolate Monkey"
+                      thumbnail="https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg"
 />,
-                  <Recipe
-                    alcoholic={undefined}
-                    category={undefined}
-                    forceDetails={false}
-                    glass={undefined}
-                    ingredient1={undefined}
-                    ingredient10={undefined}
-                    ingredient11={undefined}
-                    ingredient12={undefined}
-                    ingredient13={undefined}
-                    ingredient14={undefined}
-                    ingredient15={undefined}
-                    ingredient2={undefined}
-                    ingredient3={undefined}
-                    ingredient4={undefined}
-                    ingredient5={undefined}
-                    ingredient6={undefined}
-                    ingredient7={undefined}
-                    ingredient8={undefined}
-                    ingredient9={undefined}
-                    instructions={undefined}
-                    measure1={undefined}
-                    measure10={undefined}
-                    measure11={undefined}
-                    measure12={undefined}
-                    measure13={undefined}
-                    measure14={undefined}
-                    measure15={undefined}
-                    measure2={undefined}
-                    measure3={undefined}
-                    measure4={undefined}
-                    measure5={undefined}
-                    measure6={undefined}
-                    measure7={undefined}
-                    measure8={undefined}
-                    measure9={undefined}
-                    name="Gluehwein"
-                    thumbnail="https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg"
+                    <Recipe
+                      alcoholic={undefined}
+                      category={undefined}
+                      forceDetails={false}
+                      glass={undefined}
+                      ingredient1={undefined}
+                      ingredient10={undefined}
+                      ingredient11={undefined}
+                      ingredient12={undefined}
+                      ingredient13={undefined}
+                      ingredient14={undefined}
+                      ingredient15={undefined}
+                      ingredient2={undefined}
+                      ingredient3={undefined}
+                      ingredient4={undefined}
+                      ingredient5={undefined}
+                      ingredient6={undefined}
+                      ingredient7={undefined}
+                      ingredient8={undefined}
+                      ingredient9={undefined}
+                      instructions={undefined}
+                      measure1={undefined}
+                      measure10={undefined}
+                      measure11={undefined}
+                      measure12={undefined}
+                      measure13={undefined}
+                      measure14={undefined}
+                      measure15={undefined}
+                      measure2={undefined}
+                      measure3={undefined}
+                      measure4={undefined}
+                      measure5={undefined}
+                      measure6={undefined}
+                      measure7={undefined}
+                      measure8={undefined}
+                      measure9={undefined}
+                      name="Egg Nog #4"
+                      thumbnail="https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg"
 />,
-                  <Recipe
-                    alcoholic={undefined}
-                    category={undefined}
-                    forceDetails={false}
-                    glass={undefined}
-                    ingredient1={undefined}
-                    ingredient10={undefined}
-                    ingredient11={undefined}
-                    ingredient12={undefined}
-                    ingredient13={undefined}
-                    ingredient14={undefined}
-                    ingredient15={undefined}
-                    ingredient2={undefined}
-                    ingredient3={undefined}
-                    ingredient4={undefined}
-                    ingredient5={undefined}
-                    ingredient6={undefined}
-                    ingredient7={undefined}
-                    ingredient8={undefined}
-                    ingredient9={undefined}
-                    instructions={undefined}
-                    measure1={undefined}
-                    measure10={undefined}
-                    measure11={undefined}
-                    measure12={undefined}
-                    measure13={undefined}
-                    measure14={undefined}
-                    measure15={undefined}
-                    measure2={undefined}
-                    measure3={undefined}
-                    measure4={undefined}
-                    measure5={undefined}
-                    measure6={undefined}
-                    measure7={undefined}
-                    measure8={undefined}
-                    measure9={undefined}
-                    name="Sunny Holiday Punch"
-                    thumbnail="https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg"
+                    <Recipe
+                      alcoholic={undefined}
+                      category={undefined}
+                      forceDetails={false}
+                      glass={undefined}
+                      ingredient1={undefined}
+                      ingredient10={undefined}
+                      ingredient11={undefined}
+                      ingredient12={undefined}
+                      ingredient13={undefined}
+                      ingredient14={undefined}
+                      ingredient15={undefined}
+                      ingredient2={undefined}
+                      ingredient3={undefined}
+                      ingredient4={undefined}
+                      ingredient5={undefined}
+                      ingredient6={undefined}
+                      ingredient7={undefined}
+                      ingredient8={undefined}
+                      ingredient9={undefined}
+                      instructions={undefined}
+                      measure1={undefined}
+                      measure10={undefined}
+                      measure11={undefined}
+                      measure12={undefined}
+                      measure13={undefined}
+                      measure14={undefined}
+                      measure15={undefined}
+                      measure2={undefined}
+                      measure3={undefined}
+                      measure4={undefined}
+                      measure5={undefined}
+                      measure6={undefined}
+                      measure7={undefined}
+                      measure8={undefined}
+                      measure9={undefined}
+                      name="Egg Nog - Healthy"
+                      thumbnail="https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg"
 />,
-                  <Recipe
-                    alcoholic={undefined}
-                    category={undefined}
-                    forceDetails={false}
-                    glass={undefined}
-                    ingredient1={undefined}
-                    ingredient10={undefined}
-                    ingredient11={undefined}
-                    ingredient12={undefined}
-                    ingredient13={undefined}
-                    ingredient14={undefined}
-                    ingredient15={undefined}
-                    ingredient2={undefined}
-                    ingredient3={undefined}
-                    ingredient4={undefined}
-                    ingredient5={undefined}
-                    ingredient6={undefined}
-                    ingredient7={undefined}
-                    ingredient8={undefined}
-                    ingredient9={undefined}
-                    instructions={undefined}
-                    measure1={undefined}
-                    measure10={undefined}
-                    measure11={undefined}
-                    measure12={undefined}
-                    measure13={undefined}
-                    measure14={undefined}
-                    measure15={undefined}
-                    measure2={undefined}
-                    measure3={undefined}
-                    measure4={undefined}
-                    measure5={undefined}
-                    measure6={undefined}
-                    measure7={undefined}
-                    measure8={undefined}
-                    measure9={undefined}
-                    name="Wine Cooler"
-                    thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
+                    <Recipe
+                      alcoholic={undefined}
+                      category={undefined}
+                      forceDetails={false}
+                      glass={undefined}
+                      ingredient1={undefined}
+                      ingredient10={undefined}
+                      ingredient11={undefined}
+                      ingredient12={undefined}
+                      ingredient13={undefined}
+                      ingredient14={undefined}
+                      ingredient15={undefined}
+                      ingredient2={undefined}
+                      ingredient3={undefined}
+                      ingredient4={undefined}
+                      ingredient5={undefined}
+                      ingredient6={undefined}
+                      ingredient7={undefined}
+                      ingredient8={undefined}
+                      ingredient9={undefined}
+                      instructions={undefined}
+                      measure1={undefined}
+                      measure10={undefined}
+                      measure11={undefined}
+                      measure12={undefined}
+                      measure13={undefined}
+                      measure14={undefined}
+                      measure15={undefined}
+                      measure2={undefined}
+                      measure3={undefined}
+                      measure4={undefined}
+                      measure5={undefined}
+                      measure6={undefined}
+                      measure7={undefined}
+                      measure8={undefined}
+                      measure9={undefined}
+                      name="Egg-Nog - Classic Cooked"
+                      thumbnail="https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg"
 />,
+                    <Recipe
+                      alcoholic={undefined}
+                      category={undefined}
+                      forceDetails={false}
+                      glass={undefined}
+                      ingredient1={undefined}
+                      ingredient10={undefined}
+                      ingredient11={undefined}
+                      ingredient12={undefined}
+                      ingredient13={undefined}
+                      ingredient14={undefined}
+                      ingredient15={undefined}
+                      ingredient2={undefined}
+                      ingredient3={undefined}
+                      ingredient4={undefined}
+                      ingredient5={undefined}
+                      ingredient6={undefined}
+                      ingredient7={undefined}
+                      ingredient8={undefined}
+                      ingredient9={undefined}
+                      instructions={undefined}
+                      measure1={undefined}
+                      measure10={undefined}
+                      measure11={undefined}
+                      measure12={undefined}
+                      measure13={undefined}
+                      measure14={undefined}
+                      measure15={undefined}
+                      measure2={undefined}
+                      measure3={undefined}
+                      measure4={undefined}
+                      measure5={undefined}
+                      measure6={undefined}
+                      measure7={undefined}
+                      measure8={undefined}
+                      measure9={undefined}
+                      name="GG"
+                      thumbnail="https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
+/>,
+                    <Recipe
+                      alcoholic={undefined}
+                      category={undefined}
+                      forceDetails={false}
+                      glass={undefined}
+                      ingredient1={undefined}
+                      ingredient10={undefined}
+                      ingredient11={undefined}
+                      ingredient12={undefined}
+                      ingredient13={undefined}
+                      ingredient14={undefined}
+                      ingredient15={undefined}
+                      ingredient2={undefined}
+                      ingredient3={undefined}
+                      ingredient4={undefined}
+                      ingredient5={undefined}
+                      ingredient6={undefined}
+                      ingredient7={undefined}
+                      ingredient8={undefined}
+                      ingredient9={undefined}
+                      instructions={undefined}
+                      measure1={undefined}
+                      measure10={undefined}
+                      measure11={undefined}
+                      measure12={undefined}
+                      measure13={undefined}
+                      measure14={undefined}
+                      measure15={undefined}
+                      measure2={undefined}
+                      measure3={undefined}
+                      measure4={undefined}
+                      measure5={undefined}
+                      measure6={undefined}
+                      measure7={undefined}
+                      measure8={undefined}
+                      measure9={undefined}
+                      name="Gluehwein"
+                      thumbnail="https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg"
+/>,
+                    <Recipe
+                      alcoholic={undefined}
+                      category={undefined}
+                      forceDetails={false}
+                      glass={undefined}
+                      ingredient1={undefined}
+                      ingredient10={undefined}
+                      ingredient11={undefined}
+                      ingredient12={undefined}
+                      ingredient13={undefined}
+                      ingredient14={undefined}
+                      ingredient15={undefined}
+                      ingredient2={undefined}
+                      ingredient3={undefined}
+                      ingredient4={undefined}
+                      ingredient5={undefined}
+                      ingredient6={undefined}
+                      ingredient7={undefined}
+                      ingredient8={undefined}
+                      ingredient9={undefined}
+                      instructions={undefined}
+                      measure1={undefined}
+                      measure10={undefined}
+                      measure11={undefined}
+                      measure12={undefined}
+                      measure13={undefined}
+                      measure14={undefined}
+                      measure15={undefined}
+                      measure2={undefined}
+                      measure3={undefined}
+                      measure4={undefined}
+                      measure5={undefined}
+                      measure6={undefined}
+                      measure7={undefined}
+                      measure8={undefined}
+                      measure9={undefined}
+                      name="Sunny Holiday Punch"
+                      thumbnail="https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg"
+/>,
+                    <Recipe
+                      alcoholic={undefined}
+                      category={undefined}
+                      forceDetails={false}
+                      glass={undefined}
+                      ingredient1={undefined}
+                      ingredient10={undefined}
+                      ingredient11={undefined}
+                      ingredient12={undefined}
+                      ingredient13={undefined}
+                      ingredient14={undefined}
+                      ingredient15={undefined}
+                      ingredient2={undefined}
+                      ingredient3={undefined}
+                      ingredient4={undefined}
+                      ingredient5={undefined}
+                      ingredient6={undefined}
+                      ingredient7={undefined}
+                      ingredient8={undefined}
+                      ingredient9={undefined}
+                      instructions={undefined}
+                      measure1={undefined}
+                      measure10={undefined}
+                      measure11={undefined}
+                      measure12={undefined}
+                      measure13={undefined}
+                      measure14={undefined}
+                      measure15={undefined}
+                      measure2={undefined}
+                      measure3={undefined}
+                      measure4={undefined}
+                      measure5={undefined}
+                      measure6={undefined}
+                      measure7={undefined}
+                      measure8={undefined}
+                      measure9={undefined}
+                      name="Wine Cooler"
+                      thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
+/>,
+                  ],
                 ],
                 "className": "recipe-summary-container",
               },
               "ref": null,
               "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="curve2"
+/>,
+                      <div
+                        className="point2"
+/>,
+                    ],
+                    "className": "arrow2",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "curve2",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "point2",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
                 Object {
                   "instance": null,
                   "key": "12864",
@@ -4009,158 +4357,6 @@ ShallowWrapper {
                   "ref": null,
                   "rendered": null,
                   "type": [Function],
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <p
-                    className="inventoryGuide"
->
-                    Click on "Update My Inventory" below to select ingredients that you already own.
-</p>,
-                  <p
-                    className="menuGuide"
->
-                    Then click "View My Bar Menu" to see recipes that you can make.
-</p>,
-                  <div
-                    className="arrow3"
->
-                    <div
-                                        className="curve3"
-                    />
-                    <div
-                                        className="point3"
-                    />
-</div>,
-                  <div
-                    className="arrow4"
->
-                    <div
-                                        className="curve4"
-                    />
-                    <div
-                                        className="point4"
-                    />
-</div>,
-                ],
-                "className": "welcome-footer",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Click on \\"Update My Inventory\\" below to select ingredients that you already own.",
-                    "className": "inventoryGuide",
-                  },
-                  "ref": null,
-                  "rendered": "Click on \\"Update My Inventory\\" below to select ingredients that you already own.",
-                  "type": "p",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Then click \\"View My Bar Menu\\" to see recipes that you can make.",
-                    "className": "menuGuide",
-                  },
-                  "ref": null,
-                  "rendered": "Then click \\"View My Bar Menu\\" to see recipes that you can make.",
-                  "type": "p",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <div
-                        className="curve3"
-/>,
-                      <div
-                        className="point3"
-/>,
-                    ],
-                    "className": "arrow3",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "className": "curve3",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "div",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "className": "point3",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "div",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <div
-                        className="curve4"
-/>,
-                      <div
-                        className="point4"
-/>,
-                    ],
-                    "className": "arrow4",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "className": "curve4",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "div",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "className": "point4",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "div",
-                    },
-                  ],
-                  "type": "div",
                 },
               ],
               "type": "div",

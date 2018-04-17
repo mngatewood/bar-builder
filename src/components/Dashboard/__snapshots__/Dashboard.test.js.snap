@@ -4,7 +4,10 @@ exports[`Dashboard matches the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withRouter(Connect(Dashboard)) />,
+  Symbol(enzyme.__unrendered__): <Dashboard
+    addMenuRecipes={[Function]}
+    clearMenuRecipes={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -15,25 +18,135 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "render": [Function],
+      "children": Array [
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/inventory"
+>
+          <button>
+                    Update My Inventory
+          </button>
+</NavLink>,
+        <button
+          onClick={[Function]}
+>
+          View My Bar Menu
+</button>,
+      ],
+      "className": "dashboard-container",
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": <button>
+            Update My Inventory
+</button>,
+          "to": "/inventory",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Update My Inventory",
+          },
+          "ref": null,
+          "rendered": "Update My Inventory",
+          "type": "button",
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "View My Bar Menu",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "View My Bar Menu",
+        "type": "button",
+      },
+    ],
+    "type": "aside",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "render": [Function],
+        "children": Array [
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/inventory"
+>
+            <button>
+                        Update My Inventory
+            </button>
+</NavLink>,
+          <button
+            onClick={[Function]}
+>
+            View My Bar Menu
+</button>,
+        ],
+        "className": "dashboard-container",
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": <button>
+              Update My Inventory
+</button>,
+            "to": "/inventory",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Update My Inventory",
+            },
+            "ref": null,
+            "rendered": "Update My Inventory",
+            "type": "button",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "View My Bar Menu",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "View My Bar Menu",
+          "type": "button",
+        },
+      ],
+      "type": "aside",
     },
   ],
   Symbol(enzyme.__options__): Object {
