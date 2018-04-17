@@ -30,12 +30,6 @@ describe("getMenuRecipes", () => {
     await expect(getRecipes(mock.mockInventory, mock.mockIngredientsList)).resolves.toEqual(expected);
   });
 
-  it.skip("throws an error when status is not ok", () => {
-    window.fetch = mock.mockFetchReject;
-    const expected = Error("Error retrieving recipes: Something went wrong.");
-
-    expect(getMenuRecipes(mock.mockInventory, mock.mockIngredientsList)).rejects.toEqual(expected);
-  });
 });
 
 

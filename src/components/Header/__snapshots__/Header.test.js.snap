@@ -609,6 +609,7 @@ ShallowWrapper {
           className="title"
 >
           <Link
+                    onClick={[Function]}
                     replace={false}
                     to="/"
           >
@@ -1546,6 +1547,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <Link
+            onClick={[Function]}
             replace={false}
             to="/"
 >
@@ -1564,6 +1566,7 @@ ShallowWrapper {
             "children": <h1>
               The Bar Builder    
 </h1>,
+            "onClick": [Function],
             "replace": false,
             "to": "/",
           },
@@ -5623,6 +5626,7 @@ ShallowWrapper {
             className="title"
 >
             <Link
+                        onClick={[Function]}
                         replace={false}
                         to="/"
             >
@@ -6560,6 +6564,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Link
+              onClick={[Function]}
               replace={false}
               to="/"
 >
@@ -6578,6 +6583,7 @@ ShallowWrapper {
               "children": <h1>
                 The Bar Builder    
 </h1>,
+              "onClick": [Function],
               "replace": false,
               "to": "/",
             },
