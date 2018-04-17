@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import { withRouter} from 'react-router-dom';
 import { Recipe } from '../Recipe/Recipe';
 
-const Menu = ({recipes}) => {
-  const displayRecipe = recipes.map(recipe => {
+export const MenuContainer = ({menu}) => {
+  const displayRecipe = menu.map(recipe => {
     return <Recipe
       key={recipe.idDrink}
       name={recipe.strDrink}
@@ -61,11 +61,11 @@ const Menu = ({recipes}) => {
 };
 
 export const mapStateToProps = (state) => ({
-  recipes: state.menu
+  menu: state.menu
 });
 
-Menu.propTypes = {
-  recipes: PropTypes.array
+MenuContainer.propTypes = {
+  menu: PropTypes.array
 };
 
-export default connect(mapStateToProps)(Menu);
+export default connect(mapStateToProps)(MenuContainer);
