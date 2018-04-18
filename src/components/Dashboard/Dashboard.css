@@ -52,6 +52,19 @@
   font-family: "Billy";
 }
 
+#left-button {
+  margin-right: 120px;
+}
+
+#left-image {
+  width: 245px;
+}
+
+#left-button-text {
+  left: 55px;
+  width: 200px;
+}
+
 NavLink {
   border: none;
 }
