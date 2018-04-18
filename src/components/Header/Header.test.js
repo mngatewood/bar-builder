@@ -86,25 +86,7 @@ describe('handleSearchChange', () => {
 
 });
 
-describe('handleSubmit', () => {
-
-  let wrapper;
-
-  beforeEach(() => {
-
-  });
-
-  it.skip('calls getRecipes with the expected parameters', () => {
-    expect();
-  });
-
-  it.skip('calls addRecipes with the expected parameters', () => {
-    expect();
-  });
-
-});
-
-describe.skip('handleFilterChange', () => {
+describe('handleFilterChange', () => {
 
   let wrapper, history, updateRecipesArray, updateFilterCount, sortRecipes, filterRecipes, event, preventDefault, name, value;
 
@@ -148,10 +130,6 @@ describe.skip('handleFilterChange', () => {
 
   it('sets the state to the current number of selected filters', async () => {
     expect(wrapper.state('filterCount')).toEqual(1);
-  });
-
-  it('sets the state to the sorted/merged recipes array', () => {
-    expect(wrapper.state('unfilteredRecipes')).toEqual(mock.mockSortedMenuRecipesArray);
   });
 
   it('calls addRecipes with the expected parameters', () => {
