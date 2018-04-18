@@ -2,6 +2,8 @@ import { Dashboard, mapStateToProps, mapDispatchToProps } from './Dashboard';
 import { shallow } from 'enzyme';
 import React from 'react';
 import * as mock from '../../mockData/mockData';
+import { getMenuRecipes } from '../../api/apiHelpers/getMenuRecipes';
+jest.mock('../../api/apiHelpers/getMenuRecipes');
 
 describe("Dashboard", () => {
 
@@ -35,14 +37,17 @@ describe("Dashboard", () => {
 
 describe("handleMenuClick", () => {
 
-  it.skip('calls clearMenuRecipes, getMenuRecipes, addMenuRecipes with expected params', () => {
+  it('calls clearMenuRecipes, getMenuRecipes, addMenuRecipes with expected params', () => {
     const addMenuRecipes = jest.fn();
     const clearMenuRecipes = jest.fn();
-    const getMenuRecipes = jest.fn();
+    // const getMenuRecipes = jest.fn();
+    const history = {};
+    history.push = jest.fn();
     const wrapper = shallow(<Dashboard
       addMenuRecipes={addMenuRecipes}
       clearMenuRecipes={clearMenuRecipes}
-      getMenuRecipes={getMenuRecipes} />);
+      getMenuRecipes={getMenuRecipes}
+      history={history} />);
 
     wrapper.instance().handleMenuClick();
     expect(clearMenuRecipes).toHaveBeenCalled;
