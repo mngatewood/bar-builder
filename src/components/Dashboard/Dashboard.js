@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import { addMenuRecipes, clearMenuRecipes } from '../../actions';
 import PropTypes from 'prop-types';
 import './Dashboard.css';
+import buttonRight from '../../assets/bar-button-right.png';
+import buttonLeft from '../../assets/bar-button-left.png';
 
 export class Dashboard extends Component {
 
@@ -26,11 +28,13 @@ export class Dashboard extends Component {
     return <aside className="dashboard-container">
       <NavLink to='/inventory'>
         <button>
-          Update My Inventory
+          <img src={buttonRight} alt="button" />
+          <span className="button-text">INVENTORY</span>
         </button>
       </NavLink>
       <button onClick={this.handleMenuClick}>
-          View My Bar Menu
+        <img src={buttonRight} alt="button" />
+        <span className="button-text">BAR MENU</span>
       </button>
     </aside>;
 
