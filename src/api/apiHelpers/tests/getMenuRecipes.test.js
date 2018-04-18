@@ -9,8 +9,8 @@ jest.mock('../getUniqueMenuRecipes');
 describe("getMenuRecipes", () => {
 
   it("calls getRecipes with expected params", async () => {
-    await getMenuRecipes(mock.mockInventory, mock.mockIngredientsList);
-    expect(getRecipes).toHaveBeenCalled;
+    await getMenuRecipes(["Grenadine"], mock.mockIngredientsList);
+    expect(getRecipes).toHaveBeenCalledWith("filter", "i", "Grenadine");
   });
 
   it("calls filterMenuRecipes with expected params", async () => {
