@@ -3,6 +3,7 @@ import './Welcome.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Recipe } from '../Recipe/Recipe';
+import pageTitleSign from '../../assets/page-title-sign.png';
 
 export const Welcome = ({recipes}) => {
   const displayRecipe = recipes.map(recipe => {
@@ -51,6 +52,9 @@ export const Welcome = ({recipes}) => {
     <div className="welcome-container">
       <div className="page-title-wrapper">
         <div className="page-title">
+          <img src={pageTitleSign}
+            className="page-title-sign"
+            alt="page title background" />
           <h2>Welcome</h2>
         </div>
       </div>
