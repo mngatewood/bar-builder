@@ -120,7 +120,7 @@ export class Recipe extends Component {
               <table className="ingredients-table">
                 <tbody>
                   <tr>
-                    <td className="table-category" 
+                    <td className="ingredient-category table-category" 
                       colSpan="2">Ingredients: </td>
                   </tr>
                   <tr>

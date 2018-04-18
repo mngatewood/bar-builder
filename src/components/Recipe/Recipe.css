@@ -76,10 +76,10 @@ img.recipe-image {
 
 .recipe-details {
   display: flex;
-  background-color: rgba(85, 90, 107, 1);
-  color: white;
+  background-color: rgba(246, 239, 246, 1);
+  color: rgba(77, 37, 133, 1);
+  border: 1px solid rgba(85, 90, 107, 1);
   border-radius: 5px;
-  font-family: Roboto;
   box-shadow: 5px 5px 5px rgba(158, 160, 179, 0.7);
 }
 
@@ -90,8 +90,9 @@ img.recipe-image {
 .recipe-details h1 {
   padding-left: 20px;
   text-align: left;
-  text-decoration: underline;
-  font-family: "Prosto One";
+  /* text-decoration: underline; */
+  font-family: "Kaushan Script";
+  font-size: 36px;
 }
 
 table {
@@ -99,6 +100,13 @@ table {
   padding: 0 20px;
   vertical-align: top;
   padding: 0px 20px 20px 20px;
+}
+
+.table-text {
+  font-family: "Nothing You Could Do";
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px 0;
 }
 
 .table-category {
@@ -111,9 +119,11 @@ table {
   font-family: "Convergence";
 }
 
-.table-text {
-  font-size: 18px;
-  padding: 10px 0;
+.ingredient-category.table-category {
+  padding-bottom: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Convergence";
 }
 
 .cocktail-image-container {
@@ -144,6 +154,9 @@ table {
 .ingredients-table td {
   margin-bottom: 10px;
   border-bottom: 5px solid transparent;
+  font-family: "Nothing You Could Do";
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 #close-details {
