@@ -25,9 +25,7 @@
   background-color: transparent;
   border: transparent;
   font-weight: bold;
-  color: white;
-  /* border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1); */
+  color: rgba(245, 244, 193, 1);
   cursor: pointer;
   width: 100px;
 }
