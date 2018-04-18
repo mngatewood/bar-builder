@@ -1,5 +1,7 @@
 import { updateRecipesArray } from '../updateRecipesArray';
 import * as mock from '../../../mockData/mockData';
+import { getRecipes } from '../../apiCalls/getRecipes';
+jest.mock('../../apiCalls/getRecipes');
 
 describe('updateRecipesArray', () => {
 

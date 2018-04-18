@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import './Header.css';
 import PropTypes from 'prop-types';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
-import { addRecipes } from '../../actions/';
+import { addRecipes, clearRecipes } from '../../actions/';
 import { filterRecipes } from '../../api/apiHelpers/filterRecipes';
 import { sortRecipes } from '../../api/apiHelpers/sortRecipes';
 import { updateRecipesArray } from '../../api/apiHelpers/updateRecipesArray';
@@ -141,12 +141,12 @@ export const mapStateToProps = state => ({
   recipes: state.recipes,
   categories: state.categories,
   ingredients: state.ingredients,
-  alcoholicOptions: state.alcoholicOptions,
-  clearRecipes: state.clearRecipes
+  alcoholicOptions: state.alcoholicOptions
 });
 
 export const mapDispatchToProps = dispatch => ({
-  addRecipes: recipes => dispatch(addRecipes(recipes))
+  addRecipes: recipes => dispatch(addRecipes(recipes)),
+  clearRecipes: () => dispatch(clearRecipes())
 });
 
 Header.propTypes = {
