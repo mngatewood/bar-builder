@@ -74,6 +74,11 @@ ShallowWrapper {
           <div
                     className="page-title"
           >
+                    <img
+                              alt="page title background"
+                              className="page-title-sign"
+                              src="page-title-sign.png"
+                    />
                     <h2>
                               Welcome
                     </h2>
@@ -538,6 +543,11 @@ ShallowWrapper {
           "children": <div
             className="page-title"
 >
+            <img
+                        alt="page title background"
+                        className="page-title-sign"
+                        src="page-title-sign.png"
+            />
             <h2>
                         Welcome
             </h2>
@@ -550,23 +560,45 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h2>
-              Welcome
+            "children": Array [
+              <img
+                alt="page title background"
+                className="page-title-sign"
+                src="page-title-sign.png"
+/>,
+              <h2>
+                Welcome
 </h2>,
+            ],
             "className": "page-title",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Welcome",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "page title background",
+                "className": "page-title-sign",
+                "src": "page-title-sign.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
             },
-            "ref": null,
-            "rendered": "Welcome",
-            "type": "h2",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Welcome",
+              },
+              "ref": null,
+              "rendered": "Welcome",
+              "type": "h2",
+            },
+          ],
           "type": "div",
         },
         "type": "div",
@@ -2227,6 +2259,11 @@ ShallowWrapper {
             <div
                         className="page-title"
             >
+                        <img
+                                    alt="page title background"
+                                    className="page-title-sign"
+                                    src="page-title-sign.png"
+                        />
                         <h2>
                                     Welcome
                         </h2>
@@ -2691,6 +2728,11 @@ ShallowWrapper {
             "children": <div
               className="page-title"
 >
+              <img
+                            alt="page title background"
+                            className="page-title-sign"
+                            src="page-title-sign.png"
+              />
               <h2>
                             Welcome
               </h2>
@@ -2703,23 +2745,45 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <h2>
-                Welcome
+              "children": Array [
+                <img
+                  alt="page title background"
+                  className="page-title-sign"
+                  src="page-title-sign.png"
+/>,
+                <h2>
+                  Welcome
 </h2>,
+              ],
               "className": "page-title",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Welcome",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "page title background",
+                  "className": "page-title-sign",
+                  "src": "page-title-sign.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
               },
-              "ref": null,
-              "rendered": "Welcome",
-              "type": "h2",
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Welcome",
+                },
+                "ref": null,
+                "rendered": "Welcome",
+                "type": "h2",
+              },
+            ],
             "type": "div",
           },
           "type": "div",
