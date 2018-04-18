@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Ingredient from '../../components/Ingredient/Ingredient';
 import PropTypes from 'prop-types';
 import './InventoryContainer.css';
+import pageTitleSign from '../../assets/page-title-sign.png';
 
 export const InventoryContainer = ({ingredients, inventory}) => {
   
@@ -23,6 +24,9 @@ export const InventoryContainer = ({ingredients, inventory}) => {
     <div className="inventory-container">
       <div className="page-title-wrapper">
         <div className="page-title">
+          <img src={pageTitleSign}
+            className="page-title-sign"
+            alt="page title background" />
           <h2>My Inventory</h2>
         </div>
       </div>

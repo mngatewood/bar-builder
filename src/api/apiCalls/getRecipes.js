@@ -10,6 +10,9 @@ export const getRecipes = async (queryType, filterType, filterValue) => {
   try {
     const response = await fetch(url);
     const recipeSummary = await response.json();
+    if (recipeSummary.drinks === null) { 
+      return []; 
+    }
     const recipeDetails = await getRecipeDetails(recipeSummary.drinks);
     return recipeDetails;
   } catch (error) {
