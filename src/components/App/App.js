@@ -14,11 +14,6 @@ import { connect } from 'react-redux';
 import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';
 
 export class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-    };
-  }
 
   async componentDidMount() {
     const recipes = await getRecipes("random");

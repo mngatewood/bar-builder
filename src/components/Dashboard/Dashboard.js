@@ -7,11 +7,6 @@ import { connect } from 'react-redux';
 import { addMenuRecipes, clearMenuRecipes } from '../../actions';
 
 export class Dashboard extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
 
   handleMenuClick = async () => {
     const { inventory, ingredients, clearMenuRecipes, addMenuRecipes, history } = this.props;
