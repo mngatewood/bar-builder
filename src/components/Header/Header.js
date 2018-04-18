@@ -48,26 +48,14 @@ export class Header extends Component {
   }
   
   handleFilterChange = async (event) => {
-    // const { filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes, unfilteredRecipes} = this.state;
     this.props.history.push('/recipes');
     const { name, value } = event.target;
     this.setState({ [name]: value });
     const type = event.target.id;
     this.setState(await updateRecipesArray(name, type, value));
     this.setState(await updateFilterCount(this.state));
-      // this.state.categoryRecipes, 
-      // this.state.ingredientRecipes, 
-      // this.state.alcoholicRecipes));
     this.setState(await sortRecipes(this.state));
-      // this.state.categoryRecipes, 
-      // this.state.ingredientRecipes, 
-      // this.state.alcoholicRecipes));
     this.props.addRecipes(await filterRecipes(this.state));
-      // this.state.filterCount, 
-      // this.state.categoryRecipes, 
-      // this.state.ingredientRecipes, 
-      // this.state.alcoholicRecipes, 
-      // this.state.unfilteredRecipes));
   }
 
   handleRedirect = () => {

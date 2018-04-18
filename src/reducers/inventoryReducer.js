@@ -4,7 +4,7 @@ const inventoryReducer = (state = [], action) => {
     return [...state, action.ingredient];
   case 'REMOVE_INGREDIENT':
     return state.filter(ingredient => 
-      ingredient !== action.ingredient);
+      ingredient.strIngredient1 !== action.ingredient.strIngredient1);
   default:
     return state;
   }

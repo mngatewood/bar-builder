@@ -3,23 +3,52 @@ import * as mock from '../../../mockData/mockData';
 
 describe('updateFilterCount', () => {
 
-  it.skip('returns the number of populated filter arrays', () => {
-    let category = mock.mockSodaCategoryRecipes
-    let ingredient = [];
-    let alcoholic = [];
+  let category, ingredient, alcoholic;
 
-    expect(updateFilterCount(category, ingredient, alcoholic)).
-      toEqual({ filterCount: 1 });
+  beforeEach(() => {
 
+    category = [];
+    ingredient = [];
+    alcoholic = [];
+
+  });
+
+  it('returns 1 if one array is populated', () => {
+    category = mock.mockSodaCategoryRecipes;
+    const props = {
+      "categoryRecipes": category,
+      "ingredientRecipes": ingredient,
+      "alcoholicRecipes": alcoholic
+    }
+
+    expect(updateFilterCount(props)).toEqual({ filterCount: 1 });
+
+  });
+
+  it('returns 2 if two arrays are populated', () => {
+    category = mock.mockSodaCategoryRecipes;
     ingredient = mock.mockCocaColaIngredientRecipes;
+    const props = {
+      "categoryRecipes": category,
+      "ingredientRecipes": ingredient,
+      "alcoholicRecipes": alcoholic
+    }
 
-    expect(updateFilterCount(category, ingredient, alcoholic)).
-      toEqual({ filterCount: 2 });
+    expect(updateFilterCount(props)).toEqual({ filterCount: 2 });
 
+  });
+
+  it('returns 3 if three arrays are populated', () => {
+    category = mock.mockSodaCategoryRecipes
+    ingredient = mock.mockCocaColaIngredientRecipes;
     alcoholic = mock.mockNonAlcoholicRecipes;
+    const props = {
+      "categoryRecipes": category,
+      "ingredientRecipes": ingredient,
+      "alcoholicRecipes": alcoholic
+    };
 
-    expect(updateFilterCount(category, ingredient, alcoholic)).
-      toEqual({ filterCount: 3 });
+    expect(updateFilterCount(props)).toEqual({ filterCount: 3 });
 
   });
 

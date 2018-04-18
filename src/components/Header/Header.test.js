@@ -88,35 +88,18 @@ describe('handleSearchChange', () => {
 
 describe('handleSubmit', () => {
 
-  let wrapper, event, getRecipes, addRecipes, history;
+  let wrapper;
 
   beforeEach(() => {
 
-    history={};
-    history.push=jest.fn();
-    event = { preventDefault: jest.fn() };
-    getRecipes = jest.fn();
-    addRecipes = jest.fn();
-    wrapper = shallow(<Header
-      categories={mock.sortedCategoryOptions}
-      ingredients={mock.sortedIngredientOptions}
-      alcoholicOptions={mock.sortedAlcoholicOptions}
-      history={history}
-      addRecipes={addRecipes}
-    />);
-    wrapper.instance().handleSubmit(event);
   });
 
-  it('calls getRecipes with expected params', () => {
-    expect(getRecipes).toHaveBeenCalled;
-  })
-
-  it('clears the search field', () => {
-    expect(wrapper.state('search')).toEqual( '' )
+  it.skip('calls getRecipes with the expected parameters', () => {
+    expect();
   });
 
-  it('calls addRecipes with expected params', () => {
-    expect(addRecipes).toHaveBeenCalled;
+  it.skip('calls addRecipes with the expected parameters', () => {
+    expect();
   });
 
 });
@@ -148,19 +131,19 @@ describe.skip('handleFilterChange', () => {
         value: 'Beer'
       }
     };
-    wrapper.instance().handleSubmit(event);
-
+    wrapper.instance().handleFilterChange(event);
+    
   });
 
   it('sets the state to the current filter value', () => {
+    wrapper.instance().handleFilterChange(event);
     const name = event.target.name;
     const value = event.target.value;
-    wrapper.setState({ [name]: value });
     expect(wrapper.state('categoryFilter')).toEqual('Beer');
   });
 
-  it('sets the state to the currently filtered array of recipes', async () => {
-    await expect(wrapper.state('categoryRecipes')).toEqual(mock.mockUnsortedMenuRecipeArray);
+  it('sets the state to the currently filtered array of recipes', () => {
+    expect(wrapper.state('categoryRecipes')).toEqual(mock.mockUnsortedMenuRecipeArray);
   });
 
   it('sets the state to the current number of selected filters', async () => {

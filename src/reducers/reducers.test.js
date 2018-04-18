@@ -72,7 +72,7 @@ describe('reducers', () => {
       expect(inventoryReducer(state, action)).toEqual(expected);
     });
 
-    it.skip('should return a state with ingredient removed', () => {
+    it('should return a state with ingredient removed', () => {
       const state = [{ strIngredient1: "water" }, { strIngredient1: "ice" }];
       let ingredient = { strIngredient1: "ice" };
       let expected = [{ strIngredient1: "water" }];
