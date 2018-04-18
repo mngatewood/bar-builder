@@ -12,6 +12,10 @@ The Bar Builder is an application that allows users to view cocktail recipes in 
 * HTML
 * Blood, sweat, and tears
 
+## Contributors
+
+[Michael Gatewood](https://github.com/mngatewood)
+
 ## Additional Screenshots
 
 ![Welcome](https://raw.githubusercontent.com/mngatewood/bar-builder/master/src/assets/Welcome.png)
