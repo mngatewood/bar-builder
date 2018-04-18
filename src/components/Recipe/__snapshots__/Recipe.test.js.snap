@@ -173,7 +173,7 @@ ShallowWrapper {
                                                   <tbody>
                                                             <tr>
                                                                       <td
-                                                                                className="table-category"
+                                                                                className="ingredient-category table-category"
                                                                                 colSpan="2"
                                                                       >
                                                                                 Ingredients: 
@@ -795,7 +795,7 @@ ShallowWrapper {
                                                         <tbody>
                                                                       <tr>
                                                                                     <td
-                                                                                                  className="table-category"
+                                                                                                  className="ingredient-category table-category"
                                                                                                   colSpan="2"
                                                                                     >
                                                                                                   Ingredients: 
@@ -967,7 +967,7 @@ ShallowWrapper {
                                                 <tbody>
                                                                 <tr>
                                                                                 <td
-                                                                                                className="table-category"
+                                                                                                className="ingredient-category table-category"
                                                                                                 colSpan="2"
                                                                                 >
                                                                                                 Ingredients: 
@@ -1119,7 +1119,7 @@ ShallowWrapper {
                                         <tbody>
                                                             <tr>
                                                                                 <td
-                                                                                                    className="table-category"
+                                                                                                    className="ingredient-category table-category"
                                                                                                     colSpan="2"
                                                                                 >
                                                                                                     Ingredients: 
@@ -1610,7 +1610,7 @@ ShallowWrapper {
                       <tbody>
                                             <tr>
                                                                   <td
-                                                                                        className="table-category"
+                                                                                        className="ingredient-category table-category"
                                                                                         colSpan="2"
                                                                   >
                                                                                         Ingredients: 
@@ -1689,7 +1689,7 @@ ShallowWrapper {
                       "children": <tbody>
                         <tr>
                                                 <td
-                                                                        className="table-category"
+                                                                        className="ingredient-category table-category"
                                                                         colSpan="2"
                                                 >
                                                                         Ingredients: 
@@ -1767,7 +1767,7 @@ ShallowWrapper {
                         "children": Array [
                           <tr>
                             <td
-                                                        className="table-category"
+                                                        className="ingredient-category table-category"
                                                         colSpan="2"
                             >
                                                         Ingredients: 
@@ -1843,7 +1843,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": <td
-                              className="table-category"
+                              className="ingredient-category table-category"
                               colSpan="2"
 >
                               Ingredients: 
@@ -1856,7 +1856,7 @@ ShallowWrapper {
                             "nodeType": "host",
                             "props": Object {
                               "children": "Ingredients: ",
-                              "className": "table-category",
+                              "className": "ingredient-category table-category",
                               "colSpan": "2",
                             },
                             "ref": null,
@@ -2598,7 +2598,7 @@ ShallowWrapper {
                                                             <tbody>
                                                                         <tr>
                                                                                     <td
-                                                                                                className="table-category"
+                                                                                                className="ingredient-category table-category"
                                                                                                 colSpan="2"
                                                                                     >
                                                                                                 Ingredients: 
@@ -3220,7 +3220,7 @@ ShallowWrapper {
                                                                 <tbody>
                                                                                 <tr>
                                                                                                 <td
-                                                                                                                className="table-category"
+                                                                                                                className="ingredient-category table-category"
                                                                                                                 colSpan="2"
                                                                                                 >
                                                                                                                 Ingredients: 
@@ -3392,7 +3392,7 @@ ShallowWrapper {
                                                       <tbody>
                                                                         <tr>
                                                                                           <td
-                                                                                                            className="table-category"
+                                                                                                            className="ingredient-category table-category"
                                                                                                             colSpan="2"
                                                                                           >
                                                                                                             Ingredients: 
@@ -3544,7 +3544,7 @@ ShallowWrapper {
                                             <tbody>
                                                                   <tr>
                                                                                         <td
-                                                                                                              className="table-category"
+                                                                                                              className="ingredient-category table-category"
                                                                                                               colSpan="2"
                                                                                         >
                                                                                                               Ingredients: 
@@ -4035,7 +4035,7 @@ ShallowWrapper {
                         <tbody>
                                                 <tr>
                                                                         <td
-                                                                                                className="table-category"
+                                                                                                className="ingredient-category table-category"
                                                                                                 colSpan="2"
                                                                         >
                                                                                                 Ingredients: 
@@ -4114,7 +4114,7 @@ ShallowWrapper {
                         "children": <tbody>
                           <tr>
                                                     <td
-                                                                              className="table-category"
+                                                                              className="ingredient-category table-category"
                                                                               colSpan="2"
                                                     >
                                                                               Ingredients: 
@@ -4192,7 +4192,7 @@ ShallowWrapper {
                           "children": Array [
                             <tr>
                               <td
-                                                            className="table-category"
+                                                            className="ingredient-category table-category"
                                                             colSpan="2"
                               >
                                                             Ingredients: 
@@ -4268,7 +4268,7 @@ ShallowWrapper {
                             "nodeType": "host",
                             "props": Object {
                               "children": <td
-                                className="table-category"
+                                className="ingredient-category table-category"
                                 colSpan="2"
 >
                                 Ingredients: 
@@ -4281,7 +4281,7 @@ ShallowWrapper {
                               "nodeType": "host",
                               "props": Object {
                                 "children": "Ingredients: ",
-                                "className": "table-category",
+                                "className": "ingredient-category table-category",
                                 "colSpan": "2",
                               },
                               "ref": null,

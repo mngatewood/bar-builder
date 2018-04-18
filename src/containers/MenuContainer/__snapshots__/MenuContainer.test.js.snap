@@ -74,6 +74,11 @@ ShallowWrapper {
           <div
                     className="page-title"
           >
+                    <img
+                              alt="page title background"
+                              className="page-title-sign"
+                              src="page-title-sign.png"
+                    />
                     <h2>
                               My Bar Menu
                     </h2>
@@ -434,6 +439,12 @@ ShallowWrapper {
                     thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
           />
 </div>,
+        <div
+          className="no-results"
+          hidden={9}
+>
+          There are no results to display.
+</div>,
       ],
       "className": "menu-container",
     },
@@ -447,6 +458,11 @@ ShallowWrapper {
           "children": <div
             className="page-title"
 >
+            <img
+                        alt="page title background"
+                        className="page-title-sign"
+                        src="page-title-sign.png"
+            />
             <h2>
                         My Bar Menu
             </h2>
@@ -459,23 +475,45 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h2>
-              My Bar Menu
+            "children": Array [
+              <img
+                alt="page title background"
+                className="page-title-sign"
+                src="page-title-sign.png"
+/>,
+              <h2>
+                My Bar Menu
 </h2>,
+            ],
             "className": "page-title",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "My Bar Menu",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "page title background",
+                "className": "page-title-sign",
+                "src": "page-title-sign.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
             },
-            "ref": null,
-            "rendered": "My Bar Menu",
-            "type": "h2",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "My Bar Menu",
+              },
+              "ref": null,
+              "rendered": "My Bar Menu",
+              "type": "h2",
+            },
+          ],
           "type": "div",
         },
         "type": "div",
@@ -1268,6 +1306,19 @@ ShallowWrapper {
         ],
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "There are no results to display.",
+          "className": "no-results",
+          "hidden": 9,
+        },
+        "ref": null,
+        "rendered": "There are no results to display.",
+        "type": "div",
+      },
     ],
     "type": "div",
   },
@@ -1284,6 +1335,11 @@ ShallowWrapper {
             <div
                         className="page-title"
             >
+                        <img
+                                    alt="page title background"
+                                    className="page-title-sign"
+                                    src="page-title-sign.png"
+                        />
                         <h2>
                                     My Bar Menu
                         </h2>
@@ -1644,6 +1700,12 @@ ShallowWrapper {
                         thumbnail="https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
             />
 </div>,
+          <div
+            className="no-results"
+            hidden={9}
+>
+            There are no results to display.
+</div>,
         ],
         "className": "menu-container",
       },
@@ -1657,6 +1719,11 @@ ShallowWrapper {
             "children": <div
               className="page-title"
 >
+              <img
+                            alt="page title background"
+                            className="page-title-sign"
+                            src="page-title-sign.png"
+              />
               <h2>
                             My Bar Menu
               </h2>
@@ -1669,23 +1736,45 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <h2>
-                My Bar Menu
+              "children": Array [
+                <img
+                  alt="page title background"
+                  className="page-title-sign"
+                  src="page-title-sign.png"
+/>,
+                <h2>
+                  My Bar Menu
 </h2>,
+              ],
               "className": "page-title",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "My Bar Menu",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "page title background",
+                  "className": "page-title-sign",
+                  "src": "page-title-sign.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
               },
-              "ref": null,
-              "rendered": "My Bar Menu",
-              "type": "h2",
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "My Bar Menu",
+                },
+                "ref": null,
+                "rendered": "My Bar Menu",
+                "type": "h2",
+              },
+            ],
             "type": "div",
           },
           "type": "div",
@@ -2476,6 +2565,19 @@ ShallowWrapper {
               "type": [Function],
             },
           ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "There are no results to display.",
+            "className": "no-results",
+            "hidden": 9,
+          },
+          "ref": null,
+          "rendered": "There are no results to display.",
           "type": "div",
         },
       ],

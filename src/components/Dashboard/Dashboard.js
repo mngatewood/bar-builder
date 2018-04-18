@@ -29,7 +29,9 @@ export class Dashboard extends Component {
       <NavLink to='/recipes'>
         <button id="left-button">
           <img src={buttonLeft} id="left-image" alt="button" />
-          <span className="button-text" id="left-button-text">BROWSE DRINKS</span>
+          <span className="button-text" id="left-button-text">
+            BROWSE DRINKS
+          </span>
         </button>
       </NavLink>
       <NavLink to='/inventory'>
