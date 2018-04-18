@@ -76,7 +76,7 @@ img.recipe-image {
 
 .recipe-details {
   display: flex;
-  background-color: rgba(246, 239, 246, 1);
+  background-color: rgba(255, 255, 255, 1);
   color: rgba(77, 37, 133, 1);
   border: 1px solid rgba(85, 90, 107, 1);
   border-radius: 5px;
