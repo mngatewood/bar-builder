@@ -14,8 +14,10 @@ describe("getRecipeDetails", () => {
   });
 
   it("calls fetch with expected params", () => {
+    const mockURL = 
+      "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=13056";
     getRecipeDetails(mock.mockRecipeArray);
-    expect(window.fetch).toHaveBeenCalled();
+    expect(window.fetch).toHaveBeenCalledWith(mockURL);
   });
 
   it("returns an array of recipe details when status is ok", async () => {

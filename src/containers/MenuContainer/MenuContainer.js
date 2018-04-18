@@ -1,10 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Recipe } from '../Recipe/Recipe';
+import { Recipe } from '../../components/Recipe/Recipe';
 import PropTypes from 'prop-types';
 import './MenuContainer.css';
 
 export const MenuContainer = ({menu}) => {
+
+  const recipesToDisplay = menu.length;
   const displayRecipe = menu.map(recipe => {
     return <Recipe
       key={recipe.idDrink}
@@ -56,6 +58,10 @@ export const MenuContainer = ({menu}) => {
     <div className="recipe-container">
       {displayRecipe}
     </div>
+    <div className="no-results" hidden={recipesToDisplay}>
+      There are no results to display.
+    </div>
+
   </div>;
 };
 

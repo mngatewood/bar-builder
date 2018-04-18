@@ -30,7 +30,7 @@ describe('App', () => {
 
   it('calls getRecipes with correct params on componentDidMount', async () => {
     wrapper;
-    expect(getRecipes).toHaveBeenCalled();
+    expect(getRecipes).toHaveBeenCalledWith("random");
   });
 
   it('calls dispatch function when using mapDispatchToProps', () => {
