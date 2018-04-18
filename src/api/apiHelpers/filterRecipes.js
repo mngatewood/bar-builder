@@ -1,7 +1,12 @@
-export const filterRecipes = (props) => {
-  const { filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes, unfilteredRecipes } = props;
+export const filterRecipes = (
+  filterCount, 
+  categoryRecipes, 
+  ingredientRecipes, 
+  alcoholicRecipes, 
+  unfilteredRecipes) => {
+    
   let filteredRecipes;
-
+  
   if (filterCount === 0) {
     filteredRecipes = [];
   }
@@ -11,7 +16,7 @@ export const filterRecipes = (props) => {
     if (ingredientRecipes.length > 0) { filteredRecipes = ingredientRecipes; }
     if (alcoholicRecipes.length > 0) { filteredRecipes = alcoholicRecipes; }
   }
-
+  
   if (filterCount === 2) {
     filteredRecipes = [];
     let lastRecipeID = 0;

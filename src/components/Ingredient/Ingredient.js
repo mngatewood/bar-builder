@@ -21,34 +21,35 @@ export class Ingredient extends Component {
   };
 
   render() {
-    const { value, inInventory } = this.props;
     return <li
       className="ingredient">
       <input
         type="checkbox"
-        value={value}
+        value={this.props.value}
         checked={this.state.selected}
         onChange={this.handleChange} />
       <span>
-        &nbsp;{value}
+        &nbsp;{this.props.value}
       </span>
-    </li>
+    </li>;
   }
 
-};
+}
 
 export const mapDispatchToProps = (dispatch) => ({
-  addIngredient: ingredient =>
-    dispatch(addIngredient(ingredient)), 
-  removeIngredient: ingredient =>
-    dispatch(removeIngredient(ingredient)) 
+  addIngredient: ingredient => dispatch(addIngredient(ingredient)), 
+  removeIngredient: ingredient => dispatch(removeIngredient(ingredient)) 
 });
 
 Ingredient.propTypes = {
   value: PropTypes.string,
   ingredient: PropTypes.object,
   addIngredient: PropTypes.func,
-  removeIngredient: PropTypes.func
+  removeIngredient: PropTypes.func,
+  inInventory: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool
+  ])
 };
 
 export default connect(null, mapDispatchToProps)(Ingredient);

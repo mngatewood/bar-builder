@@ -1,7 +1,6 @@
 import { getMenuRecipes } from '../getMenuRecipes';
 import { getRecipes } from '../../apiCalls/getRecipes';
 import { filterMenuRecipes } from '../filterMenuRecipes';
-import { getUniqueMenuRecipes } from '../getUniqueMenuRecipes';
 import * as mock from '../../../mockData/mockData';
 jest.mock('../../apiCalls/getRecipes');
 jest.mock('../filterMenuRecipes');
@@ -24,10 +23,11 @@ describe("getMenuRecipes", () => {
     expect(filterMenuRecipes).toHaveBeenCalled;
   });
 
-  it("returns an array of recipes when status is ok", async () => {
-    const expected = mock.mockResponseRecipes;
+  it("returns an array of recipes when status is ok", () => {
+    const expected = mock.mockRecipeArray;
     
-    await expect(getRecipes(mock.mockInventory, mock.mockIngredientsList)).resolves.toEqual(expected);
+    expect(getRecipes(mock.mockInventory, mock.mockIngredientsList))
+      .resolves.toEqual(expected);
   });
 
 });

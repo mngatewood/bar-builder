@@ -9,4 +9,4 @@ describe('sortIngredients', () => {
       toEqual(mock.sortedIngredientOptions);
   });
 
-})
+});

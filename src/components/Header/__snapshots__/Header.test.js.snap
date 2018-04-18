@@ -614,7 +614,7 @@ ShallowWrapper {
                     to="/"
           >
                     <h1>
-                              The Bar Builder    
+                              The Bar Builder
                     </h1>
           </Link>
 </div>,
@@ -1552,7 +1552,7 @@ ShallowWrapper {
             to="/"
 >
             <h1>
-                        The Bar Builder    
+                        The Bar Builder
             </h1>
 </Link>,
           "className": "title",
@@ -1564,7 +1564,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <h1>
-              The Bar Builder    
+              The Bar Builder
 </h1>,
             "onClick": [Function],
             "replace": false,
@@ -1576,10 +1576,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "The Bar Builder    ",
+              "children": "The Bar Builder",
             },
             "ref": null,
-            "rendered": "The Bar Builder    ",
+            "rendered": "The Bar Builder",
             "type": "h1",
           },
           "type": [Function],
@@ -5548,7 +5548,7 @@ ShallowWrapper {
 >
                     Optional alcohol
 </option>,
-                  undefined,
+                  null,
                 ],
               ],
               "id": "a",
@@ -5605,7 +5605,7 @@ ShallowWrapper {
                 "rendered": "Optional alcohol",
                 "type": "option",
               },
-              undefined,
+              null,
             ],
             "type": "select",
           },
@@ -5631,7 +5631,7 @@ ShallowWrapper {
                         to="/"
             >
                         <h1>
-                                    The Bar Builder    
+                                    The Bar Builder
                         </h1>
             </Link>
 </div>,
@@ -6569,7 +6569,7 @@ ShallowWrapper {
               to="/"
 >
               <h1>
-                            The Bar Builder    
+                            The Bar Builder
               </h1>
 </Link>,
             "className": "title",
@@ -6581,7 +6581,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <h1>
-                The Bar Builder    
+                The Bar Builder
 </h1>,
               "onClick": [Function],
               "replace": false,
@@ -6593,10 +6593,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "The Bar Builder    ",
+                "children": "The Bar Builder",
               },
               "ref": null,
-              "rendered": "The Bar Builder    ",
+              "rendered": "The Bar Builder",
               "type": "h1",
             },
             "type": [Function],
@@ -10565,7 +10565,7 @@ ShallowWrapper {
 >
                       Optional alcohol
 </option>,
-                    undefined,
+                    null,
                   ],
                 ],
                 "id": "a",
@@ -10622,7 +10622,7 @@ ShallowWrapper {
                   "rendered": "Optional alcohol",
                   "type": "option",
                 },
-                undefined,
+                null,
               ],
               "type": "select",
             },

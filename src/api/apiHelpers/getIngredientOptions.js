@@ -8,6 +8,8 @@ export const getIngredientOptions = (sortedIngredients) => {
         value={option.strIngredient1}>
         {option.strIngredient1}
       </option>;
+    } else {
+      return null;
     }
   });
 };

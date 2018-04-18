@@ -11,14 +11,13 @@ import Dashboard from '../Dashboard/Dashboard';
 import InventoryContainer from '../InventoryContainer/InventoryContainer';
 import MenuContainer from '../MenuContainer/MenuContainer';
 import { connect } from 'react-redux';
-import { addRecipes, addCategories, addIngredients, addAlcoholicOptions } from '../../actions';
+import { 
+  addRecipes, 
+  addCategories, 
+  addIngredients, 
+  addAlcoholicOptions } from '../../actions';
 
 export class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-    };
-  }
 
   async componentDidMount() {
     const recipes = await getRecipes("random");
@@ -55,7 +54,8 @@ export const mapDispatchToProps = dispatch => ({
   addRecipes: recipes => dispatch(addRecipes(recipes)),
   addCategories: categories => dispatch(addCategories(categories)),
   addIngredients: ingredients => dispatch(addIngredients(ingredients)),
-  addAlcoholicOptions: alcoholicOptions => dispatch(addAlcoholicOptions(alcoholicOptions))
+  addAlcoholicOptions: alcoholicOptions => 
+    dispatch(addAlcoholicOptions(alcoholicOptions))
 });
 
 App.propTypes = {

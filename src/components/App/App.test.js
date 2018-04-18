@@ -2,7 +2,6 @@ import React from 'react';
 import { App, mapDispatchToProps } from './App';
 import { shallow } from 'enzyme';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
-import { getFilterOptions } from '../../api/apiCalls/getFilterOptions'
 jest.mock('../../api/apiCalls/getRecipes');
 jest.mock('../../api/apiCalls/getFilterOptions');
 
@@ -29,7 +28,7 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('calls getRecipes with the correct params on componentDidMount ', async () => {
+  it('calls getRecipes with correct params on componentDidMount', async () => {
     wrapper;
     expect(getRecipes).toHaveBeenCalled();
   });

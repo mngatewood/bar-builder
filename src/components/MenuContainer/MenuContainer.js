@@ -2,7 +2,6 @@ import React from 'react';
 import './MenuContainer.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { withRouter} from 'react-router-dom';
 import { Recipe } from '../Recipe/Recipe';
 
 export const MenuContainer = ({menu}) => {
@@ -57,7 +56,7 @@ export const MenuContainer = ({menu}) => {
     <div className="recipe-container">
       {displayRecipe}
     </div>
-  </div>
+  </div>;
 };
 
 export const mapStateToProps = (state) => ({

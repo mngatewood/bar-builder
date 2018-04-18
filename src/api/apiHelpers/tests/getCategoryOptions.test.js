@@ -1,5 +1,5 @@
 import React from 'react';
-import { getCategoryOptions } from '../getCategoryOptions'
+import { getCategoryOptions } from '../getCategoryOptions';
 import { shallow } from 'enzyme';
 
 describe("getCategoryOptions", () => {

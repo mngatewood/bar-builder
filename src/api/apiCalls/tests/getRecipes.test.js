@@ -1,5 +1,4 @@
 import { getRecipes } from '../getRecipes';
-import { getRecipeDetails } from '../../apiCalls/getRecipeDetails';
 import * as mock from '../../../mockData/mockData';
 jest.mock('../../apiCalls/getRecipeDetails');
 
@@ -27,7 +26,8 @@ describe("getRecipes", () => {
 
   it("returns a recipe when status is ok", async () => {
     const expected = mock.mockResponseRecipes.results;
-    await expect(getRecipes("filter", "a", "Optional_alcohol")).resolves.toEqual(expected);
+    await expect(getRecipes("filter", "a", "Optional_alcohol"))
+      .resolves.toEqual(expected);
   });
 
   it("throws an error when status is not ok", () => {
