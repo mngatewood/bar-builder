@@ -2,7 +2,7 @@ import React from 'react';
 import './RecipeContainer.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Recipe } from '../Recipe/Recipe';
+import { Recipe } from '../../components/Recipe/Recipe';
 
 export const RecipeContainer = ({recipes}) => {
   const displayRecipe = recipes.map(recipe => {

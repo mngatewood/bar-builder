@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Ingredient from '../Ingredient/Ingredient';
+import Ingredient from '../../components/Ingredient/Ingredient';
 import PropTypes from 'prop-types';
 import './InventoryContainer.css';
 

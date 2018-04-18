@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import './App.css';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { getFilterOptions } from '../../api/apiCalls/getFilterOptions';
-import RecipeContainer from '../RecipeContainer/RecipeContainer';
+import { connect } from 'react-redux';
+import RecipeContainer from '../../containers/RecipeContainer/RecipeContainer';
 import Header from '../Header/Header';
 import Welcome from '../Welcome/Welcome';
 import Dashboard from '../Dashboard/Dashboard';
-import InventoryContainer from '../InventoryContainer/InventoryContainer';
-import MenuContainer from '../MenuContainer/MenuContainer';
-import { connect } from 'react-redux';
+import MenuContainer from '../../containers/MenuContainer/MenuContainer';
+import PropTypes from 'prop-types';
+import './App.css';
+import InventoryContainer 
+  from '../../containers/InventoryContainer/InventoryContainer';
 import { 
   addRecipes, 
   addCategories, 
