@@ -52,6 +52,8 @@
 
 #left-button {
   margin-right: 120px;
+  margin-left: -300px;
+  visibility: hidden;
 }
 
 #left-image {
