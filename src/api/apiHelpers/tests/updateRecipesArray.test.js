@@ -18,20 +18,12 @@ describe('updateRecipesArray', () => {
   
   it('returns the array named in the arguments', () => {
     expect(updateRecipesArray("categoryFilter", "c", "Soft Drink / Soda")).
-      resolves.toEqual({ categoryRecipes: category })
+      resolves.toEqual({ categoryRecipes: mock.mockRecipeArray })
   });
 
   it('returns an empty array if the filter value starts with All', () => {
     expect(updateRecipesArray("categoryFilter", "c", "All Categories")).
       resolves.toEqual({ categoryRecipes: [] })
-  });
-
-  it("throws an error when status is not ok", () => {
-    window.fetch = mock.mockFetchReject;
-    const expected = Error("Error retrieving options: Something went wrong.");
-
-    expect(updateRecipesArray("categoryFilter", "c", "All Categories"))
-      .rejects.toEqual(expected);
   });
 
 });

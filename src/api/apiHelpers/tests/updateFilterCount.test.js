@@ -17,7 +17,6 @@ describe('updateFilterCount', () => {
     category = mock.mockSodaCategoryRecipes;
 
     expect(updateFilterCount(category, ingredient, alcoholic)).toEqual(1);
-
   });
 
   it('returns 2 if two arrays are populated', () => {
@@ -25,7 +24,6 @@ describe('updateFilterCount', () => {
     ingredient = mock.mockCocaColaIngredientRecipes;
 
     expect(updateFilterCount(category, ingredient, alcoholic)).toEqual(2);
-
   });
 
   it('returns 3 if three arrays are populated', () => {
@@ -34,7 +32,6 @@ describe('updateFilterCount', () => {
     alcoholic = mock.mockNonAlcoholicRecipes;
 
     expect(updateFilterCount(category, ingredient, alcoholic)).toEqual(3);
-
   });
 
 });

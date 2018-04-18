@@ -1,5 +1,5 @@
-import { mockResponseRecipes } from '../../../mockData/mockData';
+import { mockRecipeArray } from '../../../mockData/mockData';
 
 export const getRecipes = jest.fn().mockImplementation(() => {
-  return Promise.resolve( mockResponseRecipes );
+  return Promise.resolve( mockRecipeArray );
 });

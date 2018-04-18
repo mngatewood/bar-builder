@@ -24,10 +24,10 @@ describe("getMenuRecipes", () => {
     expect(filterMenuRecipes).toHaveBeenCalled;
   });
 
-  it("returns an array of recipes when status is ok", async () => {
-    const expected = mock.mockResponseRecipes;
+  it("returns an array of recipes when status is ok", () => {
+    const expected = mock.mockRecipeArray;
     
-    await expect(getRecipes(mock.mockInventory, mock.mockIngredientsList)).resolves.toEqual(expected);
+    expect(getRecipes(mock.mockInventory, mock.mockIngredientsList)).resolves.toEqual(expected);
   });
 
 });
