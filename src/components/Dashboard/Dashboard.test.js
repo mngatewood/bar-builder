@@ -37,10 +37,9 @@ describe("Dashboard", () => {
 
 describe("handleMenuClick", () => {
 
-  it('calls clearMenuRecipes, getMenuRecipes, addMenuRecipes with expected params', () => {
+  it('calls the functions with expected params', () => {
     const addMenuRecipes = jest.fn();
     const clearMenuRecipes = jest.fn();
-    // const getMenuRecipes = jest.fn();
     const history = {};
     history.push = jest.fn();
     const wrapper = shallow(<Dashboard

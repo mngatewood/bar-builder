@@ -21,6 +21,6 @@ describe("Recipe", () => {
     expect(wrapper.state('detailsHidden')).toEqual(false);
     wrapper.instance().toggleRecipeDetails();
     expect(wrapper.state('detailsHidden')).toEqual(true);
-  })
+  });
 
 });

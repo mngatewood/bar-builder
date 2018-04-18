@@ -10,7 +10,7 @@ describe("Menu Container", () => {
     const wrapper = shallow(
       <MenuContainer 
         menu={menu}
-      />)
+      />);
     expect(wrapper).toMatchSnapshot();
   });
 

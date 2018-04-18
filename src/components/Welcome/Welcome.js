@@ -2,7 +2,6 @@ import React from 'react';
 import './Welcome.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { withRouter} from 'react-router-dom';
 import { Recipe } from '../Recipe/Recipe';
 
 export const Welcome = ({recipes}) => {
@@ -55,46 +54,48 @@ export const Welcome = ({recipes}) => {
           <h2>Welcome</h2>
         </div>
       </div>
-
       <div className="contents-container">
-
         <div className="welcome-title">
           <h1>Welcome to The Bar Builder</h1>
         </div>
-
         <div className="guide-left">
-
           <div className="guide1">
-            <p className="filterGuide">Click on a filter above to display recipes of a particular category, ingredient, or alcoholic content.</p>
+            <p className="filterGuide">
+              Click on a filter above to display recipes of a particular 
+              category, ingredient, or alcoholic content.
+            </p>
             <div className="arrow1">
               <div className="curve1"></div>
               <div className="point1"></div>
             </div>
           </div>
-
           <div className="guide2">
-            <p className="summaryGuide">Hover over a drink to view ingredients or click to view a detailed recipe.</p>
+            <p className="summaryGuide">
+              Hover over a drink to view ingredients 
+              or click to view a detailed recipe.
+            </p>
           </div>
-
-
         </div>
-
         <div className="guide3">
-          <p className="inventoryGuide">Click on "Update My Inventory" below to select ingredients that you own.</p>
+          <p className="inventoryGuide">
+            Click on &quot;Update My Inventory&quot; 
+            below to select ingredients that you own.
+          </p>
           <div className="arrow3">
             <div className="curve3"></div>
             <div className="point3"></div>
           </div>
         </div>
-
         <div className="guide4">
-          <p className="menuGuide">Then click "View My Bar Menu" to see recipes that you can make.</p>
+          <p className="menuGuide">
+            Then click &quot;View My Bar Menu&quot; 
+            to see recipes that you can make.
+          </p>
           <div className="arrow4">
             <div className="curve4"></div>
             <div className="point4"></div>
           </div>
         </div>
-
         <div className="recipe-summary-container">
           <div className="arrow2">
             <div className="curve2"></div>
@@ -102,9 +103,6 @@ export const Welcome = ({recipes}) => {
           </div>
           {displayRecipe}
         </div>
-
-
-        
       </div>
     </div>
   );

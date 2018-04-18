@@ -12,4 +12,4 @@ describe('sortRecipes', () => {
       toEqual(mock.mockUnfilteredRecipes);
   });
 
-})
+});

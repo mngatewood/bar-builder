@@ -9,4 +9,4 @@ describe('sortAlcoholicOptions', () => {
       toEqual(mock.sortedAlcoholicOptions);
   });
   
-})
+});

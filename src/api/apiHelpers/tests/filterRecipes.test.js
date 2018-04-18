@@ -6,7 +6,7 @@ describe("filterRecipes", () => {
   it("filters recipes when one filter is selected", () => {
     const mockUnfilteredRecipes = [...mock.mockSodaCategoryRecipes];
     const filterCount = 1;
-    const expected = mockUnfilteredRecipes
+    const expected = mockUnfilteredRecipes;
     expect(filterRecipes(filterCount,
       mock.mockSodaCategoryRecipes,
       [],

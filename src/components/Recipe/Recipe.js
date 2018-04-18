@@ -50,8 +50,7 @@ export class Recipe extends Component {
       ingredient14,
       measure14,
       ingredient15,
-      measure15,
-      forceDetails } = this.props;
+      measure15 } = this.props;
     const { detailsHidden } = this.state;
     return <div>
       <div className="recipe-summary" 
@@ -85,7 +84,10 @@ export class Recipe extends Component {
         <div className="recipe-details-outline">
           <div className="recipe-details">
             <div className="cocktail-image-container">
-              <img className="cocktail-image-large" src={thumbnail} alt="cocktail" />
+              <img 
+                className="cocktail-image-large" 
+                src={thumbnail} 
+                alt="cocktail" />
             </div>
             <div className="instructions-table-container">
               <h1>{name}</h1>
@@ -104,10 +106,12 @@ export class Recipe extends Component {
                     <td className="table-text">{glass}</td>
                   </tr>
                   <tr>
-                    <td className="table-category" colSpan="2">Instructions: </td>
+                    <td className="table-category" 
+                      colSpan="2">Instructions: </td>
                   </tr>
                   <tr>
-                    <td className="table-text" colSpan="2">{instructions}</td>
+                    <td className="table-text" 
+                      colSpan="2">{instructions}</td>
                   </tr>
                 </tbody>
               </table>
@@ -116,7 +120,8 @@ export class Recipe extends Component {
               <table className="ingredients-table">
                 <tbody>
                   <tr>
-                    <td className="table-category" colSpan="2">Ingredients: </td>
+                    <td className="table-category" 
+                      colSpan="2">Ingredients: </td>
                   </tr>
                   <tr>
                     <td>{ingredient1}</td>
@@ -184,7 +189,7 @@ export class Recipe extends Component {
           </div>
         </div>
       </div>
-    </div>
+    </div>;
   }
 }
 

@@ -8,6 +8,8 @@ export const getAlcoholicOptions = (sortedAlcoholicOptions) => {
         value={option.strAlcoholic}>
         {option.strAlcoholic}
       </option>;
+    } else {
+      return null;
     }
   });
 };

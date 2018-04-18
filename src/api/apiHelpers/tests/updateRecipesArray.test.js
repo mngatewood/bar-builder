@@ -1,6 +1,5 @@
 import { updateRecipesArray } from '../updateRecipesArray';
 import * as mock from '../../../mockData/mockData';
-import { getRecipes } from '../../apiCalls/getRecipes';
 jest.mock('../../apiCalls/getRecipes');
 
 describe('updateRecipesArray', () => {
@@ -20,12 +19,12 @@ describe('updateRecipesArray', () => {
   
   it('returns the array named in the arguments', () => {
     expect(updateRecipesArray("categoryFilter", "c", "Soft Drink / Soda")).
-      resolves.toEqual({ categoryRecipes: mock.mockRecipeArray })
+      resolves.toEqual({ categoryRecipes: mock.mockRecipeArray });
   });
 
   it('returns an empty array if the filter value starts with All', () => {
     expect(updateRecipesArray("categoryFilter", "c", "All Categories")).
-      resolves.toEqual({ categoryRecipes: [] })
+      resolves.toEqual({ categoryRecipes: [] });
   });
 
 });

@@ -1,4 +1,10 @@
-export const filterRecipes = (filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes, unfilteredRecipes) => {
+export const filterRecipes = (
+  filterCount, 
+  categoryRecipes, 
+  ingredientRecipes, 
+  alcoholicRecipes, 
+  unfilteredRecipes) => {
+    
   let filteredRecipes;
   
   if (filterCount === 0) {

@@ -9,7 +9,12 @@ import { addMenuRecipes, clearMenuRecipes } from '../../actions';
 export class Dashboard extends Component {
 
   handleMenuClick = async () => {
-    const { inventory, ingredients, clearMenuRecipes, addMenuRecipes, history } = this.props;
+    const { 
+      inventory, 
+      ingredients, 
+      clearMenuRecipes, 
+      addMenuRecipes, 
+      history } = this.props;
     await clearMenuRecipes();
     const menuRecipes = await getMenuRecipes(inventory, ingredients);
     await addMenuRecipes(menuRecipes);
@@ -31,7 +36,7 @@ export class Dashboard extends Component {
 
   }
 
-};
+}
 
 export const mapStateToProps = state => ({
   inventory: state.inventory,
@@ -47,4 +52,5 @@ Dashboard.propTypes = {
   inventory: PropTypes.array
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Dashboard));
+export default 
+withRouter(connect(mapStateToProps, mapDispatchToProps)(Dashboard));

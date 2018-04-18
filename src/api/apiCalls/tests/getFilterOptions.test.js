@@ -7,6 +7,7 @@ describe("getRecipeDetails", () => {
 
   beforeEach(() => {
 
+    // eslint-disable-next-line
     mockUrl = "https://www.thecocktaildb.com/api/json/v1/1/list.php?category=list";
     window.fetch = jest.fn().mockImplementation(() =>
       Promise.resolve({

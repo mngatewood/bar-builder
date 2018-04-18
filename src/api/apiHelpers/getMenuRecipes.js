@@ -7,10 +7,11 @@ export const getMenuRecipes = async (inventory, ingredients) => {
   let matchingMenuRecipes = [];
   for (let index = 0; index < inventory.length; index++) {
     const recipes = await getRecipes('filter', 'i', inventory[index]);
-    const filteredMenuRecipes = await filterMenuRecipes(inventory, ingredients, recipes);
+    const filteredMenuRecipes = 
+      await filterMenuRecipes(inventory, ingredients, recipes);
     matchingMenuRecipes = [...matchingMenuRecipes, ...filteredMenuRecipes];
   }
   const sortedMenuRecipes = await matchingMenuRecipes.sort(sortMenuRecipes);
   const uniqueMenuRecipes = await getUniqueMenuRecipes(sortedMenuRecipes);
   return uniqueMenuRecipes;  
-}
+};

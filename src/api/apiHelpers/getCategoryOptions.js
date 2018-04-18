@@ -8,6 +8,8 @@ export const getCategoryOptions = (sortedCategories) => {
         value={option.strCategory}>
         {option.strCategory}
       </option>;
+    } else {
+      return null;
     }
-  })
+  });
 };

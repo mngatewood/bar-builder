@@ -12,7 +12,7 @@ describe("Inventory Container", () => {
       <InventoryContainer
         ingredients={ingredients}
         inventory={inventory}
-       />);
+      />);
     expect(wrapper).toMatchSnapshot();
   });
 

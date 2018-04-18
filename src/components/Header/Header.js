@@ -11,9 +11,11 @@ import { updateRecipesArray } from '../../api/apiHelpers/updateRecipesArray';
 import { updateFilterCount } from '../../api/apiHelpers/updateFilterCount';
 import { sortCategories } from '../../api/apiHelpers/sortCategories';
 import { sortIngredients } from '../../api/apiHelpers/sortIngredients';
-import { sortAlcoholicOptions } from '../../api/apiHelpers/sortAlcoholicOptions';
+import { sortAlcoholicOptions } 
+  from '../../api/apiHelpers/sortAlcoholicOptions';
 import { getCategoryOptions } from '../../api/apiHelpers/getCategoryOptions';
-import { getIngredientOptions } from '../../api/apiHelpers/getIngredientOptions';
+import { getIngredientOptions } 
+  from '../../api/apiHelpers/getIngredientOptions';
 import { getAlcoholicOptions } from '../../api/apiHelpers/getAlcoholicOptions';
 
 export class Header extends Component {
@@ -38,7 +40,7 @@ export class Header extends Component {
   }
 
   handleSubmit = async (event) => {
-    // event.preventDefault();
+    event.preventDefault();
     this.props.history.push('/recipes');
     const value = this.state.search;
     const recipes = await getRecipes('search', 's', value);
@@ -53,15 +55,28 @@ export class Header extends Component {
     this.setState({ [name]: value });
     const type = event.target.id;
     this.setState(await updateRecipesArray(name, type, value));
-    const { categoryRecipes, ingredientRecipes, alcoholicRecipes } = this.state;
-    const filterCount = await updateFilterCount(categoryRecipes, ingredientRecipes, alcoholicRecipes);
+    const { 
+      categoryRecipes, 
+      ingredientRecipes, 
+      alcoholicRecipes } = this.state;
+    const filterCount = await updateFilterCount(
+      categoryRecipes, 
+      ingredientRecipes, 
+      alcoholicRecipes);
     this.setState({ filterCount });
-    const sortedRecipes = await sortRecipes(categoryRecipes, ingredientRecipes, alcoholicRecipes);
-    const filteredRecipes = await filterRecipes(filterCount, categoryRecipes, ingredientRecipes, alcoholicRecipes, sortedRecipes);
+    const sortedRecipes = await sortRecipes(
+      categoryRecipes, 
+      ingredientRecipes, 
+      alcoholicRecipes);
+    const filteredRecipes = await filterRecipes(filterCount, 
+      categoryRecipes, 
+      ingredientRecipes, 
+      alcoholicRecipes, 
+      sortedRecipes);
     this.props.addRecipes(filteredRecipes);
   }
 
-  handleRedirect = () => {
+  handleRedirect = async () => {
     const resetState = {
       search: '',
       filterCount: 0,
@@ -75,6 +90,8 @@ export class Header extends Component {
     };
     this.setState(resetState);
     this.props.clearRecipes();
+    const recipes = await getRecipes("random");
+    this.props.addRecipes(recipes);
   }
 
   render() {
@@ -91,7 +108,9 @@ export class Header extends Component {
 
     return <div className="header">
       <div className="title">
-        <Link to="/" onClick={this.handleRedirect}><h1>The Bar Builder&nbsp;&nbsp;&nbsp;&nbsp;</h1></Link>
+        <Link to="/" onClick={this.handleRedirect}>
+          <h1>The Bar Builder</h1>
+        </Link>
       </div>
       <form onSubmit={this.handleSubmit}>
         <input 

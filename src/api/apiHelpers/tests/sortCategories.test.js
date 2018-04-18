@@ -9,4 +9,4 @@ describe('sortCategories', () => {
       toEqual(mock.sortedCategoryOptions);
   });
 
-})
+});
