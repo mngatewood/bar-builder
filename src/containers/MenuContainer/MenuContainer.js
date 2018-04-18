@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import './MenuContainer.css';
 
 export const MenuContainer = ({menu}) => {
+
+  const recipesToDisplay = menu.length;
   const displayRecipe = menu.map(recipe => {
     return <Recipe
       key={recipe.idDrink}
@@ -56,6 +58,10 @@ export const MenuContainer = ({menu}) => {
     <div className="recipe-container">
       {displayRecipe}
     </div>
+    <div className="no-results" hidden={recipesToDisplay}>
+      There are no results to display.
+    </div>
+
   </div>;
 };
 

@@ -17,3 +17,7 @@
   left: 50%;
   margin-left: -100px;
 }
+
+.no-results {
+  font-size: 24px;
+}
