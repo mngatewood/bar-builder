@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Dashboard.css';
 import { NavLink, withRouter } from 'react-router-dom';
 import { getMenuRecipes } from '../../api/apiHelpers/getMenuRecipes';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addMenuRecipes, clearMenuRecipes } from '../../actions';
+import PropTypes from 'prop-types';
+import './Dashboard.css';
 
 export class Dashboard extends Component {
 
@@ -49,7 +49,10 @@ export const mapDispatchToProps = dispatch => ({
 });
 
 Dashboard.propTypes = {
-  inventory: PropTypes.array
+  inventory: PropTypes.array,
+  ingredients: PropTypes.array,
+  addMenuRecipes: PropTypes.func,
+  clearMenuRecipes: PropTypes.func
 };
 
 export default 

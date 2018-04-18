@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import './Header.css';
-import PropTypes from 'prop-types';
 import { getRecipes } from '../../api/apiCalls/getRecipes';
 import { addRecipes, clearRecipes } from '../../actions/';
 import { filterRecipes } from '../../api/apiHelpers/filterRecipes';
@@ -11,12 +9,14 @@ import { updateRecipesArray } from '../../api/apiHelpers/updateRecipesArray';
 import { updateFilterCount } from '../../api/apiHelpers/updateFilterCount';
 import { sortCategories } from '../../api/apiHelpers/sortCategories';
 import { sortIngredients } from '../../api/apiHelpers/sortIngredients';
+import { getCategoryOptions } from '../../api/apiHelpers/getCategoryOptions';
+import { getAlcoholicOptions } from '../../api/apiHelpers/getAlcoholicOptions';
 import { sortAlcoholicOptions } 
   from '../../api/apiHelpers/sortAlcoholicOptions';
-import { getCategoryOptions } from '../../api/apiHelpers/getCategoryOptions';
 import { getIngredientOptions } 
   from '../../api/apiHelpers/getIngredientOptions';
-import { getAlcoholicOptions } from '../../api/apiHelpers/getAlcoholicOptions';
+import PropTypes from 'prop-types';
+import './Header.css';
 
 export class Header extends Component {
   constructor(props) {
@@ -169,13 +169,13 @@ export const mapDispatchToProps = dispatch => ({
 });
 
 Header.propTypes = {
-  addRecipes: PropTypes.func,
   recipes: PropTypes.array,
   categories: PropTypes.array,
   ingredients: PropTypes.array,
   alcoholicOptions: PropTypes.array,
-  history: PropTypes.object,
-  clearRecipes: PropTypes.func
+  addRecipes: PropTypes.func,
+  clearRecipes: PropTypes.func,
+  history: PropTypes.object
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

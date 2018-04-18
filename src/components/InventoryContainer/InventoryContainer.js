@@ -1,8 +1,8 @@
 import React from 'react';
-import './InventoryContainer.css';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import Ingredient from '../Ingredient/Ingredient';
+import PropTypes from 'prop-types';
+import './InventoryContainer.css';
 
 export const InventoryContainer = ({ingredients, inventory}) => {
   
@@ -45,7 +45,8 @@ export const mapStateToProps = state => ({
 
 InventoryContainer.propTypes = {
   ingredients: PropTypes.array,
-  inventory: PropTypes.array
+  inventory: PropTypes.array,
+  strIngredient1: PropTypes.string
 };
 
 export default connect(mapStateToProps)(InventoryContainer);

@@ -42,10 +42,10 @@ export const mapDispatchToProps = (dispatch) => ({
 });
 
 Ingredient.propTypes = {
-  value: PropTypes.string,
-  ingredient: PropTypes.object,
   addIngredient: PropTypes.func,
   removeIngredient: PropTypes.func,
+  ingredient: PropTypes.object,
+  value: PropTypes.string,
   inInventory: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.bool

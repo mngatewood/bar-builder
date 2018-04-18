@@ -1,8 +1,8 @@
 import React from 'react';
-import './MenuContainer.css';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import { Recipe } from '../Recipe/Recipe';
+import PropTypes from 'prop-types';
+import './MenuContainer.css';
 
 export const MenuContainer = ({menu}) => {
   const displayRecipe = menu.map(recipe => {
@@ -64,7 +64,45 @@ export const mapStateToProps = (state) => ({
 });
 
 MenuContainer.propTypes = {
-  menu: PropTypes.array
+  menu: PropTypes.array,
+  idDrink: PropTypes.number,
+  strDrink: PropTypes.string,
+  strCategory: PropTypes.string,
+  strAlcoholic: PropTypes.string,
+  strGlass: PropTypes.string,
+  strInstructions: PropTypes.string,
+  strDrinkThumb: PropTypes.string,
+  strIngredient1: PropTypes.string,
+  strMeasure1: PropTypes.string,
+  strIngredient2: PropTypes.string,
+  strMeasure2: PropTypes.string,
+  strIngredient3: PropTypes.string,
+  strMeasure3: PropTypes.string,
+  strIngredient4: PropTypes.string,
+  strMeasure4: PropTypes.string,
+  strIngredient5: PropTypes.string,
+  strMeasure5: PropTypes.string,
+  strIngredient6: PropTypes.string,
+  strMeasure6: PropTypes.string,
+  strIngredient7: PropTypes.string,
+  strMeasure7: PropTypes.string,
+  strIngredient8: PropTypes.string,
+  strMeasure8: PropTypes.string,
+  strIngredient9: PropTypes.string,
+  strMeasure9: PropTypes.string,
+  strIngredient10: PropTypes.string,
+  strMeasure10: PropTypes.string,
+  strIngredient11: PropTypes.string,
+  strMeasure11: PropTypes.string,
+  strIngredient12: PropTypes.string,
+  strMeasure12: PropTypes.string,
+  strIngredient13: PropTypes.string,
+  strMeasure13: PropTypes.string,
+  strIngredient14: PropTypes.string,
+  strMeasure14: PropTypes.string,
+  strIngredient15: PropTypes.string,
+  strMeasure15: PropTypes.string,
+  forceDetails: PropTypes.bool
 };
 
 export default connect(mapStateToProps)(MenuContainer);
