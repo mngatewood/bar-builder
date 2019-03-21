@@ -26,22 +26,12 @@ export class Dashboard extends Component {
   render() {
 
     return <aside className="dashboard-container">
-      <NavLink to='/recipes'>
-        <button id="left-button">
-          <img src={buttonLeft} id="left-image" alt="button" />
-          <span className="button-text" id="left-button-text">
-            BROWSE DRINKS
-          </span>
-        </button>
-      </NavLink>
       <NavLink to='/inventory'>
         <button>
-          <img src={buttonRight} alt="button" />
           <span className="button-text">INVENTORY</span>
         </button>
       </NavLink>
       <button onClick={this.handleMenuClick}>
-        <img src={buttonRight} alt="button" />
         <span className="button-text">BAR MENU</span>
       </button>
     </aside>;

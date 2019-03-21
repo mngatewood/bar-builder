@@ -32,7 +32,10 @@
   grid-column: 1 / 2;
 } 
 
-.guide1, .guide2, .guide3, .guide4 {
+.guide1, 
+.guide2, 
+.guide3, 
+.guide4 {
   font-family: "Poor Story";
   font-size: 32px;
   padding: 25px;
@@ -46,24 +49,33 @@
 .guide2 {
   grid-row: 2;
   text-align: right;
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+
+.guide2 p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  max-width: 450px;
 }
 
 .guide3 {
   grid-row: 4 / 4;
   grid-column: 1 / 2;
-  text-align: right;
-  margin-right: 100px;
+  text-align: center;
 }
 
 .guide4 {
   grid-row: 4 / 4;
   grid-column: 2 / 3;
-  text-align: left;
-  margin-left: 100px;
+  text-align: center;
 }
 
-.guide3 p, .guide4 p {
-  margin-top: 0;
+.guide3 p, 
+.guide4 p {
+  margin: auto;
+  max-width: 400px;
 }
 
 .recipe-summary-container {
@@ -89,208 +101,3 @@
   right: 40px;
   border-radius: 2px;
 }
-
-/* Arrows */
-
-/* Arrow 1 */
-
-.arrow1 {
-	position: absolute;
-  margin: 0 auto;
-  width: 10%;
-  top: 100px;
-  margin-left: 25px;
-}
-
-.arrow1 .curve1 {
-	border: 5px solid #BE5F4B;
-	border-color: transparent transparent transparent #BE5F4B;
-	height: 100px;
-	/* width: 1200px; */
-	border-radius: 230px 0 0 150px;
-}
-
-.arrow1 .point1 {
-	position: absolute;
-	left: 40px;
-	top: 315px;
-}
-
-.arrow1 .point1:before, .arrow1 .point1:after {
-	border: 2px solid #BE5F4B;
-	height: 25px;
-	content: "";
-	position: absolute;
-}
-
-.arrow1 .point1:before {
-	top: -307px;
-	left: -32px;
-	transform:rotate(-100deg);
-	-webkit-transform:rotate(-100deg);
-  -moz-transform:rotate(-100deg);
-  -ms-transform: rotate(-100deg);
-}
-
-.arrow1 .point1:after {
-  top: -297px;
-	left: -19px;
-	transform:rotate(3deg);
-	-webkit-transform: rotate(3deg);
-  -moz-transform:rotate(3deg);
-  -ms-transform: rotate(3deg);
-}
-
-/* Arrow 2 */
-
-.arrow2 {
-	position: absolute;
-  margin: 0 auto;
-  width: 10%;
-  top: 140px;
-  left: -100px;
-  margin-left: 25px;
-  transform: rotate(50deg)
-}
-
-.arrow2 .curve2 {
-	border: 5px solid #BE5F4B;
-	border-color: transparent transparent transparent #BE5F4B;
-	height: 100px;
-	width: 1200px;
-	border-radius: 230px 0 0 150px;
-}
-
-.arrow2 .point2 {
-	position: absolute;
-	left: 40px;
-	top: 315px;
-}
-
-.arrow2 .point2:before, .arrow2 .point2:after {
-	border: 2px solid #BE5F4B;
-	height: 25px;
-	content: "";
-	position: absolute;
-}
-
-.arrow2 .point2:before {
-	top: -307px;
-	left: -32px;
-	transform:rotate(-100deg);
-	-webkit-transform:rotate(-100deg);
-  -moz-transform:rotate(-100deg);
-  -ms-transform: rotate(-100deg);
-}
-
-.arrow2 .point2:after {
-  top: -297px;
-	left: -19px;
-	transform:rotate(3deg);
-	-webkit-transform: rotate(3deg);
-  -moz-transform:rotate(3deg);
-  -ms-transform: rotate(3deg);
-}
-
-/* Arrow 3 */
-
-.arrow3 {
-	position: absolute;
-  margin: 0 auto;
-  width: 100px;
-  bottom: 50px;
-  left: 36%;
-  margin-left: 25px;
-  transform: rotate(180deg);
-}
-
-.arrow3 .curve3 {
-	border: 5px solid #BE5F4B;
-	border-color: transparent transparent transparent #BE5F4B;
-	height: 100px;
-	/* width: 1200px; */
-	border-radius: 230px 0 0 150px;
-}
-
-.arrow3 .point3 {
-	position: absolute;
-	left: 40px;
-	top: 315px;
-}
-
-.arrow3 .point3:before, .arrow3 .point3:after {
-	border: 2px solid #BE5F4B;
-	height: 25px;
-	content: "";
-	position: absolute;
-}
-
-.arrow3 .point3:before {
-	top: -307px;
-	left: -32px;
-	transform:rotate(-100deg);
-	-webkit-transform:rotate(-100deg);
-  -moz-transform:rotate(-100deg);
-  -ms-transform: rotate(-100deg);
-}
-
-.arrow3 .point3:after {
-  top: -297px;
-	left: -19px;
-	transform:rotate(3deg);
-	-webkit-transform: rotate(3deg);
-  -moz-transform:rotate(3deg);
-  -ms-transform: rotate(3deg);
-}
-
-/* Arrow 4 */
-
-.arrow4 {
-	position: absolute;
-  margin: 0 auto;
-  width: 100px;
-  bottom: 52px;
-  left: 53%;
-  margin-left: 25px;
-}
-
-.arrow4 .curve4 {
-	border: 5px solid #BE5F4B;
-	border-color: transparent transparent transparent #BE5F4B;
-	height: 100px;
-	/* width: 1200px; */
-	border-radius: 230px 0 0 150px;
-}
-
-.arrow4 .point4 {
-	position: absolute;
-    left: -270%;
-    top: 16px;
-    transform: rotate(109deg);
-}
-
-.arrow4 .point4:before, .arrow4 .point4:after {
-	border: 2px solid #BE5F4B;
-	height: 25px;
-	content: "";
-	position: absolute;
-}
-
-.arrow4 .point4:before {
-	top: -307px;
-	left: -32px;
-	transform:rotate(-100deg);
-	-webkit-transform:rotate(-100deg);
-  -moz-transform:rotate(-100deg);
-  -ms-transform: rotate(-100deg);
-}
-
-.arrow4 .point4:after {
-  top: -297px;
-	left: -19px;
-	transform:rotate(3deg);
-	-webkit-transform: rotate(3deg);
-  -moz-transform:rotate(3deg);
-  -ms-transform: rotate(3deg);
-}
-

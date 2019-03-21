@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Recipe } from '../../components/Recipe/Recipe';
 import PropTypes from 'prop-types';
 import './MenuContainer.css';
-import pageTitleSign from '../../assets/page-title-sign.png';
 
 export const MenuContainer = ({menu}) => {
 
@@ -53,9 +52,6 @@ export const MenuContainer = ({menu}) => {
   return <div className="menu-container">
     <div className="page-title-wrapper">
       <div className="page-title">
-        <img src={pageTitleSign}
-          className="page-title-sign"
-          alt="page title background" />
         <h2>My Bar Menu</h2>
       </div>
     </div>

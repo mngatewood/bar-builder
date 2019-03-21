@@ -3,7 +3,6 @@ import './RecipeContainer.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Recipe } from '../../components/Recipe/Recipe';
-import pageTitleSign from '../../assets/page-title-sign.png';
 
 export const RecipeContainer = ({recipes}) => {
   
@@ -52,9 +51,6 @@ export const RecipeContainer = ({recipes}) => {
   return <div className="filtered-container">
     <div className="page-title-wrapper">
       <div className="page-title">
-        <img src={pageTitleSign} 
-          className="page-title-sign" 
-          alt="page title background" />
         <h2>Filtered Recipes</h2>
       </div>
     </div>

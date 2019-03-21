@@ -109,7 +109,7 @@ export class Header extends Component {
     return <div className="header">
       <div className="title">
         <Link to="/" onClick={this.handleRedirect}>
-          <h1>The Bar Builder</h1>
+          <h1>Bar Builder</h1>
         </Link>
       </div>
       <form onSubmit={this.handleSubmit}>

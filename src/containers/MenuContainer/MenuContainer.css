@@ -5,7 +5,7 @@
 .page-title {
   position: relative;
   z-index: 49;
-  width: 200px;
+  width: 250px;
   height: 60px;
   margin: 0 auto;
   background-color: transparent;
@@ -13,16 +13,8 @@
   font-family: "Poor Story"
 }
 
-.page-title img {
-  width: 200px;
-  height: 60px;
-}
-
 .page-title h2 {
-  display: block;
-  position: relative;
-  top: -71px;
   margin: 12px;
   color: rgba(245, 244, 193, 1);
-  font-family: "Pinyon Script"
+  font-family: "Convergence"
 }
