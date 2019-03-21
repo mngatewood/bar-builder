@@ -1,15 +1,6 @@
-@font-face {
-    font-family: Billy;
-    src: url("../../assets/fonts/BILLYTHEKID.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Billy;
-    font-weight: bold;
-    src: url("../../assets/fonts/BILLYTHEKID-Bold.otf") format("opentype");
-}
-
 .dashboard-container {
+  display: flex;
+  justify-content: space-around;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -20,51 +11,20 @@
 }
 
 .dashboard-container button {
-  margin: 10px 60px;
+  margin: 10px;
+  padding: 4px;
   font-size: 18px;
-  background-color: transparent;
-  border: transparent;
+  background-color: rgba(83, 90, 107, 1);
+  border: 1px solid rgba(246, 239, 246, 1);
+  border-radius: 4px;
   font-weight: bold;
   color: rgba(245, 244, 193, 1);
   cursor: pointer;
-  width: 100px;
-}
-
-.dashboard-container button img {
-  height: 35px;
-  width: 200px;
-  border: none;
+  width: 150px;
+  height: 32px;
 }
 
 .dashboard-container button:hover {
   filter: drop-shadow(5px 5px 5px rgba(83, 90, 107, 1));
-  color: rgba(83, 90, 107, 1);
-}
-
-.button-text {
-  display: block;
-  position: relative;
-  top: -32px;
-  left: 18px;
-  width: 102px;
-  font-family: "Billy";
-}
-
-#left-button {
-  margin-right: 120px;
-  margin-left: -300px;
-  visibility: hidden;
-}
-
-#left-image {
-  width: 245px;
-}
-
-#left-button-text {
-  left: 55px;
-  width: 200px;
-}
-
-NavLink {
-  border: none;
+  color: rgba(255, 255, 255, 1);
 }

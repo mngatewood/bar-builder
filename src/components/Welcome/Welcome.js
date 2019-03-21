@@ -3,7 +3,6 @@ import './Welcome.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Recipe } from '../Recipe/Recipe';
-import pageTitleSign from '../../assets/page-title-sign.png';
 
 export const Welcome = ({recipes}) => {
   const displayRecipe = recipes.map(recipe => {
@@ -52,15 +51,12 @@ export const Welcome = ({recipes}) => {
     <div className="welcome-container">
       <div className="page-title-wrapper">
         <div className="page-title">
-          <img src={pageTitleSign}
-            className="page-title-sign"
-            alt="page title background" />
           <h2>Welcome</h2>
         </div>
       </div>
       <div className="contents-container">
         <div className="welcome-title">
-          <h1>Welcome to The Bar Builder</h1>
+          <h1>Welcome to Bar Builder</h1>
         </div>
         <div className="guide-left">
           <div className="guide1">
@@ -68,10 +64,6 @@ export const Welcome = ({recipes}) => {
               Click on a filter above to display recipes of a particular 
               category, ingredient, or alcoholic content.
             </p>
-            <div className="arrow1">
-              <div className="curve1"></div>
-              <div className="point1"></div>
-            </div>
           </div>
           <div className="guide2">
             <p className="summaryGuide">
@@ -81,30 +73,18 @@ export const Welcome = ({recipes}) => {
           </div>
         </div>
         <div className="guide3">
-          <p className="inventoryGuide">
-            Click on &quot;Update My Inventory&quot; 
+          <p className="menuGuide">
+            Click on &quot;Inventory&quot; 
             below to select ingredients that you own.
           </p>
-          <div className="arrow3">
-            <div className="curve3"></div>
-            <div className="point3"></div>
-          </div>
         </div>
         <div className="guide4">
           <p className="menuGuide">
-            Then click &quot;View My Bar Menu&quot; 
+            Then, click &quot;Bar Menu&quot; 
             to see recipes that you can make.
           </p>
-          <div className="arrow4">
-            <div className="curve4"></div>
-            <div className="point4"></div>
-          </div>
         </div>
         <div className="recipe-summary-container">
-          <div className="arrow2">
-            <div className="curve2"></div>
-            <div className="point2"></div>
-          </div>
           {displayRecipe}
         </div>
       </div>
