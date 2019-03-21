@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 import { addMenuRecipes, clearMenuRecipes } from '../../actions';
 import PropTypes from 'prop-types';
 import './Dashboard.css';
-import buttonRight from '../../assets/bar-button-right.png';
-import buttonLeft from '../../assets/bar-button-left.png';
 
 export class Dashboard extends Component {
 
